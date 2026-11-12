@@ -1,0 +1,191 @@
+{
+  "KnottFibHub": {
+    "author": "Dr. Ron Knott",
+    "work": "Fibonacci Numbers, the Golden Section and the Golden String",
+    "locus": "University of Surrey, 1996–2025 (fib.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fib.html"
+  },
+  "KnottPhi2D": {
+    "author": "Dr. Ron Knott",
+    "work": "Phi in 2D Geometry and Trigonometry",
+    "locus": "University of Surrey, 1996–2025 (phi2DGeomTrig.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/phi2DGeomTrig.html"
+  },
+  "KnottSimpleTrig": {
+    "author": "Dr. Ron Knott",
+    "work": "Exact Trig Values for Simple Angles",
+    "locus": "University of Surrey, 1996–2025 (simpleTrig.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/simpleTrig.html"
+  },
+  "KnottPhi3D": {
+    "author": "Dr. Ron Knott",
+    "work": "The Golden Geometry of Solids or Phi in 3 Dimensions",
+    "locus": "University of Surrey, 1996–2025 (phi3DGeom.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/phi3DGeom.html"
+  },
+  "KnottPropsPhi": {
+    "author": "Dr. Ron Knott",
+    "work": "Phi's Fascinating Figures",
+    "locus": "University of Surrey, 1996–2025 (propsOfPhi.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/propsOfPhi.html"
+  },
+  "KnottPhigits": {
+    "author": "Dr. Ron Knott",
+    "work": "Phigits and the Base Phi System",
+    "locus": "University of Surrey, 1996–2025 (phigits.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/phigits.html"
+  },
+  "KnottGoldenString": {
+    "author": "Dr. Ron Knott",
+    "work": "The Fibonacci Rabbit Sequence (The Golden String)",
+    "locus": "University of Surrey, 1996–2025 (fibrab.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibrab.html"
+  },
+  "KnottFibRep": {
+    "author": "Dr. Ron Knott",
+    "work": "Fibonacci Representations of Numbers",
+    "locus": "University of Surrey, 1996–2025 (fibrep.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibrep.html"
+  },
+  "KnottFibGen": {
+    "author": "Dr. Ron Knott",
+    "work": "General Fibonacci Series, Wythoff and Stolarsky Arrays",
+    "locus": "University of Surrey, 1996–2025 (fibGen.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibGen.html"
+  },
+  "KnottPythag": {
+    "author": "Dr. Ron Knott",
+    "work": "Pythagorean Triangles and Triples",
+    "locus": "University of Surrey, 1996–2025 (Pythag/pythag.html)",
+    "url": "https://r-knott.surrey.ac.uk/Pythag/pythag.html"
+  },
+  "KnottPuzzles2": {
+    "author": "Dr. Ron Knott",
+    "work": "Harder Fibonacci Puzzles",
+    "locus": "University of Surrey, 1996–2025 (fibpuzzles2.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibpuzzles2.html"
+  },
+  "KnottFormulae": {
+    "author": "Dr. Ron Knott",
+    "work": "Fibonacci and Phi Formulae",
+    "locus": "University of Surrey, 1996–2025 (fibFormulae.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibFormulae.html"
+  },
+  "KnottFibPi": {
+    "author": "Dr. Ron Knott",
+    "work": "The Fibonacci Numbers in a Formula for Pi",
+    "locus": "University of Surrey, 1996–2025 (fibpi.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibpi.html"
+  },
+  "KnottNature": {
+    "author": "Dr. Ron Knott",
+    "work": "Fibonacci Numbers and Nature",
+    "locus": "University of Surrey, 1996–2025 (fibnat.html)",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html"
+  },
+  "EuclidElements": {
+    "author": "Euclid (trans. Sir Thomas L. Heath)",
+    "work": "The Thirteen Books of Euclid's Elements",
+    "locus": "Books II.11, IV.10–11, IV.16, VI.def.3, VI.30, XIII.1–18 (Cambridge, 1908)"
+  },
+  "Pacioli1509": {
+    "author": "Luca Pacioli (illus. Leonardo da Vinci)",
+    "work": "De Divina Proportione",
+    "locus": "Venice: Paganino Paganini, 1509"
+  },
+  "Hambidge1920": {
+    "author": "Jay Hambidge",
+    "work": "Dynamic Symmetry: The Greek Vase",
+    "locus": "Yale University Press, 1920"
+  },
+  "Wildberger2005": {
+    "author": "Norman J. Wildberger",
+    "work": "Divine Proportions: Rational Trigonometry to Universal Geometry",
+    "locus": "Wild Egg Books, Sydney, 2005"
+  },
+  "Penrose1974": {
+    "author": "Roger Penrose",
+    "work": "The Role of Aesthetics in Pure and Applied Mathematical Research",
+    "locus": "Bulletin of the Institute of Mathematics and Its Applications 10 (1974), 266–271"
+  },
+  "Gardner1977": {
+    "author": "Martin Gardner",
+    "work": "Extraordinary Nonperiodic Tilings That Enrich the Theory of Tiles",
+    "locus": "Scientific American 236(1), January 1977, 110–121"
+  },
+  "Gauss1801": {
+    "author": "Carl Friedrich Gauss",
+    "work": "Disquisitiones Arithmeticae",
+    "locus": "Section VII, arts. 365–366 (Leipzig, 1801)"
+  },
+  "Coxeter1973": {
+    "author": "H. S. M. Coxeter",
+    "work": "Regular Polytopes (3rd ed.) & Introduction to Geometry",
+    "locus": "Dover, 1973; Wiley, 1969 (Ch. 11: The Golden Section and Phyllotaxis)"
+  },
+  "Vajda1989": {
+    "author": "Steven Vajda",
+    "work": "Fibonacci and Lucas Numbers, and the Golden Section: Theory and Applications",
+    "locus": "Ellis Horwood, Chichester, 1989"
+  },
+  "Hurwitz1891": {
+    "author": "Adolf Hurwitz",
+    "work": "Ueber die angenäherte Darstellung der Irrationalzahlen durch rationale Brüche",
+    "locus": "Mathematische Annalen 39 (1891), 279–284"
+  },
+  "Bergman1957": {
+    "author": "George M. Bergman",
+    "work": "A Number System with an Irrational Base",
+    "locus": "Mathematics Magazine 31(2), Nov.–Dec. 1957, 98–110"
+  },
+  "Zeckendorf1972": {
+    "author": "Édouard Zeckendorf",
+    "work": "Représentation des nombres naturels par une somme de nombres de Fibonacci ou de nombres de Lucas",
+    "locus": "Bull. Soc. Roy. Sci. Liège 41 (1972), 179–182"
+  },
+  "Wythoff1907": {
+    "author": "Willem Abraham Wythoff",
+    "work": "A Modification of the Game of Nim",
+    "locus": "Nieuw Archief voor Wiskunde (2) 7 (1907), 199–202"
+  },
+  "Stolarsky1977": {
+    "author": "Kenneth B. Stolarsky",
+    "work": "A Set of Generalized Fibonacci Sequences Such That Each Natural Number Belongs to Exactly One",
+    "locus": "Fibonacci Quarterly 15(3), 1977, 224"
+  },
+  "Morrison1980": {
+    "author": "David R. Morrison",
+    "work": "A Stolarsky Array of Wythoff Pairs",
+    "locus": "A Collection of Manuscripts Related to the Fibonacci Sequence, Fibonacci Assoc., 1980, 134–136"
+  },
+  "Horadam1961": {
+    "author": "Alwyn F. Horadam",
+    "work": "Fibonacci Number Triples",
+    "locus": "American Mathematical Monthly 68(8), 1961, 751–753"
+  },
+  "Gardner1956": {
+    "author": "Martin Gardner",
+    "work": "Mathematics, Magic and Mystery",
+    "locus": "Dover Publications, New York, 1956 (Ch. 7: Geometrical Vanishes)"
+  },
+  "Horadam1962": {
+    "author": "Alwyn F. Horadam",
+    "work": "Fibonacci Sequences and a Geometrical Paradox",
+    "locus": "Mathematics Magazine 35(1), 1962, 1–11"
+  },
+  "Honsberger1985": {
+    "author": "Ross Honsberger",
+    "work": "Mathematical Gems III",
+    "locus": "Mathematical Association of America, 1985 (Ch. 8: A Second Look at the Fibonacci and Lucas Numbers)"
+  },
+  "Lehmer1936": {
+    "author": "Derrick Henry Lehmer",
+    "work": "Problem 3801 (Reciprocal Fibonacci Arctangent Identity)",
+    "locus": "American Mathematical Monthly 43 (1936), 580; solution 45 (1938), 636–637"
+  },
+  "Thompson1917": {
+    "author": "D'Arcy Wentworth Thompson",
+    "work": "On Growth and Form",
+    "locus": "Cambridge University Press, 1917 (Ch. XIV: On Leaf-Arrangement, or Phyllotaxis)"
+  }
+}

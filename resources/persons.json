@@ -1,0 +1,137 @@
+{
+  "knott": {
+    "name": "Dr. Ron Knott",
+    "dates": "fl. 1979–2025",
+    "role": "Mathematician & computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025)."
+  },
+  "euclid": {
+    "name": "Euclid of Alexandria",
+    "dates": "fl. c. 300 BCE",
+    "role": "Author of the Elements; formalized division in extreme and mean ratio (II.11, VI.30), the golden 72°–72°–36° triangle and regular pentagon/15-gon (IV.10–16), and the icosahedron/dodecahedron (Book XIII)."
+  },
+  "fibonacci": {
+    "name": "Leonardo Pisano (Fibonacci)",
+    "dates": "c. 1170 – c. 1240–1250",
+    "role": "Pisan mathematician whose Liber Abaci (1202) introduced Hindu-Arabic numerals to Europe and posed the monthly rabbit problem generating 1, 1, 2, 3, 5, 8, 13, …"
+  },
+  "pacioli": {
+    "name": "Luca Pacioli",
+    "dates": "c. 1447 – 1517",
+    "role": "Franciscan friar and mathematician; authored De Divina Proportione (1509, illustrated by Leonardo da Vinci) cataloging thirteen geometric effects of the Golden Ratio across plane and solid figures."
+  },
+  "kepler": {
+    "name": "Johannes Kepler",
+    "dates": "1571 – 1630",
+    "role": "Astronomer and geometer; discovered the (1, √Φ, Φ) right triangle (1597 letter to Mästlin), observed F_{n+1}/F_n → Φ (1608), and studied the rhombic triacontahedron."
+  },
+  "ptolemy": {
+    "name": "Claudius Ptolemy",
+    "dates": "c. 100 – c. 170 CE",
+    "role": "Alexandrian astronomer-mathematician whose Almagest chord theorem (Book I.10) yields the pentagonal diagonal-to-side identity d = Φ s and exact trigonometric tables."
+  },
+  "pythagoras": {
+    "name": "Pythagoras of Samos",
+    "dates": "c. 570 – c. 495 BCE",
+    "role": "Founder of the Pythagorean school; associated with the pentagram badge (ὑγίεια) and right-triangle quadrance additivity."
+  },
+  "cassini": {
+    "name": "Giovanni Domenico Cassini",
+    "dates": "1625 – 1712",
+    "role": "Italian-French astronomer and mathematician who presented F_{n-1} F_{n+1} - F_n^2 = (-1)^n to the Royal Academy of Sciences in 1680."
+  },
+  "euler": {
+    "name": "Leonhard Euler",
+    "dates": "1707 – 1783",
+    "role": "Swiss mathematician whose Machin-type rational arctangent decompositions underpin the reciprocal Fibonacci telescoping series for π/4."
+  },
+  "gauss": {
+    "name": "Carl Friedrich Gauss",
+    "dates": "1777 – 1855",
+    "role": "Proved at age 18 (30 March 1796; Disquisitiones Arithmeticae, 1801) that the regular 17-gon is constructible by straightedge and compass via nested quadratic radicals."
+  },
+  "binet": {
+    "name": "Jacques Philippe Marie Binet",
+    "dates": "1786 – 1856",
+    "role": "French mathematician who published (1843) the closed-form power formula F_n = (Φ^n - (-φ)^n)/√5 previously known to Euler, Daniel Bernoulli, and de Moivre."
+  },
+  "catalan": {
+    "name": "Eugène Charles Catalan",
+    "dates": "1814 – 1894",
+    "role": "Belgian-French mathematician who generalized Cassini's identity to F_n^2 - F_{n-r} F_{n+r} = (-1)^{n-r} F_r^2 (1879)."
+  },
+  "lucas": {
+    "name": "Édouard Lucas",
+    "dates": "1842 – 1891",
+    "role": "French number theorist who named the Fibonacci sequence, introduced the companion Lucas sequence L_n = Φ^n + (-φ)^n, and developed Fibonomial coefficients."
+  },
+  "loyd": {
+    "name": "Sam Loyd & Sam Loyd Jr.",
+    "dates": "1841 – 1911 / 1873 – 1934",
+    "role": "American puzzle pioneers who popularized both the 64 = 65 vanishing-square dissection and the 64 = 63 notched-rectangle dissection."
+  },
+  "dudeney": {
+    "name": "Henry Ernest Dudeney",
+    "dates": "1857 – 1930",
+    "role": "English mathematical puzzle creator who analyzed generalized Fibonacci chessboard dissections for both +1 gap and -1 overlap paradoxes."
+  },
+  "hurwitz": {
+    "name": "Adolf Hurwitz",
+    "dates": "1859 – 1919",
+    "role": "German mathematician who proved (1891) that :math:`|\\alpha - p/q| < 1/(\\sqrt{5}\\, q^2)` has infinitely many rational solutions for every irrational α, with √5 optimal specifically because of Φ."
+  },
+  "thompson": {
+    "name": "D'Arcy Wentworth Thompson",
+    "dates": "1860 – 1948",
+    "role": "Scottish biologist, mathematician, and classicist whose On Growth and Form (1917) analyzed Fibonacci phyllotaxis and gnomonic biological growth."
+  },
+  "wythoff": {
+    "name": "Willem Abraham Wythoff",
+    "dates": "1865 – 1939",
+    "role": "Dutch mathematician who characterized cold positions of Wythoff's Nim (1907) as the complementary Beatty pairs (⌊nΦ⌋, ⌊nΦ^2⌋)."
+  },
+  "zeckendorf": {
+    "name": "Édouard Zeckendorf",
+    "dates": "1901 – 1983",
+    "role": "Belgian physician, army officer, and amateur mathematician who published the canonical non-consecutive Fibonacci representation theorem (1972, discovered c. 1939)."
+  },
+  "lehmer": {
+    "name": "Derrick Henry Lehmer",
+    "dates": "1905 – 1991",
+    "role": "American number theorist who posed (1936) the reciprocal Fibonacci arctangent series π/4 = ∑_{k=1}^∞ arctan(1/F_{2k+1})."
+  },
+  "coxeter": {
+    "name": "Harold Scott MacDonald Coxeter",
+    "dates": "1907 – 2003",
+    "role": "Geometer whose Regular Polytopes and Introduction to Geometry unified 3D golden polyhedra, 5-cube compounds, and cylindrical phyllotaxis lattices."
+  },
+  "penrose": {
+    "name": "Roger Penrose",
+    "dates": "b. 1931",
+    "role": "Mathematical physicist and geometer who discovered the five-fold aperiodic P2 (kite & dart) and P3 (thick & thin golden rhomb) tilings in 1973–1974."
+  },
+  "conway": {
+    "name": "John Horton Conway",
+    "dates": "1937 – 2020",
+    "role": "Mathematician who named Penrose's 'kite' and 'dart' prototiles and connected Fibonacci shift operations with Wythoff's array."
+  },
+  "stolarsky": {
+    "name": "Kenneth B. Stolarsky",
+    "dates": "b. 1942",
+    "role": "Number theorist who constructed the Stolarsky interspersion array (1977) via nearest-integer Golden Ratio rounding."
+  },
+  "kimberling": {
+    "name": "Clark Kimberling",
+    "dates": "b. 1942",
+    "role": "Mathematician who formalized interspersion and dispersion arrays generalizing the Wythoff and Stolarsky arrays, and curated the Encyclopedia of Triangle Centers (ETC)."
+  },
+  "bergman": {
+    "name": "George M. Bergman",
+    "dates": "b. 1943",
+    "role": "Mathematician who discovered and published the base-Φ ('phigit') positional numeral system in 1957 at age 14."
+  },
+  "wildberger": {
+    "name": "Norman J. Wildberger",
+    "dates": "b. 1955",
+    "role": "Creator of Rational Trigonometry (Divine Proportions, 2005), replacing transcendental distance and angle with exact algebraic quadrance and spread."
+  }
+}

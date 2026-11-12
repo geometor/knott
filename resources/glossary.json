@@ -1,0 +1,127 @@
+{
+  "golden-ratio": {
+    "headword": "Golden Ratio (Φ, φ)",
+    "translation": "Knott: Φ = (1+√5)/2, φ = (√5−1)/2",
+    "definition": "Positive root Φ = (1+√5)/2 ≈ 1.6180339887 of x^2 − x − 1 = 0, paired in Dr. Ron Knott's notation with its reciprocal φ = Φ − 1 = 1/Φ ≈ 0.6180339887 (corresponding to SymPy/GEOMETOR sp.GoldenRatio and 1/sp.GoldenRatio)."
+  },
+  "extreme-and-mean-ratio": {
+    "headword": "Extreme and Mean Ratio",
+    "translation": "ἄκρος καὶ μέσος λόγος (Euclid VI.def.3)",
+    "definition": "Division of a straight segment AB at G such that the whole AB is to the greater part AG as AG is to the lesser part GB (AB : AG = AG : GB = Φ)."
+  },
+  "cross-ratio": {
+    "headword": "Cross-Ratio",
+    "translation": "(A, B; C, D)",
+    "definition": "Projective four-point invariant (A−C)(B−D) / ((A−D)(B−C)) preserved under all central projections and linear fractional transformations."
+  },
+  "golden-rectangle": {
+    "headword": "Golden Rectangle",
+    "translation": "1 × Φ or φ × 1 rectangle",
+    "definition": "Rectangle whose side lengths stand in the Golden Ratio Φ : 1; removing a square gnomon leaves a congruent-shaped daughter golden rectangle rotated by 90°."
+  },
+  "gnomon": {
+    "headword": "Gnomon",
+    "translation": "γνώμων",
+    "definition": "Geometric figure which, when added to or removed from a given figure, leaves a new figure similar to the original (such as a unit square adjoined to a golden rectangle or an obtuse golden triangle adjoined to an acute golden triangle)."
+  },
+  "quadrance": {
+    "headword": "Quadrance",
+    "translation": "Q(A, B) = (x₂−x₁)² + (y₂−y₁)²",
+    "definition": "Exact squared Euclidean separation between two points in Rational Trigonometry, remaining purely polynomial over the coordinate field without square roots."
+  },
+  "spread": {
+    "headword": "Spread",
+    "translation": "s(l₁, l₂) = sin² θ",
+    "definition": "Exact Rational Trigonometry measure of separation between two lines, defined algebraically in [0, 1] with s = 0 for parallel lines and s = 1 for perpendicular lines."
+  },
+  "golden-triangle": {
+    "headword": "Golden Triangle (Acute)",
+    "translation": "72°–72°–36° isosceles triangle",
+    "definition": "Euclid IV.10 isosceles triangle with leg-to-base ratio Φ : 1 and exact spreads s(72°) = (5+√5)/8 and s(36°) = (5−√5)/8."
+  },
+  "golden-gnomon": {
+    "headword": "Golden Gnomon (Obtuse)",
+    "translation": "36°–36°–108° isosceles triangle",
+    "definition": "Obtuse isosceles triangle with base-to-leg ratio Φ : 1 (or 1 : φ) and apex spread s(108°) = (5+√5)/8."
+  },
+  "pentagram": {
+    "headword": "Pentagram",
+    "translation": "{5/2} regular star pentagon",
+    "definition": "Five-pointed star formed by the five diagonals of a regular pentagon, cutting every diagonal into segments in geometric progression φ² : φ : 1 : Φ."
+  },
+  "kepler-triangle": {
+    "headword": "Kepler Triangle",
+    "translation": "(1, √Φ, Φ) right triangle",
+    "definition": "Unique right triangle up to similarity whose side lengths (1, √Φ, Φ) — and side quadrances (1, Φ, Φ²) — form a geometric progression."
+  },
+  "penrose-tiling": {
+    "headword": "Penrose Prototiles (P2 / P3)",
+    "translation": "Kite & Dart / Thick & Thin Rhombs",
+    "definition": "Roger Penrose's golden-triangle and golden-gnomon prototile pairs with exact area ratio Φ : 1 that tile the plane only nonperiodically under matching rules."
+  },
+  "constructible-angle": {
+    "headword": "Constructible Angle",
+    "translation": "Straightedge-and-compass angle",
+    "definition": "Angle whose sine and cosine lie in an iterated quadratic extension of Q; integer-degree constructible angles are exactly the multiples of 3°."
+  },
+  "golden-rhombohedron": {
+    "headword": "Golden Rhombohedra",
+    "translation": "Acute (prolate) & Obtuse (oblate) 3D tiles",
+    "definition": "Pair of hexahedra bounded by six congruent golden rhombi of diagonal ratio Φ : 1 with volume ratio Φ : 1, serving as 3D quasicrystal and rhombic-triacontahedron building blocks."
+  },
+  "continued-fraction": {
+    "headword": "Simple Continued Fraction",
+    "translation": "[a₀; a₁, a₂, …]",
+    "definition": "Canonical nested-reciprocal representation of a real number; Φ = [1; 1, 1, …] has minimal partial quotients and slowest possible rational convergence."
+  },
+  "cassini-identity": {
+    "headword": "Cassini's Identity",
+    "translation": "F_{n−1} F_{n+1} − F_n² = (−1)ⁿ",
+    "definition": "Determinant invariant of the Fibonacci Q-matrix ((1, 1), (1, 0))ⁿ governing convergent errors, area-paradox dissections, and Fibonacci arctangent telescoping."
+  },
+  "phigit": {
+    "headword": "Phigit (Base-Φ Digit)",
+    "translation": "George Bergman's base-Φ numeral",
+    "definition": "Binary digit in {0, 1} weighting integer powers Φ^k; canonical minimal phigit form forbids adjacent 1s via the carry law 011_Φ = 100_Φ."
+  },
+  "zeckendorf-representation": {
+    "headword": "Zeckendorf Representation",
+    "translation": "Canonical non-consecutive Fibonacci sum",
+    "definition": "Unique representation of every positive integer N as a sum of non-adjacent Fibonacci numbers F_{k₁} + … + F_{k_r} (k_i ≥ k_{i+1} + 2, k_r ≥ 2)."
+  },
+  "golden-string": {
+    "headword": "Golden String (Fibonacci Word)",
+    "translation": "1011010110110101101…",
+    "definition": "Infinite Sturmian sequence fixed by the substitution 1 ↦ 10, 0 ↦ 1 and generated equivalently by Beatty differences ⌊(n+1)φ⌋ − ⌊nφ⌋ or lattice crossings of y = φ x."
+  },
+  "beatty-sequence": {
+    "headword": "Beatty Complementary Pair",
+    "translation": "(⌊nΦ⌋, ⌊nΦ²⌋)",
+    "definition": "Disjoint, exhaustive partition of the positive integers into lower Wythoff numbers A_n = ⌊nΦ⌋ and upper Wythoff numbers B_n = ⌊nΦ²⌋ = A_n + n."
+  },
+  "wythoff-array": {
+    "headword": "Wythoff Array",
+    "translation": "W(r, c) = ⌊(r+1)Φ⌋ F_{c+2} + r F_{c+1}",
+    "definition": "Bijective two-dimensional interspersion array of all positive integers whose rows are generalized Fibonacci sequences classified by Zeckendorf shift classes."
+  },
+  "stolarsky-array": {
+    "headword": "Stolarsky Array",
+    "translation": "Nearest-integer Golden Ratio interspersion",
+    "definition": "Bijective array of all positive integers seeded by missing minimal integers and the nearest-integer Golden Ratio recurrence b = ⌊aΦ + 1/2⌋."
+  },
+  "fibonomial": {
+    "headword": "Fibonomial Coefficient",
+    "translation": "C(k, j)_F",
+    "definition": "Fibonacci analogue of the binomial coefficient formed from descending and ascending products of Fibonacci numbers, governing linear recurrences of k-th powers F_n^k."
+  },
+  "golden-angle": {
+    "headword": "Golden Angle",
+    "translation": "360° / Φ² = 360° φ² ≈ 137.50776°",
+    "definition": "Minor circular sector obtained by dividing a full 2π revolution in extreme and mean ratio, optimizing radial packing in botanical phyllotaxis."
+  },
+  "parastichy": {
+    "headword": "Parastichy",
+    "translation": "Opposing Fibonacci contact spirals (F_k, F_{k+1})",
+    "definition": "Left- and right-handed visible spiral families in cylindrical or planar phyllotaxis whose counts advance through consecutive Fibonacci pairs."
+  }
+}

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -321.38 616.00 538.34" width="616.0" height="538.3" class="euclid-graphic" data-graphic-id="knott-1-6.g1" data-folio="knott-1-6" data-graphic="g1">
+  <style>
+    svg.euclid-graphic .geom-golden {
+      stroke: #e0911b;
+      stroke-width: 2.3;
+    }
+    svg.euclid-graphic polygon.geom-golden {
+      fill: #e0911b;
+      fill-opacity: 0.16;
+      stroke: #e0911b;
+      stroke-width: 1.8;
+    }
+    svg.euclid-graphic .geom-overlay {
+      opacity: 0;
+      fill: none;
+      stroke: none;
+      stroke-width: 0;
+    }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+      <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+      <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+    </marker>
+    <clipPath id="clip-knott-1-6-g1">
+      <rect x="-48.00" y="-321.38" width="616.00" height="538.34" />
+    </clipPath>
+  </defs>
+  <g id="elements" clip-path="url(#clip-knott-1-6-g1)">
+    <circle data-ref="( A U )" data-type="circle" fill="none" stroke="#18181b" stroke-width="1.4" stroke-opacity="0.45" stroke-dasharray="4, 3" cx="0.00" cy="-0.00" r="177.65" class="geom-circle geom-dashed geom-guide" />
+  </g>
+  <g id="graphics">
+    <polygon data-ref="&lt; A F E B &gt;" data-type="polygon" fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 232.55,168.96 520.00,168.96 287.45,-0.00" class="geom-polygon geom-polygon-bordered" />
+    <polygon data-ref="&lt; A B K D &gt;" data-type="polygon" fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 287.45,-0.00 143.72,-104.42 88.83,-273.38" class="geom-polygon geom-polygon-bordered" />
+    <polygon data-ref="&lt; K B C D &gt;" data-type="polygon" fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="143.72,-104.42 287.45,-0.00 376.28,-273.38 88.83,-273.38" class="geom-polygon geom-polygon-gnomon geom-golden" />
+    <path data-ref="/ A C /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4, 3" stroke-opacity="0.50" d="M 0.00 -0.00 L 188.14 -136.69 L 376.28 -273.38" class="geom-line geom-segment geom-dashed geom-guide" />
+    <path data-ref="/ A B /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 143.72 -0.00 L 287.45 -0.00" class="geom-line geom-segment geom-given" />
+    <path data-ref="/ B C /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 287.45 -0.00 L 331.86 -136.69 L 376.28 -273.38" class="geom-line geom-segment geom-golden" />
+    <path data-ref="/ C D /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 376.28 -273.38 L 232.55 -273.38 L 88.83 -273.38" class="geom-line geom-segment geom-golden" />
+    <path data-ref="/ D A /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.83 -273.38 L 44.41 -136.69 L 0.00 -0.00" class="geom-line geom-segment" />
+    <path data-ref="/ B K /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 287.45 -0.00 L 215.59 -52.21 L 143.72 -104.42" class="geom-line geom-segment geom-golden" />
+    <path data-ref="/ D K /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 88.83 -273.38 L 116.28 -188.90 L 143.72 -104.42" class="geom-line geom-segment geom-golden" />
+    <path data-ref="/ A K /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 71.86 -52.21 L 143.72 -104.42" class="geom-line geom-segment" />
+    <path data-ref="/ K C /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 143.72 -104.42 L 260.00 -188.90 L 376.28 -273.38" class="geom-line geom-segment geom-golden" />
+    <path data-ref="/ A F /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 116.28 84.48 L 232.55 168.96" class="geom-line geom-segment" />
+    <path data-ref="/ F E /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 232.55 168.96 L 376.28 168.96 L 520.00 168.96" class="geom-line geom-segment" />
+    <path data-ref="/ E B /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 520.00 168.96 L 403.72 84.48 L 287.45 -0.00" class="geom-line geom-segment" />
+  </g>
+  <g id="highlights" clip-path="url(#clip-knott-1-6-g1)" style="pointer-events: none;">
+    <polygon data-ref="&lt; A F E B &gt;" data-type="polygon" fill="none" opacity="0" points="0.00,-0.00 232.55,168.96 520.00,168.96 287.45,-0.00" class="geom-overlay" />
+    <polygon data-ref="&lt; A B K D &gt;" data-type="polygon" fill="none" opacity="0" points="0.00,-0.00 287.45,-0.00 143.72,-104.42 88.83,-273.38" class="geom-overlay" />
+    <polygon data-ref="&lt; K B C D &gt;" data-type="polygon" fill="none" opacity="0" points="143.72,-104.42 287.45,-0.00 376.28,-273.38 88.83,-273.38" class="geom-overlay" />
+    <path data-ref="/ A C /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 188.14 -136.69 L 376.28 -273.38" class="geom-overlay" />
+    <circle data-ref="( A U )" data-type="circle" fill="none" opacity="0" cx="0.00" cy="-0.00" r="177.65" class="geom-overlay" />
+    <path data-ref="/ A B /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 143.72 -0.00 L 287.45 -0.00" class="geom-overlay" />
+    <path data-ref="/ B C /" data-type="segment" fill="none" opacity="0" d="M 287.45 -0.00 L 331.86 -136.69 L 376.28 -273.38" class="geom-overlay" />
+    <path data-ref="/ C D /" data-type="segment" fill="none" opacity="0" d="M 376.28 -273.38 L 232.55 -273.38 L 88.83 -273.38" class="geom-overlay" />
+    <path data-ref="/ D A /" data-type="segment" fill="none" opacity="0" d="M 88.83 -273.38 L 44.41 -136.69 L 0.00 -0.00" class="geom-overlay" />
+    <path data-ref="/ B K /" data-type="segment" fill="none" opacity="0" d="M 287.45 -0.00 L 215.59 -52.21 L 143.72 -104.42" class="geom-overlay" />
+    <path data-ref="/ D K /" data-type="segment" fill="none" opacity="0" d="M 88.83 -273.38 L 116.28 -188.90 L 143.72 -104.42" class="geom-overlay" />
+    <path data-ref="/ A K /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 71.86 -52.21 L 143.72 -104.42" class="geom-overlay" />
+    <path data-ref="/ K C /" data-type="segment" fill="none" opacity="0" d="M 143.72 -104.42 L 260.00 -188.90 L 376.28 -273.38" class="geom-overlay" />
+    <path data-ref="/ A F /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 116.28 84.48 L 232.55 168.96" class="geom-overlay" />
+    <path data-ref="/ F E /" data-type="segment" fill="none" opacity="0" d="M 232.55 168.96 L 376.28 168.96 L 520.00 168.96" class="geom-overlay" />
+    <path data-ref="/ E B /" data-type="segment" fill="none" opacity="0" d="M 520.00 168.96 L 403.72 84.48 L 287.45 -0.00" class="geom-overlay" />
+  </g>
+  <g id="points">
+    <circle data-ref="A" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+    <circle data-ref="B" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="287.45" cy="-0.00" r="4.2" class="geom-point" />
+    <circle data-ref="D" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="88.83" cy="-273.38" r="4.2" class="geom-point" />
+    <circle data-ref="C" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="376.28" cy="-273.38" r="4.2" class="geom-point" />
+    <circle data-ref="K" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="143.72" cy="-104.42" r="4.2" class="geom-point" />
+    <circle data-ref="F" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="232.55" cy="168.96" r="3.6" class="geom-point" />
+    <circle data-ref="E" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="168.96" r="3.6" class="geom-point" />
+  </g>
+  <g id="labels">
+    <text data-ref="A" x="-17.39" y="4.66" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+    <text data-ref="B" x="282.79" y="17.39" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+    <text data-ref="D" x="79.83" y="-288.97" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+    <text data-ref="C" x="389.00" y="-286.11" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+    <text data-ref="K" x="126.34" y="-109.08" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+    <text data-ref="F" x="227.89" y="186.34" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+    <text data-ref="E" x="537.39" y="173.62" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+  </g>
+</svg>
