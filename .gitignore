@@ -1,0 +1,22 @@
+# Build & documentation artifacts
+docs/
+build/
+dist/
+*.egg-info/
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editor & OS files
+.DS_Store
+*.swp
+*~
