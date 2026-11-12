@@ -1,0 +1,194 @@
+geometor.knott.constants
+========================
+
+.. py:module:: geometor.knott.constants
+
+.. autoapi-nested-parse::
+
+   Exact symbolic constants, notation bridges, and Rational Trigonometry invariants.
+
+   Dr. Ron Knott's archive (*Fibonacci Numbers, the Golden Section and the Golden
+   String*, University of Surrey) uses uppercase :math:`\Phi = (1 + \sqrt{5})/2`
+   for the Golden Ratio (:math:`\approx 1.61803\dots`) and lowercase
+   :math:`\phi = \Phi - 1 = 1/\Phi = (\sqrt{5} - 1)/2` for its reciprocal
+   (:math:`\approx 0.61803\dots`). By contrast, SymPy and ``geometor.model`` denote
+   the larger root by ``sp.GoldenRatio`` (:math:`\phi_{\text{GEOMETOR}} = \Phi_{\text{Knott}}`).
+
+   This module provides exact closed-form :math:`\mathbb{Q}(\sqrt{5})` definitions
+   alongside lossless symbolic conversion helpers and Rational Trigonometry invariants.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.knott.constants.SQRT5
+   geometor.knott.constants.PHI
+   geometor.knott.constants.phi
+   geometor.knott.constants.PSI
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.constants.simplify_exact
+   geometor.knott.constants.assert_zero
+   geometor.knott.constants.assert_no_floats
+   geometor.knott.constants.knott_to_geometor
+   geometor.knott.constants.geometor_to_knott_radicals
+   geometor.knott.constants.verify_notation_bijection
+   geometor.knott.constants.quadrance
+   geometor.knott.constants.spread
+   geometor.knott.constants.cross
+   geometor.knott.constants.cross_ratio
+   geometor.knott.constants.polygon_signed_area
+   geometor.knott.constants.floor_linear_phi
+
+
+Module Contents
+---------------
+
+.. py:data:: SQRT5
+   :type:  sympy.Expr
+
+   Exact square root of 5 over :math:`\mathbb{Q}(\sqrt{5})`.
+
+.. py:data:: PHI
+   :type:  sympy.Expr
+
+   Dr. Ron Knott's Golden Ratio :math:`\Phi = (1 + \sqrt{5})/2 \approx 1.6180339887\dots`.
+
+.. py:data:: phi
+   :type:  sympy.Expr
+
+   Dr. Ron Knott's reciprocal Golden Ratio :math:`\phi = \Phi - 1 = 1/\Phi \approx 0.6180339887\dots`.
+
+.. py:data:: PSI
+   :type:  sympy.Expr
+
+   Galois conjugate :math:`\Psi = 1 - \Phi = -\phi = (1 - \sqrt{5})/2 \approx -0.6180339887\dots`.
+
+.. py:function:: simplify_exact(expr: sympy.Expr | int | sympy.Rational) -> sympy.Expr
+
+   Canonicalize an exact symbolic expression without introducing floats.
+
+   :param expr: Exact SymPy expression or integer/rational value.
+
+   :returns: Simplified exact :class:`sympy.Expr`.
+
+
+.. py:function:: assert_zero(expr: sympy.Expr, message: str = '') -> None
+
+   Assert that ``expr`` simplifies identically to symbolic ``0``.
+
+   :param expr: Difference expression expected to vanish identically.
+   :param message: Optional diagnostic description on failure.
+
+   :raises AssertionError: If ``expr`` does not reduce to exact ``0``.
+
+
+.. py:function:: assert_no_floats(obj: geometor.model.Model | sympy.Basic | collections.abc.Sequence[object] | dict[object, object]) -> None
+
+   Verify recursively that no ``float`` or ``sp.Float`` exists in ``obj``.
+
+   :param obj: A :class:`geometor.model.Model`, SymPy expression/entity, sequence, or mapping.
+
+   :raises AssertionError: If any floating-point value or ``sp.Float`` atom is detected.
+
+
+.. py:function:: knott_to_geometor(expr: sympy.Expr, *, knott_big_phi: sympy.Symbol | None = None, knott_small_phi: sympy.Symbol | None = None) -> sympy.Expr
+
+   Map an expression in Knott's :math:`(\Phi, \phi)` symbols to ``sp.GoldenRatio``.
+
+   :param expr: Symbolic expression written in terms of Knott's ``Phi`` and ``phi`` symbols.
+   :param knott_big_phi: Optional symbol representing :math:`\Phi` (defaults to ``Symbol('Phi')``).
+   :param knott_small_phi: Optional symbol representing :math:`\phi` (defaults to ``Symbol('phi')``).
+
+   :returns: Equivalent SymPy expression written in terms of ``sp.GoldenRatio``.
+
+
+.. py:function:: geometor_to_knott_radicals(expr: sympy.Expr) -> sympy.Expr
+
+   Expand an expression containing ``sp.GoldenRatio`` into :math:`\mathbb{Q}(\sqrt{5})`.
+
+   :param expr: Symbolic expression possibly containing ``sp.GoldenRatio``.
+
+   :returns: Exact radical form over :math:`\mathbb{Q}(\sqrt{5})`.
+
+
+.. py:function:: verify_notation_bijection() -> dict[str, sympy.Expr]
+
+   Verify all fundamental identities bridging Knott and GEOMETOR conventions.
+
+   :returns: Dictionary of canonical zero-checked identities and exact radical constants.
+
+
+.. py:function:: quadrance(p1: sympy.geometry.Point, p2: sympy.geometry.Point) -> sympy.Expr
+
+   Compute the exact Euclidean quadrance :math:`Q(p_1, p_2) = (x_2 - x_1)^2 + (y_2 - y_1)^2`.
+
+   :param p1: First planar point.
+   :param p2: Second planar point.
+
+   :returns: Exact squared distance in SymPy without introducing square roots.
+
+
+.. py:function:: spread(l1: sympy.geometry.Line | sympy.geometry.Segment, l2: sympy.geometry.Line | sympy.geometry.Segment) -> sympy.Expr
+
+   Compute the exact Rational Trigonometry spread :math:`s(\ell_1, \ell_2) \in [0, 1]`.
+
+   :param l1: First line or segment.
+   :param l2: Second line or segment.
+
+   :returns: Exact symbolic spread :math:`(a_1 b_2 - a_2 b_1)^2 / ((a_1^2 + b_1^2)(a_2^2 + b_2^2))`.
+
+
+.. py:function:: cross(l1: sympy.geometry.Line | sympy.geometry.Segment, l2: sympy.geometry.Line | sympy.geometry.Segment) -> sympy.Expr
+
+   Compute the complementary Rational Trigonometry cross :math:`c(\ell_1, \ell_2) = 1 - s`.
+
+   :param l1: First line or segment.
+   :param l2: Second line or segment.
+
+   :returns: Exact symbolic cross :math:`(dx_1 dx_2 + dy_1 dy_2)^2 / ((dx_1^2 + dy_1^2)(dx_2^2 + dy_2^2))`.
+
+
+.. py:function:: cross_ratio(a: sympy.geometry.Point, b: sympy.geometry.Point, c: sympy.geometry.Point, d: sympy.geometry.Point) -> sympy.Expr
+
+   Compute the projective cross-ratio :math:`(A, B; C, D)` of four collinear points.
+
+   :param a: First collinear point :math:`A`.
+   :param b: Second collinear point :math:`B`.
+   :param c: Third collinear point :math:`C`.
+   :param d: Fourth collinear point :math:`D`.
+
+   :returns: Exact projective invariant :math:`(\overline{AC}\cdot\overline{BD}) / (\overline{BC}\cdot\overline{AD})`.
+
+
+.. py:function:: polygon_signed_area(points: collections.abc.Sequence[sympy.geometry.Point]) -> sympy.Expr
+
+   Compute the exact signed shoelace area of a planar polygon.
+
+   :param points: Ordered sequence of polygon vertices.
+
+   :returns: Exact symbolic signed area (positive for counter-clockwise orientation).
+
+
+.. py:function:: floor_linear_phi(a: int | sympy.Rational, b: int | sympy.Rational) -> int
+
+   Compute :math:`\lfloor a + b\Phi \rfloor` for :math:`a, b \in \mathbb{Q}` using pure integer algebra.
+
+   Rewrites :math:`a + b\Phi = (2a + b + b\sqrt{5}) / 2` over a common positive
+   integer denominator and determines the exact integer floor via integer square roots
+   ``sp.integer_nthroot`` with zero floating-point evaluation.
+
+   :param a: Rational constant term.
+   :param b: Rational coefficient of :math:`\Phi`.
+
+   :returns: Exact Python ``int`` equal to :math:`\lfloor a + b\Phi \rfloor`.
+
+

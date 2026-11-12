@@ -1,0 +1,143 @@
+geometor.knott.flat_geometry
+============================
+
+.. py:module:: geometor.knott.flat_geometry
+
+.. autoapi-nested-parse::
+
+   Collection 1: 2D Golden Geometry & Constructions (`KNOTT-1.1` through `KNOTT-1.6`).
+
+   Catalogs the planar compass-and-straightedge constructions, self-similar triangles,
+   pentagonal star-chord progressions, Kepler right triangles, and Penrose aperiodic
+   prototiles curated by Dr. Ron Knott on ``phi2DGeomTrig.html``.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.knott.flat_geometry.GeometricCatalogResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.flat_geometry.construct_golden_section_segment
+   geometor.knott.flat_geometry.construct_golden_rectangles_and_spiral
+   geometor.knott.flat_geometry.construct_golden_triangles_and_gnomons
+   geometor.knott.flat_geometry.construct_pentagon_and_paper_knot
+   geometor.knott.flat_geometry.construct_kepler_triangle
+   geometor.knott.flat_geometry.construct_penrose_tiles
+
+
+Module Contents
+---------------
+
+.. py:class:: GeometricCatalogResult
+
+   Verified exact symbolic model and invariant summary for a catalog item.
+
+
+   .. py:attribute:: canonical_id
+      :type:  str
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: invariants
+      :type:  dict[str, sympy.Expr]
+
+
+.. py:function:: construct_golden_section_segment() -> GeometricCatalogResult
+
+   Construct `KNOTT-1.1`: Internal and external golden sections on segment ``AB``.
+
+   Models both classical Euclidean constructions on segment ``AB`` of length ``2``:
+
+   1. **External extension**: From square ``ABCD`` and midpoint ``M`` of ``AB``, circle
+      ``(M, C)`` of radius :math:`\sqrt{5}` meets line ``[AB]`` at ``E``, yielding
+      :math:`AE / AB = AB / BE = \Phi` and Golden Rectangle ``AEFD``.
+   2. **Internal division**: Joining ``A`` to midpoint ``H`` of ``BC``, circle ``(H, B)``
+      cuts ``AH`` at ``K`` (:math:`AK = 2\phi`), and circle ``(A, K)`` cuts ``AB`` at
+      the internal golden section ``G`` (:math:`AB / AG = AG / GB = \Phi`).
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-1.1``.
+
+
+.. py:function:: construct_golden_rectangles_and_spiral() -> GeometricCatalogResult
+
+   Construct `KNOTT-1.2`: Golden rectangle, :math:`\sqrt{5}` rectangle, & whirling squares.
+
+   Surrounding unit square ``ABCD`` with midpoint circle ``(M, C)`` constructs both
+   right golden rectangle ``AEFD`` (:math:`\Phi \times 1`) and full :math:`\sqrt{5} \times 1`
+   rectangle ``WEFN``. Subdividing gnomon ``BEFC`` into whirling squares demonstrates
+   that main diagonal ``[AF]`` and gnomon diagonal ``[EC]`` intersect orthogonally
+   (exact spread :math:`s = 1`) at the logarithmic spiral pole ``P``.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-1.2``.
+
+
+.. py:function:: construct_golden_triangles_and_gnomons() -> GeometricCatalogResult
+
+   Construct `KNOTT-1.3`: Acute golden triangle (:math:`72^\circ\text{-}72^\circ\text{-}36^\circ`) & gnomon deflation.
+
+   Constructs acute golden triangle ``ABC`` (:math:`AB = 1, AC = BC = \Phi`) and
+   intersects leg ``BC`` with unit circle ``(A, B)`` at ``D``, partitioning ``ABC``
+   into obtuse golden gnomon ``CAD`` (:math:`36^\circ\text{-}36^\circ\text{-}108^\circ`,
+   legs ``1``) and deflated acute golden triangle ``DAB`` (:math:`AB = AD = 1, BD = \phi`),
+   followed by a second deflation step at ``E`` on ``AB``.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-1.3``.
+
+
+.. py:function:: construct_pentagon_and_paper_knot() -> GeometricCatalogResult
+
+   Construct `KNOTT-1.4`: Regular pentagon, pentagram :math:`1:\Phi:\Phi^2:\Phi^3` chords, & paper knot.
+
+   Constructs regular pentagon ``P0 P1 P2 P3 P4`` of unit side, intersects its five
+   pentagram diagonals to form inner pentagon ``Q0 Q1 Q2 Q3 Q4``, verifies the four-step
+   golden geometric progression along ``P0 P2``, and drops perpendicular ``P4 H`` onto
+   ``[P0 P1]`` to prove Dr. Ron Knott's overhand paper-strip knot theorem: two crossing
+   parallel-sided strips of width :math:`w = P_4 H = \sin 72^\circ` lock into an exact
+   regular pentagon of side :math:`w \sec 18^\circ`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-1.4``.
+
+
+.. py:function:: construct_kepler_triangle() -> GeometricCatalogResult
+
+   Construct `KNOTT-1.5`: Kepler's golden right triangle :math:`(1, \sqrt{\Phi}, \Phi)` & near-quadrature.
+
+   Uses Euclid's semicircle geometric-mean construction on ``DE`` (:math:`D=(-1,0),
+   B=(0,0), E=(\Phi,0)`) to construct :math:`C=(0, \sqrt{\Phi})` by exact compass
+   intersection over :math:`\mathbb{Q}(\sqrt{\Phi})`. In right triangle ``DBC``:
+
+   - Side quadrances :math:`(Q(B,D), Q(B,C), Q(D,C)) = (1, \Phi, \Phi^2)` form a
+     geometric progression AND satisfy Pythagoras :math:`1 + \Phi = \Phi^2`;
+   - The square ``BCFG`` on leg ``BC`` has perimeter :math:`4\sqrt{\Phi} \approx 5.08808`,
+     while the Thales circle ``(M, C)`` on hypotenuse ``CD`` has circumference
+     :math:`\pi\Phi \approx 5.08320` (agreement within :math:`0.096\%`).
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-1.5``.
+
+
+.. py:function:: construct_penrose_tiles() -> GeometricCatalogResult
+
+   Construct `KNOTT-1.6`: Penrose kites & darts (:math:`P2`) and thick/thin golden rhombs (:math:`P3`).
+
+   Constructs thick Penrose golden rhomb ``ABCD`` (:math:`72^\circ / 108^\circ`, side :math:`\Phi`),
+   intersects diagonal ``AC`` with unit circle ``(A, U)`` at ``K`` to partition ``ABCD``
+   into Penrose dart ``ABKD`` (non-convex :math:`216^\circ` reflex at ``K``) and Penrose
+   kite ``KBCD`` (:math:`72^\circ, 72^\circ, 72^\circ, 144^\circ`), and adjoins thin
+   Penrose golden rhomb ``ABEF`` (:math:`36^\circ / 144^\circ`, side :math:`\Phi`).
+   Proves both exact area ratios equal :math:`\Phi : 1`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-1.6``.
+
+

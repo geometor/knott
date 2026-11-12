@@ -1,0 +1,204 @@
+geometor.knott.golden_string
+============================
+
+.. py:module:: geometor.knott.golden_string
+
+.. autoapi-nested-parse::
+
+   Collection 5: The Golden String, Zeckendorf Base, & Wythoff / Stolarsky Arrays (`KNOTT-5.1` – `KNOTT-5.3`).
+
+   Catalogs the Sturmian Golden String (``101101011011...``), lattice-cutting slope
+   geometry, Zeckendorf's canonical Fibonacci numeral base, Beatty's complementary
+   sequences, and Morrison's Wythoff and Stolarsky interspersion arrays curated by
+   Dr. Ron Knott on ``fibrab.html``, ``fibrep.html``, and ``fibGen.html``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.golden_string.golden_string_generations
+   geometor.knott.golden_string.golden_string_beatty_word
+   geometor.knott.golden_string.recursive_fib_additions
+   geometor.knott.golden_string.construct_golden_string_cutting_model
+   geometor.knott.golden_string.zeckendorf_summands
+   geometor.knott.golden_string.to_zeckendorf
+   geometor.knott.golden_string.from_zeckendorf
+   geometor.knott.golden_string.construct_zeckendorf_staircase_model
+   geometor.knott.golden_string.beatty_pair
+   geometor.knott.golden_string.wythoff_entry
+   geometor.knott.golden_string.wythoff_locate
+   geometor.knott.golden_string.stolarsky_entry
+   geometor.knott.golden_string.construct_wythoff_beatty_model
+
+
+Module Contents
+---------------
+
+.. py:function:: golden_string_generations(steps: int = 7) -> list[str]
+
+   Generate finite Rabbit-tree / morphism words :math:`S_1, S_2, \dots, S_{\text{steps}}`.
+
+   Applies the Sturmian substitution :math:`1 \mapsto 10,\; 0 \mapsto 1` starting from
+   ``S_1 = '1'`` (equivalently :math:`S_k = S_{k-1} + S_{k-2}` for :math:`k \ge 3`,
+   with :math:`|S_k| = F_{k+1}`).
+
+   :param steps: Number of finite generations to return (:math:`\ge 1`).
+
+   :returns: List of finite Golden String prefixes ``['1', '10', '101', '10110', ...]``.
+
+
+.. py:function:: golden_string_beatty_word(length: int) -> str
+
+   Compute the first ``length`` characters of the Golden String via exact floor differences.
+
+   Uses :math:`d_n = \lfloor (n + 1)\phi \rfloor - \lfloor n\phi \rfloor` for
+   :math:`n = 1, 2, \dots, \text{length}`, evaluated via pure integer arithmetic
+   :func:`~geometor.knott.constants.floor_linear_phi` (:math:`n\phi = -n + n\Phi`).
+
+   :param length: Prefix length (:math:`\ge 1`).
+
+   :returns: Exact binary prefix of ``101101011011010110101...``.
+
+
+.. py:function:: recursive_fib_additions(n: int) -> int
+
+   Return the exact number of additions in naive recursive ``fib(n)`` (with ``F_1 = F_2 = 1``).
+
+   Cataloged on ``fibrab.html#props``: :math:`A(1) = A(2) = 0` and
+   :math:`A(n) = A(n-1) + A(n-2) + 1 = F_n - 1` (or :math:`F_{n+1} - 1` when ``0``-indexed
+   base cases ``fib(0), fib(1)`` are used). Here for ``F_1 = F_2 = 1``,
+   :math:`A(n) = F_n - 1`; for ``0``-based ``fib(0)=0, fib(1)=1``, :math:`A_0(n) = F_{n+1} - 1`.
+
+   :param n: Non-negative integer index for ``0``-based ``fib(n)`` (:math:`n \ge 1`).
+
+   :returns: Exact addition count :math:`F_{n+1} - 1`.
+
+
+.. py:function:: construct_golden_string_cutting_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-5.1`: Sturmian lattice-cutting line :math:`y = \phi x` generating ``10110101``.
+
+   Constructs ray ``[O R]`` of exact slope :math:`\phi = \Phi - 1` across vertical grid
+   lines :math:`x = 1..5` and horizontal grid lines :math:`y = 1..3` in ``geometor.model``.
+   Intersecting ``[O R]`` with every grid line in order of distance from ``O`` produces
+   vertical crossings ``V1..V5`` (digit ``1``) and horizontal crossings ``H1..H3``
+   (digit ``0``) in exact sequence ``V1, H1, V2, V3, H2, V4, H3, V5`` -> ``10110101``!
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-5.1``.
+
+
+.. py:function:: zeckendorf_summands(n: int) -> list[int]
+
+   Return the unique non-consecutive Fibonacci summands of positive integer ``n``.
+
+   Uses Fibonacci place values :math:`F_2 = 1, F_3 = 2, F_4 = 3, F_5 = 5, \dots`.
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Descending list of non-adjacent Fibonacci numbers summing to ``n``.
+
+
+.. py:function:: to_zeckendorf(n: int) -> str
+
+   Encode non-negative integer ``n`` into its canonical Zeckendorf Fibonacci-base string.
+
+   Columns from right to left represent :math:`F_2=1, F_3=2, F_4=3, F_5=5, F_6=8, \dots`
+   (e.g., ``to_zeckendorf(12) == '10101'`` for :math:`8 + 3 + 1`).
+
+   :param n: Non-negative integer.
+
+   :returns: ``11``-free binary Fibonacci-base string.
+
+
+.. py:function:: from_zeckendorf(bit_str: str) -> int
+
+   Decode any Fibonacci-base bitstring (with rightmost column :math:`F_2 = 1`) into an ``int``.
+
+   :param bit_str: String of ``'0'`` and ``'1'`` digits.
+
+   :returns: Decoded non-negative integer value.
+
+
+.. py:function:: construct_zeckendorf_staircase_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-5.2`: Geometric Fibonacci staircase & Zeckendorf decomposition of ``12 = 8 + 3 + 1``.
+
+   Constructs adjacent Fibonacci column rectangles of widths ``1`` and exact heights
+   :math:`F_2=1, F_3=2, F_4=3, F_5=5, F_6=8` in ``geometor.model``, highlighting the
+   non-adjacent columns :math:`F_6=8, F_4=3, F_2=1` that compose :math:`12 = 10101_Z`,
+   alongside a horizontal verification bar of total length ``12`` partitioned at
+   ``8`` and ``11``.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-5.2``.
+
+
+.. py:function:: beatty_pair(n: int) -> tuple[int, int]
+
+   Return Beatty's complementary Golden pair :math:`(\lfloor n\Phi \rfloor, \lfloor n\Phi^2 \rfloor)` for :math:`n \ge 1`.
+
+   Uses :math:`\lfloor n\Phi^2 \rfloor = \lfloor n(\Phi + 1) \rfloor = \lfloor n\Phi \rfloor + n`
+   and exact integer arithmetic :func:`~geometor.knott.constants.floor_linear_phi`.
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Exact integer pair ``(floor(n * PHI), floor(n * PHI^2))``.
+
+
+.. py:function:: wythoff_entry(row: int, col: int) -> int
+
+   Compute entry ``W(row, col)`` (``0``-indexed) of Morrison's Wythoff Array.
+
+   Matches Dr. Ron Knott's formula on ``fibGen.html#wythoffprops``:
+   :math:`W(r, c) = \lfloor (r + 1)\Phi \rfloor F_{c + 2} + r F_{c + 1}`.
+
+   :param row: Non-negative row index (:math:`r \ge 0`).
+   :param col: Non-negative column index (:math:`c \ge 0`).
+
+   :returns: Positive integer at ``(row, col)`` in the Wythoff Array.
+
+
+.. py:function:: wythoff_locate(n: int) -> tuple[int, int]
+
+   Locate the unique ``(row, col)`` (``0``-indexed) of positive integer ``n`` in the Wythoff Array.
+
+   Uses the Zeckendorf trailing-zero characterization: ``col`` equals the number of
+   trailing ``'0'`` digits in :func:`to_zeckendorf`, and ``W(row, 0)`` increases
+   strictly with ``row``.
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Unique ``(row, col)`` pair satisfying ``wythoff_entry(row, col) == n``.
+
+
+.. py:function:: stolarsky_entry(row: int, col: int) -> int
+
+   Compute entry ``S(row, col)`` (``0``-indexed) of Kenneth Stolarsky's (1977) Array.
+
+   Matches Dr. Ron Knott's formula on ``fibGen.html#stolarsky``:
+
+   - :math:`S(r, 0) = r + 1 + \lfloor (r + 1/2)\Phi \rfloor`;
+   - :math:`S(r, 1) = \operatorname{round}(S(r, 0)\Phi) = \lfloor S(r, 0)\Phi + 1/2 \rfloor`;
+   - :math:`S(r, c) = S(r, c - 1) + S(r, c - 2)` for :math:`c \ge 2`.
+
+   :param row: Non-negative row index (:math:`r \ge 0`).
+   :param col: Non-negative column index (:math:`c \ge 0`).
+
+   :returns: Positive integer at ``(row, col)`` in Stolarsky's Array.
+
+
+.. py:function:: construct_wythoff_beatty_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-5.3`: Wythoff / Beatty slope rays :math:`y = \Phi x` & :math:`y = \Phi^2 x` and cold positions.
+
+   Constructs the two complementary Beatty slope rays :math:`y = \Phi x` and
+   :math:`y = \Phi^2 x` from ``O(0,0)`` alongside Wythoff's game cold positions
+   :math:`(\lfloor n\Phi \rfloor, \lfloor n\Phi^2 \rfloor)` for :math:`n = 1..4`:
+   ``W1(1,2)``, ``W2(3,5)``, ``W3(4,7)``, ``W4(6,10)``. Verifies exact bijective
+   partitioning of ``1..100`` across Beatty's pair, Wythoff's Array, and Stolarsky's Array.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-5.3``.
+
+

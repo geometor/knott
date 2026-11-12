@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNOTT-5.1 — The Infinite Golden String (101101011011…), Rabbit Tree &amp; Cutting-Line Slope φ &mdash; Mathematical Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../index.html" class="is-active" aria-selected="true" >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >Modules</a>
+        </li>
+        <li>
+          <a href="../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-canonical-id="KNOTT-5.1">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../index.html">Mathematical Catalog</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+            <a class="book-crumb-link" href="../index.html">KNOTT-5 — The Golden String, Zeckendorf Base, & Wythoff / Stolarsky Arrays</a>
+            <span class="book-crumb-sep">/</span>
+            <span class="book-badge canonical-badge">KNOTT-5.1</span>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="KNOTT-5 — The Golden String, Zeckendorf Base, &amp; Wythoff / Stolarsky Arrays">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../02-zeckendorf-fibonacci-base/index.html" title="KNOTT-5.2 — Zeckendorf’s Theorem (Canonical Fibonacci Base Representation)"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="knott-5-1-the-infinite-golden-string-101101011011-rabbit-tree-cutting-line-slope">
+        <span id="knott-5-1"></span><h1>KNOTT-5.1 — The Infinite Golden String (101101011011…), Rabbit Tree &amp; Cutting-Line Slope φ<a class="headerlink" href="#knott-5-1-the-infinite-golden-string-101101011011-rabbit-tree-cutting-line-slope" title="Link to this heading">¶</a></h1>
+        <div class="enunciation">Iterating the Rabbit substitution 1 ↦ 10, 0 ↦ 1 generates the infinite Sturmian Golden String dₙ = ⌊(n + 1)φ⌋ − ⌊nφ⌋, identically realized geometrically as the sequence of vertical (‘1’) and horizontal (‘0’) unit-lattice crossings of the ray y = φ x from the origin.</div>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -369.38 616.00 417.38" width="616.0" height="417.4" class="euclid-graphic" data-graphic-id="knott-5-1.g1" data-folio="knott-5-1" data-graphic="g1">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath id="clip-knott-5-1-g1">
+              <rect x="-48.00" y="-369.38" width="616.00" height="417.38" />
+            </clipPath>
+          </defs>
+          <g id="elements" clip-path="url(#clip-knott-5-1-g1)">
+            <line data-ref="[ O R ]" data-type="line" fill="none" stroke="#18181b" stroke-width="1.3" stroke-opacity="0.45" stroke-dasharray="4, 3" x1="-40.00" y1="24.72" x2="560.00" y2="-346.10" class="geom-line geom-dashed geom-guide" />
+          </g>
+          <g id="graphics">
+            <path data-ref="/ O R /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 260.00 -160.69 L 520.00 -321.38" class="geom-line geom-segment geom-golden" />
+            <path data-ref="/ X1 XT1 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 94.55 -0.00 L 94.55 -165.45 L 94.55 -330.91" class="geom-line geom-segment" />
+            <path data-ref="/ X2 XT2 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 189.09 -0.00 L 189.09 -165.45 L 189.09 -330.91" class="geom-line geom-segment" />
+            <path data-ref="/ X3 XT3 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 283.64 -0.00 L 283.64 -165.45 L 283.64 -330.91" class="geom-line geom-segment" />
+            <path data-ref="/ X4 XT4 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 378.18 -0.00 L 378.18 -165.45 L 378.18 -330.91" class="geom-line geom-segment" />
+            <path data-ref="/ X5 XT5 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 472.73 -0.00 L 472.73 -165.45 L 472.73 -330.91" class="geom-line geom-segment" />
+            <path data-ref="/ Y1 YR1 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -94.55 L 260.00 -94.55 L 520.00 -94.55" class="geom-line geom-segment" />
+            <path data-ref="/ Y2 YR2 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -189.09 L 260.00 -189.09 L 520.00 -189.09" class="geom-line geom-segment" />
+            <path data-ref="/ Y3 YR3 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -283.64 L 260.00 -283.64 L 520.00 -283.64" class="geom-line geom-segment" />
+          </g>
+          <g id="highlights" clip-path="url(#clip-knott-5-1-g1)" style="pointer-events: none;">
+            <line data-ref="[ O R ]" data-type="line" fill="none" opacity="0" x1="-40.00" y1="24.72" x2="560.00" y2="-346.10" class="geom-overlay" />
+            <path data-ref="/ O R /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 260.00 -160.69 L 520.00 -321.38" class="geom-overlay" />
+            <path data-ref="/ X1 XT1 /" data-type="segment" fill="none" opacity="0" d="M 94.55 -0.00 L 94.55 -165.45 L 94.55 -330.91" class="geom-overlay" />
+            <path data-ref="/ X2 XT2 /" data-type="segment" fill="none" opacity="0" d="M 189.09 -0.00 L 189.09 -165.45 L 189.09 -330.91" class="geom-overlay" />
+            <path data-ref="/ X3 XT3 /" data-type="segment" fill="none" opacity="0" d="M 283.64 -0.00 L 283.64 -165.45 L 283.64 -330.91" class="geom-overlay" />
+            <path data-ref="/ X4 XT4 /" data-type="segment" fill="none" opacity="0" d="M 378.18 -0.00 L 378.18 -165.45 L 378.18 -330.91" class="geom-overlay" />
+            <path data-ref="/ X5 XT5 /" data-type="segment" fill="none" opacity="0" d="M 472.73 -0.00 L 472.73 -165.45 L 472.73 -330.91" class="geom-overlay" />
+            <path data-ref="/ Y1 YR1 /" data-type="segment" fill="none" opacity="0" d="M 0.00 -94.55 L 260.00 -94.55 L 520.00 -94.55" class="geom-overlay" />
+            <path data-ref="/ Y2 YR2 /" data-type="segment" fill="none" opacity="0" d="M 0.00 -189.09 L 260.00 -189.09 L 520.00 -189.09" class="geom-overlay" />
+            <path data-ref="/ Y3 YR3 /" data-type="segment" fill="none" opacity="0" d="M 0.00 -283.64 L 260.00 -283.64 L 520.00 -283.64" class="geom-overlay" />
+          </g>
+          <g id="points">
+            <circle data-ref="O" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle data-ref="R" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="-321.38" r="4.2" class="geom-point" />
+            <circle data-ref="V1" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="94.55" cy="-58.43" r="4.2" class="geom-point" />
+            <circle data-ref="V2" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="189.09" cy="-116.86" r="4.2" class="geom-point" />
+            <circle data-ref="V3" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="283.64" cy="-175.30" r="4.2" class="geom-point" />
+            <circle data-ref="V4" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="378.18" cy="-233.73" r="4.2" class="geom-point" />
+            <circle data-ref="V5" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="472.73" cy="-292.16" r="4.2" class="geom-point" />
+            <circle data-ref="H1" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="152.98" cy="-94.55" r="4.2" class="geom-point" />
+            <circle data-ref="H2" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="305.96" cy="-189.09" r="4.2" class="geom-point" />
+            <circle data-ref="H3" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="458.93" cy="-283.64" r="4.2" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text data-ref="O" x="-15.59" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text data-ref="R" x="535.59" y="-330.38" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">R</text>
+            <text data-ref="V1" x="78.96" y="-49.43" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">V1</text>
+            <text data-ref="V2" x="173.50" y="-107.86" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">V2</text>
+            <text data-ref="V3" x="299.22" y="-184.30" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">V3</text>
+            <text data-ref="V4" x="393.77" y="-242.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">V4</text>
+            <text data-ref="V5" x="488.32" y="-301.16" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">V5</text>
+            <text data-ref="H1" x="137.39" y="-85.55" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">H1</text>
+            <text data-ref="H2" x="321.54" y="-198.09" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">H2</text>
+            <text data-ref="H3" x="467.93" y="-299.22" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">H3</text>
+          </g>
+        </svg>
+        </figure>
+        <section class="level-2" id="curated-source-catalog-provenance">
+        <h2>Curated Source &amp; Catalog Provenance<a class="headerlink" href="#curated-source-catalog-provenance" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 26.0%" />
+        <col style="width: 74.0%" />
+        </colgroup>
+        <tbody>
+        <tr class="row-odd"><td><p><strong>Catalog ID</strong></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">KNOTT-5.1</span></code></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Curated Source</strong></p></td>
+        <td><p><a class="person-ref" id="occ-person-knott-1" href="../../../persons.html#person-knott" data-person="knott" title="Dr. Ron Knott (fl. 1979–2025) — Mathematician &amp; computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).">Dr. Ron Knott</a>, <em>The Fibonacci Rabbit Sequence (The Golden String)</em> (<a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/fibrab.html#PhiPlot">#PhiPlot</a>)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Source Attribution</strong></p></td>
+        <td><p><strong>© 1996–2025 Dr. Ron Knott, University of Surrey</strong> — <a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/fibrab.html#PhiPlot">Explore Dr. Knott’s original exposition</a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Exact SymPy Validator</strong></p></td>
+        <td><p><a class="reference internal" href="../../../modules/api/geometor/knott/golden_string/index.html#geometor.knott.golden_string.construct_golden_string_cutting_model" title="geometor.knott.golden_string.construct_golden_string_cutting_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.knott.golden_string.construct_golden_string_cutting_model()</span></code></a> (<cite>0</cite> <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> atoms)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>GEOMETOR Concordance</strong></p></td>
+        <td><p><a class="reference external" href="https://geometor.github.io/trees/">geometor/trees</a>, <a class="reference external" href="https://geometor.github.io/divine/">geometor/divine</a></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="constructive-synthesis-exact-proof">
+        <h2>Constructive Synthesis &amp; Exact Proof<a class="headerlink" href="#constructive-synthesis-exact-proof" title="Link to this heading">¶</a></h2>
+        <p><a class="person-ref" id="occ-person-knott-2" href="../../../persons.html#person-knott" data-person="knott" title="Dr. Ron Knott (fl. 1979–2025) — Mathematician &amp; computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).">Dr. Ron Knott</a>’s signature page <code class="docutils literal notranslate"><span class="pre">fibrab.html</span></code> (<a class="citation-ref" id="occ-cite-knottgoldenstring-1" href="../../../bibliography.html#cite-knottgoldenstring" data-cite="knottgoldenstring" title="Citation: knottgoldenstring">KnottGoldenString</a>)
+        unifies three seemingly distinct mathematical worlds—<a class="person-ref" id="occ-person-fibonacci-1" href="../../../persons.html#person-fibonacci" data-person="fibonacci" title="Leonardo Pisano (Fibonacci) (c. 1170 – c. 1240–1250) — Pisan mathematician whose Liber Abaci (1202) introduced Hindu-Arabic numerals to Europe and posed the monthly rabbit problem generating 1, 1, 2, 3, 5, 8, 13, …">Fibonacci</a>’s
+        monthly rabbit substitution (<span class="math notranslate nohighlight">\(1 \mapsto 10,\; 0 \mapsto 1\)</span>), Sturmian Beatty
+        differences <span class="math notranslate nohighlight">\(d_n = \lfloor (n+1)\phi \rfloor - \lfloor n\phi \rfloor\)</span>, and straight
+        lattice-cutting rays—into the single infinite <strong>Golden String</strong> <code class="docutils literal notranslate"><span class="pre">1011010110110101101…</span></code>.</p>
+        <ul class="simple">
+        <li><p><strong>Cutting-Line Realization of the Golden String</strong>: Tracing line
+        <span class="geom-ref" data-ref="knott-5-1.g1:[ O R ]" title="[ O R ]">[OR]</span> (segment <span class="geom-ref" data-ref="knott-5-1.g1:/ O R /" title="/ O R /">OR</span> from origin
+        <span class="geom-ref" data-ref="knott-5-1.g1:O" title="O">O</span> to <span class="geom-ref" data-ref="knott-5-1.g1:R" title="R">R</span> <span class="math notranslate nohighlight">\((5, 5\phi)\)</span>) of exact slope
+        <span class="math notranslate nohighlight">\(\phi\)</span> across vertical unit grid segments <span class="geom-ref" data-ref="knott-5-1.g1:/ X1 XT1 /" title="/ X1 XT1 /">X1XT1</span>,
+        <span class="geom-ref" data-ref="knott-5-1.g1:/ X2 XT2 /" title="/ X2 XT2 /">X2XT2</span>, <span class="geom-ref" data-ref="knott-5-1.g1:/ X3 XT3 /" title="/ X3 XT3 /">X3XT3</span> and horizontal
+        grid segments <span class="geom-ref" data-ref="knott-5-1.g1:/ Y1 YR1 /" title="/ Y1 YR1 /">Y1YR1</span>, <span class="geom-ref" data-ref="knott-5-1.g1:/ Y2 YR2 /" title="/ Y2 YR2 /">Y2YR2</span>,
+        <span class="geom-ref" data-ref="knott-5-1.g1:/ Y3 YR3 /" title="/ Y3 YR3 /">Y3YR3</span>: recording <code class="docutils literal notranslate"><span class="pre">1</span></code> at each vertical crossing
+        (<span class="geom-ref" data-ref="knott-5-1.g1:V1" title="V1">V1</span> – <span class="geom-ref" data-ref="knott-5-1.g1:V5" title="V5">V5</span> at <span class="math notranslate nohighlight">\((k, k\phi)\)</span>) and <code class="docutils literal notranslate"><span class="pre">0</span></code>
+        at each horizontal crossing (<span class="geom-ref" data-ref="knott-5-1.g1:H1" title="H1">H1</span>, <span class="geom-ref" data-ref="knott-5-1.g1:H2" title="H2">H2</span>,
+        <span class="geom-ref" data-ref="knott-5-1.g1:H3" title="H3">H3</span> at <span class="math notranslate nohighlight">\((m\Phi, m)\)</span>) spells out <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">1</span></code>
+        in exact abscissa order <span class="math notranslate nohighlight">\(1 &lt; \Phi &lt; 2 &lt; 3 &lt; 2\Phi &lt; 4 &lt; 3\Phi &lt; 5\)</span>.</p></li>
+        <li><p><strong>Palindrome Structure &amp; Recursive Call Tree</strong>: Removing the final two characters of
+        every morphism word <span class="math notranslate nohighlight">\(S_n\)</span> (length <span class="math notranslate nohighlight">\(F_n\)</span> with <span class="math notranslate nohighlight">\(F_{n-1}\)</span> ones and
+        <span class="math notranslate nohighlight">\(F_{n-2}\)</span> zeros) leaves a strict palindrome, while naive recursive evaluation of
+        <code class="docutils literal notranslate"><span class="pre">fib(n)</span></code> performs <span class="math notranslate nohighlight">\(F_{n+1} - 1\)</span> additions.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="machine-verified-exact-symbolic-invariants">
+        <h2>Machine-Verified Exact Symbolic Invariants<a class="headerlink" href="#machine-verified-exact-symbolic-invariants" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 38.0%" />
+        <col style="width: 62.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Invariant</p></th>
+        <th class="head"><p>Exact Symbolic Value</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ray</span> <span class="pre">slope</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(- \frac{1}{2} + \frac{\sqrt{5}}{2}\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">H1</span> <span class="pre">x</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{1}{2} + \frac{\sqrt{5}}{2}\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">H2</span> <span class="pre">x</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(1 + \sqrt{5}\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">H3</span> <span class="pre">x</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{3}{2} + \frac{3 \sqrt{5}}{2}\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">prefix</span> <span class="pre">length</span> <span class="pre">S8</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(34\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ones</span> <span class="pre">in</span> <span class="pre">S8</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(21\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">zeros</span> <span class="pre">in</span> <span class="pre">S8</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(13\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">recursive</span> <span class="pre">additions</span> <span class="pre">F10</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(88\)</span></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="KNOTT-5 — The Golden String, Zeckendorf Base, &amp; Wythoff / Stolarsky Arrays">&larr; <span class="nav-label">KNOTT-5 — The Golden String, Zeckendorf Base, & Wythoff / Stolarsky Arrays</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">Mathematical Catalog</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../02-zeckendorf-fibonacci-base/index.html" title="KNOTT-5.2 — Zeckendorf’s Theorem (Canonical Fibonacci Base Representation)"><span class="nav-label">KNOTT-5.2 — Zeckendorf’s Theorem (Canonical Fibonacci Base Representation)</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../types/collection.html">collection</a></li>
+        <li><a href="../../../types/item.html">item</a></li>
+        <li><a href="../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

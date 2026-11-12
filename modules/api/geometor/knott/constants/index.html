@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.knott.constants &mdash; Modules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../../../../catalog/index.html"  >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="module-geometor.knott.constants">
+        <span id="geometor-knott-constants"></span><h1>geometor.knott.constants<a class="headerlink" href="#module-geometor.knott.constants" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic constants, notation bridges, and Rational Trigonometry invariants.</p>
+        <p>Dr. Ron Knott’s archive (<em>Fibonacci Numbers, the Golden Section and the Golden
+        String</em>, University of Surrey) uses uppercase <span class="math notranslate nohighlight">\(\Phi = (1 + \sqrt{5})/2\)</span>
+        for the Golden Ratio (<span class="math notranslate nohighlight">\(\approx 1.61803\dots\)</span>) and lowercase
+        <span class="math notranslate nohighlight">\(\phi = \Phi - 1 = 1/\Phi = (\sqrt{5} - 1)/2\)</span> for its reciprocal
+        (<span class="math notranslate nohighlight">\(\approx 0.61803\dots\)</span>). By contrast, SymPy and <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> denote
+        the larger root by <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code> (<span class="math notranslate nohighlight">\(\phi_{\text{GEOMETOR}} = \Phi_{\text{Knott}}\)</span>).</p>
+        <p>This module provides exact closed-form <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span> definitions
+        alongside lossless symbolic conversion helpers and Rational Trigonometry invariants.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.SQRT5" title="geometor.knott.constants.SQRT5"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT5</span></code></a></p></td>
+        <td><p>Exact square root of 5 over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.PHI" title="geometor.knott.constants.PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI</span></code></a></p></td>
+        <td><p>Dr. Ron Knott's Golden Ratio <span class="math notranslate nohighlight">\(\Phi = (1 + \sqrt{5})/2 \approx 1.6180339887\dots\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.phi" title="geometor.knott.constants.phi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phi</span></code></a></p></td>
+        <td><p>Dr. Ron Knott's reciprocal Golden Ratio <span class="math notranslate nohighlight">\(\phi = \Phi - 1 = 1/\Phi \approx 0.6180339887\dots\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.PSI" title="geometor.knott.constants.PSI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PSI</span></code></a></p></td>
+        <td><p>Galois conjugate <span class="math notranslate nohighlight">\(\Psi = 1 - \Phi = -\phi = (1 - \sqrt{5})/2 \approx -0.6180339887\dots\)</span>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.simplify_exact" title="geometor.knott.constants.simplify_exact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simplify_exact</span></code></a>(expr) → sympy.Expr</p></td>
+        <td><p>Canonicalize an exact symbolic expression without introducing floats.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.assert_zero" title="geometor.knott.constants.assert_zero"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assert_zero</span></code></a>(expr[, message]) → None</p></td>
+        <td><p>Assert that <code class="docutils literal notranslate"><span class="pre">expr</span></code> simplifies identically to symbolic <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.assert_no_floats" title="geometor.knott.constants.assert_no_floats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assert_no_floats</span></code></a>(obj) → None</p></td>
+        <td><p>Verify recursively that no <code class="docutils literal notranslate"><span class="pre">float</span></code> or <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> exists in <code class="docutils literal notranslate"><span class="pre">obj</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.knott_to_geometor" title="geometor.knott.constants.knott_to_geometor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">knott_to_geometor</span></code></a>(expr, *[, knott_big_phi, ...]) → sympy.Expr</p></td>
+        <td><p>Map an expression in Knott's <span class="math notranslate nohighlight">\((\Phi, \phi)\)</span> symbols to <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.geometor_to_knott_radicals" title="geometor.knott.constants.geometor_to_knott_radicals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometor_to_knott_radicals</span></code></a>(expr) → sympy.Expr</p></td>
+        <td><p>Expand an expression containing <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code> into <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.verify_notation_bijection" title="geometor.knott.constants.verify_notation_bijection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_notation_bijection</span></code></a>() → dict[str, sympy.Expr]</p></td>
+        <td><p>Verify all fundamental identities bridging Knott and GEOMETOR conventions.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.quadrance" title="geometor.knott.constants.quadrance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quadrance</span></code></a>(p1, p2) → sympy.Expr</p></td>
+        <td><p>Compute the exact Euclidean quadrance <span class="math notranslate nohighlight">\(Q(p_1, p_2) = (x_2 - x_1)^2 + (y_2 - y_1)^2\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.spread" title="geometor.knott.constants.spread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spread</span></code></a>(l1, l2) → sympy.Expr</p></td>
+        <td><p>Compute the exact Rational Trigonometry spread <span class="math notranslate nohighlight">\(s(\ell_1, \ell_2) \in [0, 1]\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.cross" title="geometor.knott.constants.cross"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cross</span></code></a>(l1, l2) → sympy.Expr</p></td>
+        <td><p>Compute the complementary Rational Trigonometry cross <span class="math notranslate nohighlight">\(c(\ell_1, \ell_2) = 1 - s\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.cross_ratio" title="geometor.knott.constants.cross_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cross_ratio</span></code></a>(a, b, c, d) → sympy.Expr</p></td>
+        <td><p>Compute the projective cross-ratio <span class="math notranslate nohighlight">\((A, B; C, D)\)</span> of four collinear points.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.constants.polygon_signed_area" title="geometor.knott.constants.polygon_signed_area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polygon_signed_area</span></code></a>(points) → sympy.Expr</p></td>
+        <td><p>Compute the exact signed shoelace area of a planar polygon.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.constants.floor_linear_phi" title="geometor.knott.constants.floor_linear_phi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">floor_linear_phi</span></code></a>(a, b) → int</p></td>
+        <td><p>Compute <span class="math notranslate nohighlight">\(\lfloor a + b\Phi \rfloor\)</span> for <span class="math notranslate nohighlight">\(a, b \in \mathbb{Q}\)</span> using pure integer algebra.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.knott.constants.SQRT5">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">SQRT5</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.knott.constants.SQRT5" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact square root of 5 over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.knott.constants.PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.knott.constants.PHI" title="Link to this definition">¶</a></dt>
+        <dd><p>Dr. Ron Knott’s Golden Ratio <span class="math notranslate nohighlight">\(\Phi = (1 + \sqrt{5})/2 \approx 1.6180339887\dots\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.knott.constants.phi">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">phi</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.knott.constants.phi" title="Link to this definition">¶</a></dt>
+        <dd><p>Dr. Ron Knott’s reciprocal Golden Ratio <span class="math notranslate nohighlight">\(\phi = \Phi - 1 = 1/\Phi \approx 0.6180339887\dots\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.knott.constants.PSI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">PSI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.knott.constants.PSI" title="Link to this definition">¶</a></dt>
+        <dd><p>Galois conjugate <span class="math notranslate nohighlight">\(\Psi = 1 - \Phi = -\phi = (1 - \sqrt{5})/2 \approx -0.6180339887\dots\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.simplify_exact">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">simplify_exact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.simplify_exact" title="Link to this definition">¶</a></dt>
+        <dd><p>Canonicalize an exact symbolic expression without introducing floats.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>expr</strong> – Exact SymPy expression or integer/rational value.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Simplified exact <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Expr</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.assert_zero">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">assert_zero</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#geometor.knott.constants.assert_zero" title="Link to this definition">¶</a></dt>
+        <dd><p>Assert that <code class="docutils literal notranslate"><span class="pre">expr</span></code> simplifies identically to symbolic <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>expr</strong> – Difference expression expected to vanish identically.</p></li>
+        <li><p><strong>message</strong> – Optional diagnostic description on failure.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Raises<span class="colon">:</span></dt>
+        <dd class="field-even"><p><strong>AssertionError</strong> – If <code class="docutils literal notranslate"><span class="pre">expr</span></code> does not reduce to exact <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.assert_no_floats">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">assert_no_floats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Basic</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">collections.abc.Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#geometor.knott.constants.assert_no_floats" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify recursively that no <code class="docutils literal notranslate"><span class="pre">float</span></code> or <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> exists in <code class="docutils literal notranslate"><span class="pre">obj</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>obj</strong> – A <code class="xref py py-class docutils literal notranslate"><span class="pre">geometor.model.Model</span></code>, SymPy expression/entity, sequence, or mapping.</p>
+        </dd>
+        <dt class="field-even">Raises<span class="colon">:</span></dt>
+        <dd class="field-even"><p><strong>AssertionError</strong> – If any floating-point value or <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> atom is detected.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.knott_to_geometor">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">knott_to_geometor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">knott_big_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Symbol</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">knott_small_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Symbol</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.knott_to_geometor" title="Link to this definition">¶</a></dt>
+        <dd><p>Map an expression in Knott’s <span class="math notranslate nohighlight">\((\Phi, \phi)\)</span> symbols to <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>expr</strong> – Symbolic expression written in terms of Knott’s <code class="docutils literal notranslate"><span class="pre">Phi</span></code> and <code class="docutils literal notranslate"><span class="pre">phi</span></code> symbols.</p></li>
+        <li><p><strong>knott_big_phi</strong> – Optional symbol representing <span class="math notranslate nohighlight">\(\Phi\)</span> (defaults to <code class="docutils literal notranslate"><span class="pre">Symbol('Phi')</span></code>).</p></li>
+        <li><p><strong>knott_small_phi</strong> – Optional symbol representing <span class="math notranslate nohighlight">\(\phi\)</span> (defaults to <code class="docutils literal notranslate"><span class="pre">Symbol('phi')</span></code>).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Equivalent SymPy expression written in terms of <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.geometor_to_knott_radicals">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">geometor_to_knott_radicals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.geometor_to_knott_radicals" title="Link to this definition">¶</a></dt>
+        <dd><p>Expand an expression containing <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code> into <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>expr</strong> – Symbolic expression possibly containing <code class="docutils literal notranslate"><span class="pre">sp.GoldenRatio</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact radical form over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.verify_notation_bijection">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">verify_notation_bijection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.constants.verify_notation_bijection" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify all fundamental identities bridging Knott and GEOMETOR conventions.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Dictionary of canonical zero-checked identities and exact radical constants.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.quadrance">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">quadrance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.quadrance" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact Euclidean quadrance <span class="math notranslate nohighlight">\(Q(p_1, p_2) = (x_2 - x_1)^2 + (y_2 - y_1)^2\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>p1</strong> – First planar point.</p></li>
+        <li><p><strong>p2</strong> – Second planar point.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact squared distance in SymPy without introducing square roots.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.spread">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">spread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.spread" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact Rational Trigonometry spread <span class="math notranslate nohighlight">\(s(\ell_1, \ell_2) \in [0, 1]\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>l1</strong> – First line or segment.</p></li>
+        <li><p><strong>l2</strong> – Second line or segment.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic spread <span class="math notranslate nohighlight">\((a_1 b_2 - a_2 b_1)^2 / ((a_1^2 + b_1^2)(a_2^2 + b_2^2))\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.cross">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">cross</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.cross" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the complementary Rational Trigonometry cross <span class="math notranslate nohighlight">\(c(\ell_1, \ell_2) = 1 - s\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>l1</strong> – First line or segment.</p></li>
+        <li><p><strong>l2</strong> – Second line or segment.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic cross <span class="math notranslate nohighlight">\((dx_1 dx_2 + dy_1 dy_2)^2 / ((dx_1^2 + dy_1^2)(dx_2^2 + dy_2^2))\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.cross_ratio">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">cross_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.cross_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the projective cross-ratio <span class="math notranslate nohighlight">\((A, B; C, D)\)</span> of four collinear points.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>a</strong> – First collinear point <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+        <li><p><strong>b</strong> – Second collinear point <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+        <li><p><strong>c</strong> – Third collinear point <span class="math notranslate nohighlight">\(C\)</span>.</p></li>
+        <li><p><strong>d</strong> – Fourth collinear point <span class="math notranslate nohighlight">\(D\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact projective invariant <span class="math notranslate nohighlight">\((\overline{AC}\cdot\overline{BD}) / (\overline{BC}\cdot\overline{AD})\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.polygon_signed_area">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">polygon_signed_area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">collections.abc.Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.constants.polygon_signed_area" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact signed shoelace area of a planar polygon.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>points</strong> – Ordered sequence of polygon vertices.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic signed area (positive for counter-clockwise orientation).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.constants.floor_linear_phi">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.constants.</span></span><span class="sig-name descname"><span class="pre">floor_linear_phi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.constants.floor_linear_phi" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute <span class="math notranslate nohighlight">\(\lfloor a + b\Phi \rfloor\)</span> for <span class="math notranslate nohighlight">\(a, b \in \mathbb{Q}\)</span> using pure integer algebra.</p>
+        <p>Rewrites <span class="math notranslate nohighlight">\(a + b\Phi = (2a + b + b\sqrt{5}) / 2\)</span> over a common positive
+        integer denominator and determines the exact integer floor via integer square roots
+        <code class="docutils literal notranslate"><span class="pre">sp.integer_nthroot</span></code> with zero floating-point evaluation.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>a</strong> – Rational constant term.</p></li>
+        <li><p><strong>b</strong> – Rational coefficient of <span class="math notranslate nohighlight">\(\Phi\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact Python <code class="docutils literal notranslate"><span class="pre">int</span></code> equal to <span class="math notranslate nohighlight">\(\lfloor a + b\Phi \rfloor\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/item.html">item</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

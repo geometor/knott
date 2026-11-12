@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.knott.golden_string &mdash; Modules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../../../../catalog/index.html"  >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="module-geometor.knott.golden_string">
+        <span id="geometor-knott-golden-string"></span><h1>geometor.knott.golden_string<a class="headerlink" href="#module-geometor.knott.golden_string" title="Link to this heading">¶</a></h1>
+        <p>Collection 5: The Golden String, Zeckendorf Base, &amp; Wythoff / Stolarsky Arrays (<cite>KNOTT-5.1</cite> – <cite>KNOTT-5.3</cite>).</p>
+        <p>Catalogs the Sturmian Golden String (<code class="docutils literal notranslate"><span class="pre">101101011011...</span></code>), lattice-cutting slope
+        geometry, Zeckendorf’s canonical Fibonacci numeral base, Beatty’s complementary
+        sequences, and Morrison’s Wythoff and Stolarsky interspersion arrays curated by
+        Dr. Ron Knott on <code class="docutils literal notranslate"><span class="pre">fibrab.html</span></code>, <code class="docutils literal notranslate"><span class="pre">fibrep.html</span></code>, and <code class="docutils literal notranslate"><span class="pre">fibGen.html</span></code>.</p>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.golden_string_generations" title="geometor.knott.golden_string.golden_string_generations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">golden_string_generations</span></code></a>([steps]) → list[str]</p></td>
+        <td><p>Generate finite Rabbit-tree / morphism words <span class="math notranslate nohighlight">\(S_1, S_2, \dots, S_{\text{steps}}\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.golden_string.golden_string_beatty_word" title="geometor.knott.golden_string.golden_string_beatty_word"><code class="xref py py-obj docutils literal notranslate"><span class="pre">golden_string_beatty_word</span></code></a>(length) → str</p></td>
+        <td><p>Compute the first <code class="docutils literal notranslate"><span class="pre">length</span></code> characters of the Golden String via exact floor differences.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.recursive_fib_additions" title="geometor.knott.golden_string.recursive_fib_additions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">recursive_fib_additions</span></code></a>(n) → int</p></td>
+        <td><p>Return the exact number of additions in naive recursive <code class="docutils literal notranslate"><span class="pre">fib(n)</span></code> (with <code class="docutils literal notranslate"><span class="pre">F_1</span> <span class="pre">=</span> <span class="pre">F_2</span> <span class="pre">=</span> <span class="pre">1</span></code>).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.golden_string.construct_golden_string_cutting_model" title="geometor.knott.golden_string.construct_golden_string_cutting_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_golden_string_cutting_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-5.1</cite>: Sturmian lattice-cutting line <span class="math notranslate nohighlight">\(y = \phi x\)</span> generating <code class="docutils literal notranslate"><span class="pre">10110101</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.zeckendorf_summands" title="geometor.knott.golden_string.zeckendorf_summands"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zeckendorf_summands</span></code></a>(n) → list[int]</p></td>
+        <td><p>Return the unique non-consecutive Fibonacci summands of positive integer <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.golden_string.to_zeckendorf" title="geometor.knott.golden_string.to_zeckendorf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_zeckendorf</span></code></a>(n) → str</p></td>
+        <td><p>Encode non-negative integer <code class="docutils literal notranslate"><span class="pre">n</span></code> into its canonical Zeckendorf Fibonacci-base string.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.from_zeckendorf" title="geometor.knott.golden_string.from_zeckendorf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_zeckendorf</span></code></a>(bit_str) → int</p></td>
+        <td><p>Decode any Fibonacci-base bitstring (with rightmost column <span class="math notranslate nohighlight">\(F_2 = 1\)</span>) into an <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.golden_string.construct_zeckendorf_staircase_model" title="geometor.knott.golden_string.construct_zeckendorf_staircase_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_zeckendorf_staircase_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-5.2</cite>: Geometric Fibonacci staircase &amp; Zeckendorf decomposition of <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">=</span> <span class="pre">8</span> <span class="pre">+</span> <span class="pre">3</span> <span class="pre">+</span> <span class="pre">1</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.beatty_pair" title="geometor.knott.golden_string.beatty_pair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beatty_pair</span></code></a>(n) → tuple[int, int]</p></td>
+        <td><p>Return Beatty's complementary Golden pair <span class="math notranslate nohighlight">\((\lfloor n\Phi \rfloor, \lfloor n\Phi^2 \rfloor)\)</span> for <span class="math notranslate nohighlight">\(n \ge 1\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.golden_string.wythoff_entry" title="geometor.knott.golden_string.wythoff_entry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wythoff_entry</span></code></a>(row, col) → int</p></td>
+        <td><p>Compute entry <code class="docutils literal notranslate"><span class="pre">W(row,</span> <span class="pre">col)</span></code> (<code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed) of Morrison's Wythoff Array.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.wythoff_locate" title="geometor.knott.golden_string.wythoff_locate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wythoff_locate</span></code></a>(n) → tuple[int, int]</p></td>
+        <td><p>Locate the unique <code class="docutils literal notranslate"><span class="pre">(row,</span> <span class="pre">col)</span></code> (<code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed) of positive integer <code class="docutils literal notranslate"><span class="pre">n</span></code> in the Wythoff Array.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.golden_string.stolarsky_entry" title="geometor.knott.golden_string.stolarsky_entry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stolarsky_entry</span></code></a>(row, col) → int</p></td>
+        <td><p>Compute entry <code class="docutils literal notranslate"><span class="pre">S(row,</span> <span class="pre">col)</span></code> (<code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed) of Kenneth Stolarsky's (1977) Array.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.golden_string.construct_wythoff_beatty_model" title="geometor.knott.golden_string.construct_wythoff_beatty_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_wythoff_beatty_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-5.3</cite>: Wythoff / Beatty slope rays <span class="math notranslate nohighlight">\(y = \Phi x\)</span> &amp; <span class="math notranslate nohighlight">\(y = \Phi^2 x\)</span> and cold positions.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.golden_string_generations">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">golden_string_generations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">7</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.golden_string.golden_string_generations" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate finite Rabbit-tree / morphism words <span class="math notranslate nohighlight">\(S_1, S_2, \dots, S_{\text{steps}}\)</span>.</p>
+        <p>Applies the Sturmian substitution <span class="math notranslate nohighlight">\(1 \mapsto 10,\; 0 \mapsto 1\)</span> starting from
+        <code class="docutils literal notranslate"><span class="pre">S_1</span> <span class="pre">=</span> <span class="pre">'1'</span></code> (equivalently <span class="math notranslate nohighlight">\(S_k = S_{k-1} + S_{k-2}\)</span> for <span class="math notranslate nohighlight">\(k \ge 3\)</span>,
+        with <span class="math notranslate nohighlight">\(|S_k| = F_{k+1}\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>steps</strong> – Number of finite generations to return (<span class="math notranslate nohighlight">\(\ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>List of finite Golden String prefixes <code class="docutils literal notranslate"><span class="pre">['1',</span> <span class="pre">'10',</span> <span class="pre">'101',</span> <span class="pre">'10110',</span> <span class="pre">...]</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.golden_string_beatty_word">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">golden_string_beatty_word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#geometor.knott.golden_string.golden_string_beatty_word" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the first <code class="docutils literal notranslate"><span class="pre">length</span></code> characters of the Golden String via exact floor differences.</p>
+        <p>Uses <span class="math notranslate nohighlight">\(d_n = \lfloor (n + 1)\phi \rfloor - \lfloor n\phi \rfloor\)</span> for
+        <span class="math notranslate nohighlight">\(n = 1, 2, \dots, \text{length}\)</span>, evaluated via pure integer arithmetic
+        <a class="reference internal" href="../constants/index.html#geometor.knott.constants.floor_linear_phi" title="geometor.knott.constants.floor_linear_phi"><code class="xref py py-func docutils literal notranslate"><span class="pre">floor_linear_phi()</span></code></a> (<span class="math notranslate nohighlight">\(n\phi = -n + n\Phi\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>length</strong> – Prefix length (<span class="math notranslate nohighlight">\(\ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact binary prefix of <code class="docutils literal notranslate"><span class="pre">101101011011010110101...</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.recursive_fib_additions">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">recursive_fib_additions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.golden_string.recursive_fib_additions" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact number of additions in naive recursive <code class="docutils literal notranslate"><span class="pre">fib(n)</span></code> (with <code class="docutils literal notranslate"><span class="pre">F_1</span> <span class="pre">=</span> <span class="pre">F_2</span> <span class="pre">=</span> <span class="pre">1</span></code>).</p>
+        <p>Cataloged on <code class="docutils literal notranslate"><span class="pre">fibrab.html#props</span></code>: <span class="math notranslate nohighlight">\(A(1) = A(2) = 0\)</span> and
+        <span class="math notranslate nohighlight">\(A(n) = A(n-1) + A(n-2) + 1 = F_n - 1\)</span> (or <span class="math notranslate nohighlight">\(F_{n+1} - 1\)</span> when <code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed
+        base cases <code class="docutils literal notranslate"><span class="pre">fib(0),</span> <span class="pre">fib(1)</span></code> are used). Here for <code class="docutils literal notranslate"><span class="pre">F_1</span> <span class="pre">=</span> <span class="pre">F_2</span> <span class="pre">=</span> <span class="pre">1</span></code>,
+        <span class="math notranslate nohighlight">\(A(n) = F_n - 1\)</span>; for <code class="docutils literal notranslate"><span class="pre">0</span></code>-based <code class="docutils literal notranslate"><span class="pre">fib(0)=0,</span> <span class="pre">fib(1)=1</span></code>, <span class="math notranslate nohighlight">\(A_0(n) = F_{n+1} - 1\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Non-negative integer index for <code class="docutils literal notranslate"><span class="pre">0</span></code>-based <code class="docutils literal notranslate"><span class="pre">fib(n)</span></code> (<span class="math notranslate nohighlight">\(n \ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact addition count <span class="math notranslate nohighlight">\(F_{n+1} - 1\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.construct_golden_string_cutting_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">construct_golden_string_cutting_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.golden_string.construct_golden_string_cutting_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-5.1</cite>: Sturmian lattice-cutting line <span class="math notranslate nohighlight">\(y = \phi x\)</span> generating <code class="docutils literal notranslate"><span class="pre">10110101</span></code>.</p>
+        <p>Constructs ray <code class="docutils literal notranslate"><span class="pre">[O</span> <span class="pre">R]</span></code> of exact slope <span class="math notranslate nohighlight">\(\phi = \Phi - 1\)</span> across vertical grid
+        lines <span class="math notranslate nohighlight">\(x = 1..5\)</span> and horizontal grid lines <span class="math notranslate nohighlight">\(y = 1..3\)</span> in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>.
+        Intersecting <code class="docutils literal notranslate"><span class="pre">[O</span> <span class="pre">R]</span></code> with every grid line in order of distance from <code class="docutils literal notranslate"><span class="pre">O</span></code> produces
+        vertical crossings <code class="docutils literal notranslate"><span class="pre">V1..V5</span></code> (digit <code class="docutils literal notranslate"><span class="pre">1</span></code>) and horizontal crossings <code class="docutils literal notranslate"><span class="pre">H1..H3</span></code>
+        (digit <code class="docutils literal notranslate"><span class="pre">0</span></code>) in exact sequence <code class="docutils literal notranslate"><span class="pre">V1,</span> <span class="pre">H1,</span> <span class="pre">V2,</span> <span class="pre">V3,</span> <span class="pre">H2,</span> <span class="pre">V4,</span> <span class="pre">H3,</span> <span class="pre">V5</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">10110101</span></code>!</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-5.1</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.zeckendorf_summands">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">zeckendorf_summands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.golden_string.zeckendorf_summands" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the unique non-consecutive Fibonacci summands of positive integer <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+        <p>Uses Fibonacci place values <span class="math notranslate nohighlight">\(F_2 = 1, F_3 = 2, F_4 = 3, F_5 = 5, \dots\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Positive integer (<span class="math notranslate nohighlight">\(n \ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Descending list of non-adjacent Fibonacci numbers summing to <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.to_zeckendorf">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">to_zeckendorf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#geometor.knott.golden_string.to_zeckendorf" title="Link to this definition">¶</a></dt>
+        <dd><p>Encode non-negative integer <code class="docutils literal notranslate"><span class="pre">n</span></code> into its canonical Zeckendorf Fibonacci-base string.</p>
+        <p>Columns from right to left represent <span class="math notranslate nohighlight">\(F_2=1, F_3=2, F_4=3, F_5=5, F_6=8, \dots\)</span>
+        (e.g., <code class="docutils literal notranslate"><span class="pre">to_zeckendorf(12)</span> <span class="pre">==</span> <span class="pre">'10101'</span></code> for <span class="math notranslate nohighlight">\(8 + 3 + 1\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Non-negative integer.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">11</span></code>-free binary Fibonacci-base string.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.from_zeckendorf">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">from_zeckendorf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bit_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.golden_string.from_zeckendorf" title="Link to this definition">¶</a></dt>
+        <dd><p>Decode any Fibonacci-base bitstring (with rightmost column <span class="math notranslate nohighlight">\(F_2 = 1\)</span>) into an <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>bit_str</strong> – String of <code class="docutils literal notranslate"><span class="pre">'0'</span></code> and <code class="docutils literal notranslate"><span class="pre">'1'</span></code> digits.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Decoded non-negative integer value.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.construct_zeckendorf_staircase_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">construct_zeckendorf_staircase_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.golden_string.construct_zeckendorf_staircase_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-5.2</cite>: Geometric Fibonacci staircase &amp; Zeckendorf decomposition of <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">=</span> <span class="pre">8</span> <span class="pre">+</span> <span class="pre">3</span> <span class="pre">+</span> <span class="pre">1</span></code>.</p>
+        <p>Constructs adjacent Fibonacci column rectangles of widths <code class="docutils literal notranslate"><span class="pre">1</span></code> and exact heights
+        <span class="math notranslate nohighlight">\(F_2=1, F_3=2, F_4=3, F_5=5, F_6=8\)</span> in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>, highlighting the
+        non-adjacent columns <span class="math notranslate nohighlight">\(F_6=8, F_4=3, F_2=1\)</span> that compose <span class="math notranslate nohighlight">\(12 = 10101_Z\)</span>,
+        alongside a horizontal verification bar of total length <code class="docutils literal notranslate"><span class="pre">12</span></code> partitioned at
+        <code class="docutils literal notranslate"><span class="pre">8</span></code> and <code class="docutils literal notranslate"><span class="pre">11</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-5.2</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.beatty_pair">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">beatty_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.golden_string.beatty_pair" title="Link to this definition">¶</a></dt>
+        <dd><p>Return Beatty’s complementary Golden pair <span class="math notranslate nohighlight">\((\lfloor n\Phi \rfloor, \lfloor n\Phi^2 \rfloor)\)</span> for <span class="math notranslate nohighlight">\(n \ge 1\)</span>.</p>
+        <p>Uses <span class="math notranslate nohighlight">\(\lfloor n\Phi^2 \rfloor = \lfloor n(\Phi + 1) \rfloor = \lfloor n\Phi \rfloor + n\)</span>
+        and exact integer arithmetic <a class="reference internal" href="../constants/index.html#geometor.knott.constants.floor_linear_phi" title="geometor.knott.constants.floor_linear_phi"><code class="xref py py-func docutils literal notranslate"><span class="pre">floor_linear_phi()</span></code></a>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Positive integer (<span class="math notranslate nohighlight">\(n \ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact integer pair <code class="docutils literal notranslate"><span class="pre">(floor(n</span> <span class="pre">*</span> <span class="pre">PHI),</span> <span class="pre">floor(n</span> <span class="pre">*</span> <span class="pre">PHI^2))</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.wythoff_entry">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">wythoff_entry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.golden_string.wythoff_entry" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute entry <code class="docutils literal notranslate"><span class="pre">W(row,</span> <span class="pre">col)</span></code> (<code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed) of Morrison’s Wythoff Array.</p>
+        <p>Matches Dr. Ron Knott’s formula on <code class="docutils literal notranslate"><span class="pre">fibGen.html#wythoffprops</span></code>:
+        <span class="math notranslate nohighlight">\(W(r, c) = \lfloor (r + 1)\Phi \rfloor F_{c + 2} + r F_{c + 1}\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>row</strong> – Non-negative row index (<span class="math notranslate nohighlight">\(r \ge 0\)</span>).</p></li>
+        <li><p><strong>col</strong> – Non-negative column index (<span class="math notranslate nohighlight">\(c \ge 0\)</span>).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Positive integer at <code class="docutils literal notranslate"><span class="pre">(row,</span> <span class="pre">col)</span></code> in the Wythoff Array.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.wythoff_locate">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">wythoff_locate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.golden_string.wythoff_locate" title="Link to this definition">¶</a></dt>
+        <dd><p>Locate the unique <code class="docutils literal notranslate"><span class="pre">(row,</span> <span class="pre">col)</span></code> (<code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed) of positive integer <code class="docutils literal notranslate"><span class="pre">n</span></code> in the Wythoff Array.</p>
+        <p>Uses the Zeckendorf trailing-zero characterization: <code class="docutils literal notranslate"><span class="pre">col</span></code> equals the number of
+        trailing <code class="docutils literal notranslate"><span class="pre">'0'</span></code> digits in <a class="reference internal" href="#geometor.knott.golden_string.to_zeckendorf" title="geometor.knott.golden_string.to_zeckendorf"><code class="xref py py-func docutils literal notranslate"><span class="pre">to_zeckendorf()</span></code></a>, and <code class="docutils literal notranslate"><span class="pre">W(row,</span> <span class="pre">0)</span></code> increases
+        strictly with <code class="docutils literal notranslate"><span class="pre">row</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Positive integer (<span class="math notranslate nohighlight">\(n \ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Unique <code class="docutils literal notranslate"><span class="pre">(row,</span> <span class="pre">col)</span></code> pair satisfying <code class="docutils literal notranslate"><span class="pre">wythoff_entry(row,</span> <span class="pre">col)</span> <span class="pre">==</span> <span class="pre">n</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.stolarsky_entry">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">stolarsky_entry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.golden_string.stolarsky_entry" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute entry <code class="docutils literal notranslate"><span class="pre">S(row,</span> <span class="pre">col)</span></code> (<code class="docutils literal notranslate"><span class="pre">0</span></code>-indexed) of Kenneth Stolarsky’s (1977) Array.</p>
+        <p>Matches Dr. Ron Knott’s formula on <code class="docutils literal notranslate"><span class="pre">fibGen.html#stolarsky</span></code>:</p>
+        <ul class="simple">
+        <li><p><span class="math notranslate nohighlight">\(S(r, 0) = r + 1 + \lfloor (r + 1/2)\Phi \rfloor\)</span>;</p></li>
+        <li><p><span class="math notranslate nohighlight">\(S(r, 1) = \operatorname{round}(S(r, 0)\Phi) = \lfloor S(r, 0)\Phi + 1/2 \rfloor\)</span>;</p></li>
+        <li><p><span class="math notranslate nohighlight">\(S(r, c) = S(r, c - 1) + S(r, c - 2)\)</span> for <span class="math notranslate nohighlight">\(c \ge 2\)</span>.</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>row</strong> – Non-negative row index (<span class="math notranslate nohighlight">\(r \ge 0\)</span>).</p></li>
+        <li><p><strong>col</strong> – Non-negative column index (<span class="math notranslate nohighlight">\(c \ge 0\)</span>).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Positive integer at <code class="docutils literal notranslate"><span class="pre">(row,</span> <span class="pre">col)</span></code> in Stolarsky’s Array.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.golden_string.construct_wythoff_beatty_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.golden_string.</span></span><span class="sig-name descname"><span class="pre">construct_wythoff_beatty_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.golden_string.construct_wythoff_beatty_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-5.3</cite>: Wythoff / Beatty slope rays <span class="math notranslate nohighlight">\(y = \Phi x\)</span> &amp; <span class="math notranslate nohighlight">\(y = \Phi^2 x\)</span> and cold positions.</p>
+        <p>Constructs the two complementary Beatty slope rays <span class="math notranslate nohighlight">\(y = \Phi x\)</span> and
+        <span class="math notranslate nohighlight">\(y = \Phi^2 x\)</span> from <code class="docutils literal notranslate"><span class="pre">O(0,0)</span></code> alongside Wythoff’s game cold positions
+        <span class="math notranslate nohighlight">\((\lfloor n\Phi \rfloor, \lfloor n\Phi^2 \rfloor)\)</span> for <span class="math notranslate nohighlight">\(n = 1..4\)</span>:
+        <code class="docutils literal notranslate"><span class="pre">W1(1,2)</span></code>, <code class="docutils literal notranslate"><span class="pre">W2(3,5)</span></code>, <code class="docutils literal notranslate"><span class="pre">W3(4,7)</span></code>, <code class="docutils literal notranslate"><span class="pre">W4(6,10)</span></code>. Verifies exact bijective
+        partitioning of <code class="docutils literal notranslate"><span class="pre">1..100</span></code> across Beatty’s pair, Wythoff’s Array, and Stolarsky’s Array.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-5.3</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/item.html">item</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

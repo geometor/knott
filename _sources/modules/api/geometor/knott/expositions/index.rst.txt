@@ -1,0 +1,29 @@
+geometor.knott.expositions
+==========================
+
+.. py:module:: geometor.knott.expositions
+
+.. autoapi-nested-parse::
+
+   Original GEOMETOR mathematical expositions and interactive ``:g:``/``:eq:`` bindings.
+
+   Provides bespoke, copyright-clean constructive proofs and mathematical commentary
+   for all 22 catalog entries (``KNOTT-1.1`` – ``KNOTT-6.5``), binding prose tokens
+   directly to verified ``.euclid-graphic`` ``data-ref`` attributes.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.knott.expositions.ITEM_EXPOSITIONS
+
+
+Module Contents
+---------------
+
+.. py:data:: ITEM_EXPOSITIONS
+   :type:  dict[str, str]
+

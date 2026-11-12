@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.knott.identities &mdash; Modules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../../../../catalog/index.html"  >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="module-geometor.knott.identities">
+        <span id="geometor-knott-identities"></span><h1>geometor.knott.identities<a class="headerlink" href="#module-geometor.knott.identities" title="Link to this heading">¶</a></h1>
+        <p>Collection 6: Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; <span class="math notranslate nohighlight">\(\pi\)</span> (<cite>KNOTT-6.1</cite> – <cite>KNOTT-6.5</cite>).</p>
+        <p>Catalogs the Fibonacci generator of Pythagorean right triangles, Cassini’s identity
+        and both <span class="math notranslate nohighlight">\(64 \leftrightarrow 65\)</span> (<span class="math notranslate nohighlight">\(+1\)</span> gap) and <span class="math notranslate nohighlight">\(64 \leftrightarrow 63\)</span>
+        (<span class="math notranslate nohighlight">\(-1\)</span> overlap) jigsaw dissections, Binet/Lucas/Catalan/d’Ocagne/Honsberger and
+        Jarden-Fibonomial power identities, Lehmer/Hayashi Fibonacci arctangent telescoping
+        series for <span class="math notranslate nohighlight">\(\pi\)</span>, and the Golden Angle parastichy lattice curated by Dr. Ron
+        Knott on <code class="docutils literal notranslate"><span class="pre">pythag.html</span></code>, <code class="docutils literal notranslate"><span class="pre">fibpuzzles2.html</span></code>, <code class="docutils literal notranslate"><span class="pre">fibFormulae.html</span></code>, <code class="docutils literal notranslate"><span class="pre">fibpi.html</span></code>,
+        and <code class="docutils literal notranslate"><span class="pre">fibnat.html</span></code>.</p>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.FibonacciPythagoreanRecord" title="geometor.knott.identities.FibonacciPythagoreanRecord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FibonacciPythagoreanRecord</span></code></a></p></td>
+        <td><p>Exact Pythagorean right triangle generated from <span class="math notranslate nohighlight">\((F_n, F_{n+1}, F_{n+2}, F_{n+3})\)</span>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.fibonacci_pythagorean_triple" title="geometor.knott.identities.fibonacci_pythagorean_triple"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fibonacci_pythagorean_triple</span></code></a>(n) → FibonacciPythagoreanRecord</p></td>
+        <td><p>Generate and verify the Fibonacci Pythagorean triple for index <span class="math notranslate nohighlight">\(n \ge 1\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.identities.construct_fibonacci_pythagorean_model" title="geometor.knott.identities.construct_fibonacci_pythagorean_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_fibonacci_pythagorean_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-6.1</cite>: Exact right triangles <span class="math notranslate nohighlight">\((3,4,5)\)</span> &amp; <span class="math notranslate nohighlight">\((5,12,13)\)</span> with incircle.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.verify_cassini" title="geometor.knott.identities.verify_cassini"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_cassini</span></code></a>(n) → int</p></td>
+        <td><p>Verify Cassini's identity <span class="math notranslate nohighlight">\(F_{n-1} F_{n+1} - F_n^2 = (-1)^n\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.identities.construct_fibonacci_jigsaw_model" title="geometor.knott.identities.construct_fibonacci_jigsaw_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_fibonacci_jigsaw_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-6.2</cite>: Cassini's <span class="math notranslate nohighlight">\(8 \times 8 = 64 \leftrightarrow 5 \times 13 = 65\)</span> &amp; <span class="math notranslate nohighlight">\(63\)</span> jigsaws.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.fibonomial" title="geometor.knott.identities.fibonomial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fibonomial</span></code></a>(n, k) → int</p></td>
+        <td><p>Compute the exact integer Fibonomial coefficient <span class="math notranslate nohighlight">\(\binom{n}{k}_F\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.identities.verify_classical_identities" title="geometor.knott.identities.verify_classical_identities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_classical_identities</span></code></a>() → dict[str, sympy.Expr]</p></td>
+        <td><p>Machine-verify Binet, Lucas, Catalan, d'Ocagne, Honsberger, and Fibonomial identities.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.construct_lucas_binet_model" title="geometor.knott.identities.construct_lucas_binet_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_lucas_binet_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-6.3</cite>: Pell-Lucas lattice points <span class="math notranslate nohighlight">\((L_n, F_n)\)</span> &amp; asymptote <span class="math notranslate nohighlight">\(y = x / \sqrt{5}\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.identities.verify_fibonacci_arctan_step" title="geometor.knott.identities.verify_fibonacci_arctan_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_fibonacci_arctan_step</span></code></a>(n) → sympy.Expr</p></td>
+        <td><p>Verify Lehmer's step <span class="math notranslate nohighlight">\(\arctan(1/F_{2n}) = \arctan(1/F_{2n+1}) + \arctan(1/F_{2n+2})\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.verify_fibonacci_pi_telescoping" title="geometor.knott.identities.verify_fibonacci_pi_telescoping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_fibonacci_pi_telescoping</span></code></a>([terms]) → sympy.Expr</p></td>
+        <td><p>Verify <span class="math notranslate nohighlight">\(\frac{\pi}{4} = \sum_{k=1}^{N} \arctan\frac{1}{F_{2k+1}} + \arctan\frac{1}{F_{2N+2}}\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.identities.construct_hayashi_arctan_grid_model" title="geometor.knott.identities.construct_hayashi_arctan_grid_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_hayashi_arctan_grid_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-6.4</cite>: Ko Hayashi's integer-grid proof of <span class="math notranslate nohighlight">\(\frac{\pi}{4} = \arctan\frac{1}{2} + \arctan\frac{1}{5} + \arctan\frac{1}{8}\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.identities.golden_angle_invariants" title="geometor.knott.identities.golden_angle_invariants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">golden_angle_invariants</span></code></a>() → dict[str, sympy.Expr]</p></td>
+        <td><p>Return exact symbolic invariants of the Golden Angle (<span class="math notranslate nohighlight">\(360^\circ / \Phi^2\)</span>).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.identities.construct_parastichy_lattice_model" title="geometor.knott.identities.construct_parastichy_lattice_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_parastichy_lattice_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-6.5</cite>: Cylindrical Golden-Angle parastichy lattice &amp; opposing Fibonacci spirals.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">FibonacciPythagoreanRecord</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact Pythagorean right triangle generated from <span class="math notranslate nohighlight">\((F_n, F_{n+1}, F_{n+2}, F_{n+3})\)</span>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.n">
+        <span class="sig-name descname"><span class="pre">n</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.n" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.leg_a">
+        <span class="sig-name descname"><span class="pre">leg_a</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.leg_a" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.leg_b">
+        <span class="sig-name descname"><span class="pre">leg_b</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.leg_b" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.hypotenuse_c">
+        <span class="sig-name descname"><span class="pre">hypotenuse_c</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.hypotenuse_c" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.area">
+        <span class="sig-name descname"><span class="pre">area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.area" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.inradius">
+        <span class="sig-name descname"><span class="pre">inradius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.inradius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.gcd_factor">
+        <span class="sig-name descname"><span class="pre">gcd_factor</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.gcd_factor" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.identities.FibonacciPythagoreanRecord.primitive_triple">
+        <span class="sig-name descname"><span class="pre">primitive_triple</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.knott.identities.FibonacciPythagoreanRecord.primitive_triple" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.fibonacci_pythagorean_triple">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">fibonacci_pythagorean_triple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.identities.FibonacciPythagoreanRecord" title="geometor.knott.identities.FibonacciPythagoreanRecord"><span class="pre">FibonacciPythagoreanRecord</span></a></span></span><a class="headerlink" href="#geometor.knott.identities.fibonacci_pythagorean_triple" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate and verify the Fibonacci Pythagorean triple for index <span class="math notranslate nohighlight">\(n \ge 1\)</span>.</p>
+        <p>Uses Euclid’s generator <span class="math notranslate nohighlight">\((m, k) = (F_{n+2}, F_{n+1})\)</span>:</p>
+        <ul class="simple">
+        <li><p><span class="math notranslate nohighlight">\(a_n = m^2 - k^2 = (F_{n+2} - F_{n+1})(F_{n+2} + F_{n+1}) = F_n F_{n+3}\)</span>;</p></li>
+        <li><p><span class="math notranslate nohighlight">\(b_n = 2 m k = 2 F_{n+1} F_{n+2}\)</span>;</p></li>
+        <li><p><span class="math notranslate nohighlight">\(c_n = m^2 + k^2 = F_{n+1}^2 + F_{n+2}^2 = F_{2n+3}\)</span>.</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Positive integer (<span class="math notranslate nohighlight">\(n \ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Verified <a class="reference internal" href="#geometor.knott.identities.FibonacciPythagoreanRecord" title="geometor.knott.identities.FibonacciPythagoreanRecord"><code class="xref py py-class docutils literal notranslate"><span class="pre">FibonacciPythagoreanRecord</span></code></a>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.construct_fibonacci_pythagorean_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">construct_fibonacci_pythagorean_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.identities.construct_fibonacci_pythagorean_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-6.1</cite>: Exact right triangles <span class="math notranslate nohighlight">\((3,4,5)\)</span> &amp; <span class="math notranslate nohighlight">\((5,12,13)\)</span> with incircle.</p>
+        <p>Constructs the first two Fibonacci Pythagorean right triangles <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">A1</span> <span class="pre">B1</span></code> (<span class="math notranslate nohighlight">\(3, 4, 5\)</span>
+        from <span class="math notranslate nohighlight">\(1, 1, 2, 3\)</span>) and <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">A2</span> <span class="pre">B2</span></code> (<span class="math notranslate nohighlight">\(5, 12, 13\)</span> from <span class="math notranslate nohighlight">\(1, 2, 3, 5\)</span>)
+        sharing right-angle vertex <code class="docutils literal notranslate"><span class="pre">O(0,</span> <span class="pre">0)</span></code>, together with incircle <code class="docutils literal notranslate"><span class="pre">(I2,</span> <span class="pre">T2)</span></code> of exact
+        inradius <span class="math notranslate nohighlight">\(r_2 = F_2 F_3 = 2\)</span> inside <span class="math notranslate nohighlight">\((5, 12, 13)\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-6.1</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.verify_cassini">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">verify_cassini</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.identities.verify_cassini" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Cassini’s identity <span class="math notranslate nohighlight">\(F_{n-1} F_{n+1} - F_n^2 = (-1)^n\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Integer index.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact alternating determinant <span class="math notranslate nohighlight">\((-1)^n \in \{-1, +1\}\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.construct_fibonacci_jigsaw_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">construct_fibonacci_jigsaw_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.identities.construct_fibonacci_jigsaw_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-6.2</cite>: Cassini’s <span class="math notranslate nohighlight">\(8 \times 8 = 64 \leftrightarrow 5 \times 13 = 65\)</span> &amp; <span class="math notranslate nohighlight">\(63\)</span> jigsaws.</p>
+        <p>Models <strong>both</strong> classical four-piece dissections of the <span class="math notranslate nohighlight">\(8 \times 8 = 64\)</span> square
+        (two <span class="math notranslate nohighlight">\(3 \times 8\)</span> right triangles of area <code class="docutils literal notranslate"><span class="pre">12</span></code> + two <span class="math notranslate nohighlight">\(5 \times (3, 5)\)</span>
+        right trapezoids of area <code class="docutils literal notranslate"><span class="pre">20</span></code>) inside a single exact <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code>:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Lower figure (:math:`5 times 13 = 65` Hooper/Loyd rectangle)</strong>: encloses the
+        slender internal parallelogram <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">P1</span> <span class="pre">Q</span> <span class="pre">P2</span></code> of exact shoelace area <code class="docutils literal notranslate"><span class="pre">+1</span></code>;</p></li>
+        <li><p><strong>Upper figure (Sam Loyd Jr. / Dudeney / Knott 63-unit notched block, shifted to ``y &gt;= 7``)</strong>:
+        two <span class="math notranslate nohighlight">\(5 \times 6 = 30\)</span> wings joined by a <span class="math notranslate nohighlight">\(3 \times 1 = 3\)</span> bridge
+        (apparent outer area <code class="docutils literal notranslate"><span class="pre">63</span></code>), concealing an internal overlap parallelogram
+        <code class="docutils literal notranslate"><span class="pre">U0</span> <span class="pre">U1</span> <span class="pre">U2</span> <span class="pre">U3</span></code> of exact shoelace area <code class="docutils literal notranslate"><span class="pre">+1</span></code> (<span class="math notranslate nohighlight">\(64 - 1 = 63\)</span>).</p></li>
+        </ol>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-6.2</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.fibonomial">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">fibonomial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#geometor.knott.identities.fibonomial" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact integer Fibonomial coefficient <span class="math notranslate nohighlight">\(\binom{n}{k}_F\)</span>.</p>
+        <p>Defined on <code class="docutils literal notranslate"><span class="pre">Fibonomials.html</span></code> and <code class="docutils literal notranslate"><span class="pre">fibFormulae.html#FibonomialFormulae</span></code> as
+        <span class="math notranslate nohighlight">\(\frac{F_n F_{n-1} \cdots F_{n-k+1}}{F_k F_{k-1} \cdots F_1}\)</span> (with
+        <span class="math notranslate nohighlight">\(\binom{n}{0}_F = \binom{n}{n}_F = 1\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>n</strong> – Non-negative upper index.</p></li>
+        <li><p><strong>k</strong> – Integer lower index.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact integer Fibonomial coefficient.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.verify_classical_identities">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">verify_classical_identities</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.identities.verify_classical_identities" title="Link to this definition">¶</a></dt>
+        <dd><p>Machine-verify Binet, Lucas, Catalan, d’Ocagne, Honsberger, and Fibonomial identities.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Dictionary of representative verified exact quantities.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.construct_lucas_binet_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">construct_lucas_binet_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.identities.construct_lucas_binet_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-6.3</cite>: Pell-Lucas lattice points <span class="math notranslate nohighlight">\((L_n, F_n)\)</span> &amp; asymptote <span class="math notranslate nohighlight">\(y = x / \sqrt{5}\)</span>.</p>
+        <p>Plots exact Pell-Lucas points <span class="math notranslate nohighlight">\(P_n = (L_n, F_n)\)</span> for <span class="math notranslate nohighlight">\(n = 0..4\)</span>
+        (<code class="docutils literal notranslate"><span class="pre">P0(2,0)</span></code>, <code class="docutils literal notranslate"><span class="pre">P1(1,1)</span></code>, <code class="docutils literal notranslate"><span class="pre">P2(3,1)</span></code>, <code class="docutils literal notranslate"><span class="pre">P3(4,2)</span></code>, <code class="docutils literal notranslate"><span class="pre">P4(7,3)</span></code>) alternating across
+        hyperbolas <span class="math notranslate nohighlight">\(x^2 - 5 y^2 = \pm 4\)</span> around Binet’s asymptote ray <code class="docutils literal notranslate"><span class="pre">[O</span> <span class="pre">A]</span></code> of
+        exact slope <span class="math notranslate nohighlight">\(1 / \sqrt{5}\)</span> (<span class="math notranslate nohighlight">\(A = (8, 8/\sqrt{5})\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-6.3</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.verify_fibonacci_arctan_step">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">verify_fibonacci_arctan_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.identities.verify_fibonacci_arctan_step" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Lehmer’s step <span class="math notranslate nohighlight">\(\arctan(1/F_{2n}) = \arctan(1/F_{2n+1}) + \arctan(1/F_{2n+2})\)</span>.</p>
+        <p>Proves exact equality both via rational tangent-addition algebra
+        <span class="math notranslate nohighlight">\((a + b)/(1 - a b) = 1/F_{2n}\)</span> and via SymPy’s symbolic <code class="docutils literal notranslate"><span class="pre">atan</span></code> simplification.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>n</strong> – Positive integer (<span class="math notranslate nohighlight">\(n \ge 1\)</span>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact common tangent <span class="math notranslate nohighlight">\(1 / F_{2n}\)</span> as <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Rational</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.verify_fibonacci_pi_telescoping">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">verify_fibonacci_pi_telescoping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.identities.verify_fibonacci_pi_telescoping" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify <span class="math notranslate nohighlight">\(\frac{\pi}{4} = \sum_{k=1}^{N} \arctan\frac{1}{F_{2k+1}} + \arctan\frac{1}{F_{2N+2}}\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>terms</strong> – Number of telescoping steps <span class="math notranslate nohighlight">\(N \ge 1\)</span>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic remainder <span class="math notranslate nohighlight">\(\arctan(1 / F_{2N+2})\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.construct_hayashi_arctan_grid_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">construct_hayashi_arctan_grid_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.identities.construct_hayashi_arctan_grid_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-6.4</cite>: Ko Hayashi’s integer-grid proof of <span class="math notranslate nohighlight">\(\frac{\pi}{4} = \arctan\frac{1}{2} + \arctan\frac{1}{5} + \arctan\frac{1}{8}\)</span>.</p>
+        <p>Constructs four integer lattice points <code class="docutils literal notranslate"><span class="pre">O(0,0)</span></code>, <code class="docutils literal notranslate"><span class="pre">E(10,10)</span></code>, <code class="docutils literal notranslate"><span class="pre">M(15,5)</span></code>, and
+        <code class="docutils literal notranslate"><span class="pre">N(16,2)</span></code> (with horizontal reference <code class="docutils literal notranslate"><span class="pre">X(16,0)</span></code>):</p>
+        <ul class="simple">
+        <li><p>Right triangle <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">E</span> <span class="pre">M</span></code> has <span class="math notranslate nohighlight">\(s([OE], [EM]) = 1\)</span> and <span class="math notranslate nohighlight">\(Q(E,M)/Q(O,E) = 50/200 = 1/4 = (1/2)^2\)</span>,
+        proving <span class="math notranslate nohighlight">\(\angle EOM = \arctan(1/2)\)</span> between <span class="math notranslate nohighlight">\(45^\circ\)</span> ray <code class="docutils literal notranslate"><span class="pre">OE</span></code> and slope-<span class="math notranslate nohighlight">\(1/3\)</span> ray <code class="docutils literal notranslate"><span class="pre">OM</span></code>;</p></li>
+        <li><p>Right triangle <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">M</span> <span class="pre">N</span></code> has <span class="math notranslate nohighlight">\(s([OM], [MN]) = 1\)</span> and <span class="math notranslate nohighlight">\(Q(M,N)/Q(O,M) = 10/250 = 1/25 = (1/5)^2\)</span>,
+        proving <span class="math notranslate nohighlight">\(\angle MON = \arctan(1/5)\)</span> between slope-<span class="math notranslate nohighlight">\(1/3\)</span> ray <code class="docutils literal notranslate"><span class="pre">OM</span></code> and slope-<span class="math notranslate nohighlight">\(1/8\)</span> ray <code class="docutils literal notranslate"><span class="pre">ON</span></code>.</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-6.4</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.golden_angle_invariants">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">golden_angle_invariants</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.identities.golden_angle_invariants" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact symbolic invariants of the Golden Angle (<span class="math notranslate nohighlight">\(360^\circ / \Phi^2\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Dictionary of exact turn fractions, radian/degree expressions, and parastichy offsets.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.identities.construct_parastichy_lattice_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.identities.</span></span><span class="sig-name descname"><span class="pre">construct_parastichy_lattice_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.identities.construct_parastichy_lattice_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-6.5</cite>: Cylindrical Golden-Angle parastichy lattice &amp; opposing Fibonacci spirals.</p>
+        <p>Unrolls cylindrical phyllotaxis onto the <span class="math notranslate nohighlight">\((\Delta x, n)\)</span> plane around stem axis
+        <code class="docutils literal notranslate"><span class="pre">[O</span> <span class="pre">S]</span></code> (<span class="math notranslate nohighlight">\(x = 0\)</span>), plotting exact Fibonacci primordia
+        <span class="math notranslate nohighlight">\(P_k = (20 (F_k \phi^2 - F_{k-2}),\; F_k) = (20 (-\phi)^k,\; F_k)\)</span> for
+        <span class="math notranslate nohighlight">\(k = 2..6\)</span> (<span class="math notranslate nohighlight">\(F_2=1, F_3=2, F_4=3, F_5=5, F_6=8\)</span>), plus their vector sum
+        completing fundamental parastichy parallelograms <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">P3</span> <span class="pre">Q34</span> <span class="pre">P4</span></code> and <code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">P4</span> <span class="pre">Q45</span> <span class="pre">P5</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-6.5</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/item.html">item</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+geometor.knott.__main__
+=======================
+
+.. py:module:: geometor.knott.__main__
+
+.. autoapi-nested-parse::
+
+   Command-line entry point for inspecting and verifying ``geometor.knott``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.__main__.build_parser
+   geometor.knott.__main__.main
+
+
+Module Contents
+---------------
+
+.. py:function:: build_parser() -> argparse.ArgumentParser
+
+   Create the CLI argument parser for ``knott``.
+
+   :returns: Configured :class:`argparse.ArgumentParser`.
+
+
+.. py:function:: main(argv: collections.abc.Sequence[str] | None = None) -> int
+
+   Execute the ``knott`` CLI.
+
+   :param argv: Optional sequence of CLI arguments.
+
+   :returns: Process exit status (``0`` on success).
+
+

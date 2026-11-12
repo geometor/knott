@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.knott.flat_geometry &mdash; Modules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../../../../catalog/index.html"  >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="module-geometor.knott.flat_geometry">
+        <span id="geometor-knott-flat-geometry"></span><h1>geometor.knott.flat_geometry<a class="headerlink" href="#module-geometor.knott.flat_geometry" title="Link to this heading">¶</a></h1>
+        <p>Collection 1: 2D Golden Geometry &amp; Constructions (<cite>KNOTT-1.1</cite> through <cite>KNOTT-1.6</cite>).</p>
+        <p>Catalogs the planar compass-and-straightedge constructions, self-similar triangles,
+        pentagonal star-chord progressions, Kepler right triangles, and Penrose aperiodic
+        prototiles curated by Dr. Ron Knott on <code class="docutils literal notranslate"><span class="pre">phi2DGeomTrig.html</span></code>.</p>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a></p></td>
+        <td><p>Verified exact symbolic model and invariant summary for a catalog item.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.construct_golden_section_segment" title="geometor.knott.flat_geometry.construct_golden_section_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_golden_section_segment</span></code></a>() → GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-1.1</cite>: Internal and external golden sections on segment <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.construct_golden_rectangles_and_spiral" title="geometor.knott.flat_geometry.construct_golden_rectangles_and_spiral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_golden_rectangles_and_spiral</span></code></a>() → GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-1.2</cite>: Golden rectangle, <span class="math notranslate nohighlight">\(\sqrt{5}\)</span> rectangle, &amp; whirling squares.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.construct_golden_triangles_and_gnomons" title="geometor.knott.flat_geometry.construct_golden_triangles_and_gnomons"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_golden_triangles_and_gnomons</span></code></a>() → GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-1.3</cite>: Acute golden triangle (<span class="math notranslate nohighlight">\(72^\circ\text{-}72^\circ\text{-}36^\circ\)</span>) &amp; gnomon deflation.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.construct_pentagon_and_paper_knot" title="geometor.knott.flat_geometry.construct_pentagon_and_paper_knot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pentagon_and_paper_knot</span></code></a>() → GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-1.4</cite>: Regular pentagon, pentagram <span class="math notranslate nohighlight">\(1:\Phi:\Phi^2:\Phi^3\)</span> chords, &amp; paper knot.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.construct_kepler_triangle" title="geometor.knott.flat_geometry.construct_kepler_triangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_kepler_triangle</span></code></a>() → GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-1.5</cite>: Kepler's golden right triangle <span class="math notranslate nohighlight">\((1, \sqrt{\Phi}, \Phi)\)</span> &amp; near-quadrature.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.flat_geometry.construct_penrose_tiles" title="geometor.knott.flat_geometry.construct_penrose_tiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_penrose_tiles</span></code></a>() → GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-1.6</cite>: Penrose kites &amp; darts (<span class="math notranslate nohighlight">\(P2\)</span>) and thick/thin golden rhombs (<span class="math notranslate nohighlight">\(P3\)</span>).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.GeometricCatalogResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">GeometricCatalogResult</span></span><a class="headerlink" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Verified exact symbolic model and invariant summary for a catalog item.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.GeometricCatalogResult.canonical_id">
+        <span class="sig-name descname"><span class="pre">canonical_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.knott.flat_geometry.GeometricCatalogResult.canonical_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.GeometricCatalogResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.knott.flat_geometry.GeometricCatalogResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.GeometricCatalogResult.invariants">
+        <span class="sig-name descname"><span class="pre">invariants</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.GeometricCatalogResult.invariants" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.construct_golden_section_segment">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_golden_section_segment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.construct_golden_section_segment" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-1.1</cite>: Internal and external golden sections on segment <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p>
+        <p>Models both classical Euclidean constructions on segment <code class="docutils literal notranslate"><span class="pre">AB</span></code> of length <code class="docutils literal notranslate"><span class="pre">2</span></code>:</p>
+        <ol class="arabic simple">
+        <li><p><strong>External extension</strong>: From square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code> and midpoint <code class="docutils literal notranslate"><span class="pre">M</span></code> of <code class="docutils literal notranslate"><span class="pre">AB</span></code>, circle
+        <code class="docutils literal notranslate"><span class="pre">(M,</span> <span class="pre">C)</span></code> of radius <span class="math notranslate nohighlight">\(\sqrt{5}\)</span> meets line <code class="docutils literal notranslate"><span class="pre">[AB]</span></code> at <code class="docutils literal notranslate"><span class="pre">E</span></code>, yielding
+        <span class="math notranslate nohighlight">\(AE / AB = AB / BE = \Phi\)</span> and Golden Rectangle <code class="docutils literal notranslate"><span class="pre">AEFD</span></code>.</p></li>
+        <li><p><strong>Internal division</strong>: Joining <code class="docutils literal notranslate"><span class="pre">A</span></code> to midpoint <code class="docutils literal notranslate"><span class="pre">H</span></code> of <code class="docutils literal notranslate"><span class="pre">BC</span></code>, circle <code class="docutils literal notranslate"><span class="pre">(H,</span> <span class="pre">B)</span></code>
+        cuts <code class="docutils literal notranslate"><span class="pre">AH</span></code> at <code class="docutils literal notranslate"><span class="pre">K</span></code> (<span class="math notranslate nohighlight">\(AK = 2\phi\)</span>), and circle <code class="docutils literal notranslate"><span class="pre">(A,</span> <span class="pre">K)</span></code> cuts <code class="docutils literal notranslate"><span class="pre">AB</span></code> at
+        the internal golden section <code class="docutils literal notranslate"><span class="pre">G</span></code> (<span class="math notranslate nohighlight">\(AB / AG = AG / GB = \Phi\)</span>).</p></li>
+        </ol>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a> for <code class="docutils literal notranslate"><span class="pre">KNOTT-1.1</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.construct_golden_rectangles_and_spiral">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_golden_rectangles_and_spiral</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.construct_golden_rectangles_and_spiral" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-1.2</cite>: Golden rectangle, <span class="math notranslate nohighlight">\(\sqrt{5}\)</span> rectangle, &amp; whirling squares.</p>
+        <p>Surrounding unit square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code> with midpoint circle <code class="docutils literal notranslate"><span class="pre">(M,</span> <span class="pre">C)</span></code> constructs both
+        right golden rectangle <code class="docutils literal notranslate"><span class="pre">AEFD</span></code> (<span class="math notranslate nohighlight">\(\Phi \times 1\)</span>) and full <span class="math notranslate nohighlight">\(\sqrt{5} \times 1\)</span>
+        rectangle <code class="docutils literal notranslate"><span class="pre">WEFN</span></code>. Subdividing gnomon <code class="docutils literal notranslate"><span class="pre">BEFC</span></code> into whirling squares demonstrates
+        that main diagonal <code class="docutils literal notranslate"><span class="pre">[AF]</span></code> and gnomon diagonal <code class="docutils literal notranslate"><span class="pre">[EC]</span></code> intersect orthogonally
+        (exact spread <span class="math notranslate nohighlight">\(s = 1\)</span>) at the logarithmic spiral pole <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a> for <code class="docutils literal notranslate"><span class="pre">KNOTT-1.2</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.construct_golden_triangles_and_gnomons">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_golden_triangles_and_gnomons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.construct_golden_triangles_and_gnomons" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-1.3</cite>: Acute golden triangle (<span class="math notranslate nohighlight">\(72^\circ\text{-}72^\circ\text{-}36^\circ\)</span>) &amp; gnomon deflation.</p>
+        <p>Constructs acute golden triangle <code class="docutils literal notranslate"><span class="pre">ABC</span></code> (<span class="math notranslate nohighlight">\(AB = 1, AC = BC = \Phi\)</span>) and
+        intersects leg <code class="docutils literal notranslate"><span class="pre">BC</span></code> with unit circle <code class="docutils literal notranslate"><span class="pre">(A,</span> <span class="pre">B)</span></code> at <code class="docutils literal notranslate"><span class="pre">D</span></code>, partitioning <code class="docutils literal notranslate"><span class="pre">ABC</span></code>
+        into obtuse golden gnomon <code class="docutils literal notranslate"><span class="pre">CAD</span></code> (<span class="math notranslate nohighlight">\(36^\circ\text{-}36^\circ\text{-}108^\circ\)</span>,
+        legs <code class="docutils literal notranslate"><span class="pre">1</span></code>) and deflated acute golden triangle <code class="docutils literal notranslate"><span class="pre">DAB</span></code> (<span class="math notranslate nohighlight">\(AB = AD = 1, BD = \phi\)</span>),
+        followed by a second deflation step at <code class="docutils literal notranslate"><span class="pre">E</span></code> on <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a> for <code class="docutils literal notranslate"><span class="pre">KNOTT-1.3</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.construct_pentagon_and_paper_knot">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_pentagon_and_paper_knot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.construct_pentagon_and_paper_knot" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-1.4</cite>: Regular pentagon, pentagram <span class="math notranslate nohighlight">\(1:\Phi:\Phi^2:\Phi^3\)</span> chords, &amp; paper knot.</p>
+        <p>Constructs regular pentagon <code class="docutils literal notranslate"><span class="pre">P0</span> <span class="pre">P1</span> <span class="pre">P2</span> <span class="pre">P3</span> <span class="pre">P4</span></code> of unit side, intersects its five
+        pentagram diagonals to form inner pentagon <code class="docutils literal notranslate"><span class="pre">Q0</span> <span class="pre">Q1</span> <span class="pre">Q2</span> <span class="pre">Q3</span> <span class="pre">Q4</span></code>, verifies the four-step
+        golden geometric progression along <code class="docutils literal notranslate"><span class="pre">P0</span> <span class="pre">P2</span></code>, and drops perpendicular <code class="docutils literal notranslate"><span class="pre">P4</span> <span class="pre">H</span></code> onto
+        <code class="docutils literal notranslate"><span class="pre">[P0</span> <span class="pre">P1]</span></code> to prove Dr. Ron Knott’s overhand paper-strip knot theorem: two crossing
+        parallel-sided strips of width <span class="math notranslate nohighlight">\(w = P_4 H = \sin 72^\circ\)</span> lock into an exact
+        regular pentagon of side <span class="math notranslate nohighlight">\(w \sec 18^\circ\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a> for <code class="docutils literal notranslate"><span class="pre">KNOTT-1.4</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.construct_kepler_triangle">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_kepler_triangle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.construct_kepler_triangle" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-1.5</cite>: Kepler’s golden right triangle <span class="math notranslate nohighlight">\((1, \sqrt{\Phi}, \Phi)\)</span> &amp; near-quadrature.</p>
+        <p>Uses Euclid’s semicircle geometric-mean construction on <code class="docutils literal notranslate"><span class="pre">DE</span></code> (<span class="math notranslate nohighlight">\(D=(-1,0),
+        B=(0,0), E=(\Phi,0)\)</span>) to construct <span class="math notranslate nohighlight">\(C=(0, \sqrt{\Phi})\)</span> by exact compass
+        intersection over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{\Phi})\)</span>. In right triangle <code class="docutils literal notranslate"><span class="pre">DBC</span></code>:</p>
+        <ul class="simple">
+        <li><p>Side quadrances <span class="math notranslate nohighlight">\((Q(B,D), Q(B,C), Q(D,C)) = (1, \Phi, \Phi^2)\)</span> form a
+        geometric progression AND satisfy Pythagoras <span class="math notranslate nohighlight">\(1 + \Phi = \Phi^2\)</span>;</p></li>
+        <li><p>The square <code class="docutils literal notranslate"><span class="pre">BCFG</span></code> on leg <code class="docutils literal notranslate"><span class="pre">BC</span></code> has perimeter <span class="math notranslate nohighlight">\(4\sqrt{\Phi} \approx 5.08808\)</span>,
+        while the Thales circle <code class="docutils literal notranslate"><span class="pre">(M,</span> <span class="pre">C)</span></code> on hypotenuse <code class="docutils literal notranslate"><span class="pre">CD</span></code> has circumference
+        <span class="math notranslate nohighlight">\(\pi\Phi \approx 5.08320\)</span> (agreement within <span class="math notranslate nohighlight">\(0.096\%\)</span>).</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a> for <code class="docutils literal notranslate"><span class="pre">KNOTT-1.5</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.flat_geometry.construct_penrose_tiles">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.flat_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_penrose_tiles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.flat_geometry.construct_penrose_tiles" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-1.6</cite>: Penrose kites &amp; darts (<span class="math notranslate nohighlight">\(P2\)</span>) and thick/thin golden rhombs (<span class="math notranslate nohighlight">\(P3\)</span>).</p>
+        <p>Constructs thick Penrose golden rhomb <code class="docutils literal notranslate"><span class="pre">ABCD</span></code> (<span class="math notranslate nohighlight">\(72^\circ / 108^\circ\)</span>, side <span class="math notranslate nohighlight">\(\Phi\)</span>),
+        intersects diagonal <code class="docutils literal notranslate"><span class="pre">AC</span></code> with unit circle <code class="docutils literal notranslate"><span class="pre">(A,</span> <span class="pre">U)</span></code> at <code class="docutils literal notranslate"><span class="pre">K</span></code> to partition <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>
+        into Penrose dart <code class="docutils literal notranslate"><span class="pre">ABKD</span></code> (non-convex <span class="math notranslate nohighlight">\(216^\circ\)</span> reflex at <code class="docutils literal notranslate"><span class="pre">K</span></code>) and Penrose
+        kite <code class="docutils literal notranslate"><span class="pre">KBCD</span></code> (<span class="math notranslate nohighlight">\(72^\circ, 72^\circ, 72^\circ, 144^\circ\)</span>), and adjoins thin
+        Penrose golden rhomb <code class="docutils literal notranslate"><span class="pre">ABEF</span></code> (<span class="math notranslate nohighlight">\(36^\circ / 144^\circ\)</span>, side <span class="math notranslate nohighlight">\(\Phi\)</span>).
+        Proves both exact area ratios equal <span class="math notranslate nohighlight">\(\Phi : 1\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <a class="reference internal" href="#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code></a> for <code class="docutils literal notranslate"><span class="pre">KNOTT-1.6</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/item.html">item</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

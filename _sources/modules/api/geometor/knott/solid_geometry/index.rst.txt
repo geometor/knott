@@ -1,0 +1,139 @@
+geometor.knott.solid_geometry
+=============================
+
+.. py:module:: geometor.knott.solid_geometry
+
+.. autoapi-nested-parse::
+
+   Collection 3: 3D Golden Geometry of Solids (`KNOTT-3.1` through `KNOTT-3.3`).
+
+   Catalogs the exact 3D algebraic coordinates, edge lengths, dihedral spreads,
+   volumes, 5-cube compounds, and acute/obtuse golden quasicrystal rhombohedra curated
+   by Dr. Ron Knott on ``phi3DGeom.html``, paired with exact rational axonometric
+   2D projections into ``geometor.model.Model``.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.knott.solid_geometry.Point3D
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.solid_geometry.project_3d_to_2d
+   geometor.knott.solid_geometry.quadrance_3d
+   geometor.knott.solid_geometry.icosahedron_vertices_3d
+   geometor.knott.solid_geometry.dodecahedron_vertices_3d
+   geometor.knott.solid_geometry.construct_orthogonal_golden_rectangles_solids
+   geometor.knott.solid_geometry.find_five_cubes_in_dodecahedron
+   geometor.knott.solid_geometry.construct_cube_in_dodecahedron_model
+   geometor.knott.solid_geometry.construct_golden_rhombohedra_model
+
+
+Module Contents
+---------------
+
+.. py:data:: Point3D
+
+.. py:function:: project_3d_to_2d(pt3: Point3D) -> tuple[sympy.Expr, sympy.Expr]
+
+   Project an exact 3D point ``(x, y, z)`` to 2D via an injective rational cabinet matrix.
+
+   Uses exact rational coefficients :math:`(X, Y) = (x - \frac{2}{5} y,\; z - \frac{1}{4} y + \frac{1}{7} x)`
+   so no floating-point approximations enter :class:`geometor.model.Model` and symmetric
+   polyhedral vertices remain distinct in the plane.
+
+   :param pt3: Exact 3D coordinate triple ``(x, y, z)``.
+
+   :returns: Exact 2D coordinate pair ``(X, Y)``.
+
+
+.. py:function:: quadrance_3d(a: Point3D, b: Point3D) -> sympy.Expr
+
+   Compute exact 3D Euclidean quadrance :math:`(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2`.
+
+   :param a: First 3D point.
+   :param b: Second 3D point.
+
+   :returns: Exact symbolic squared distance in 3D.
+
+
+.. py:function:: icosahedron_vertices_3d() -> dict[str, Point3D]
+
+   Return the 12 exact vertices of the regular icosahedron spanned by 3 golden rectangles.
+
+   :returns: Ordered mapping of vertex IDs (``X1..X4``, ``Y1..Y4``, ``Z1..Z4``) to 3D points.
+
+
+.. py:function:: dodecahedron_vertices_3d() -> dict[str, Point3D]
+
+   Return the 20 exact vertices of the regular dodecahedron of edge :math:`2\phi`.
+
+   Combines the 8 cube vertices :math:`(\pm 1, \pm 1, \pm 1)` (``C1..C8``) with the
+   12 cyclic permutations of :math:`(0, \pm\phi, \pm\Phi)` (``D1..D12``).
+
+   :returns: Ordered mapping of 20 vertex IDs to exact 3D coordinate triples.
+
+
+.. py:function:: construct_orthogonal_golden_rectangles_solids() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-3.1`: Three orthogonal golden rectangles & regular icosahedron/dodecahedron.
+
+   Verifies in 3D that:
+
+   - The 12 corners of three mutually perpendicular :math:`2 \times 2\Phi` golden
+     rectangles form a regular icosahedron with 30 edges of length ``2``, 20 equilateral
+     faces, exact volume :math:`20\Phi^2 / 3`, and rational dihedral spread :math:`4/9`;
+   - The 20 vertices :math:`(\pm 1, \pm 1, \pm 1) \cup \operatorname{cyc}(0, \pm\phi, \pm\Phi)`
+     form a regular dodecahedron with 30 edges of length :math:`2\phi`, exact volume
+     :math:`8 + 4\Phi`, and rational dihedral spread :math:`4/5`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-3.1``.
+
+
+.. py:function:: find_five_cubes_in_dodecahedron() -> list[tuple[str, ...]]
+
+   Discover all 5 inscribed cubes of edge ``2`` among the 20 dodecahedron vertices.
+
+   Each cube is an 8-element subset of :func:`dodecahedron_vertices_3d` in which
+   every vertex has 3 orthogonal neighbors at exact 3D quadrance ``4`` (face diagonal
+   of a regular pentagon of side :math:`2\phi`, since :math:`\Phi \cdot 2\phi = 2`).
+
+   :returns: Sorted list of 5 8-tuples of vertex IDs partitioning the 60 face diagonals.
+
+
+.. py:function:: construct_cube_in_dodecahedron_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-3.2`: Inscribed cube & compound of five cubes in a dodecahedron.
+
+   Constructs the 20-vertex regular dodecahedron of edge :math:`2\phi`, highlights
+   primary inscribed cube ``C1..C8`` of edge ``2`` (whose 12 edges are one face
+   diagonal on each of the 12 pentagonal faces), and verifies all 5 inscribed cubes
+   partition the 60 face diagonals with every dodecahedron vertex shared by 2 cubes.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-3.2``.
+
+
+.. py:function:: construct_golden_rhombohedra_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-3.3`: Acute & obtuse golden rhombohedra (3D quasicrystal tiles).
+
+   Spans the acute (prolate) golden rhombohedron from icosahedral vectors
+   :math:`u_1=(0,1,\Phi), u_2=(1,\Phi,0), u_3=(\Phi,0,1)` and the obtuse (oblate)
+   golden rhombohedron from :math:`v_1=(0,1,\Phi), v_2=(1,-\Phi,0), v_3=(-\Phi,0,-1)`
+   (translated alongside for visual comparison). Every rhombic face has exact
+   diagonals :math:`2\Phi` and ``2`` (ratio :math:`\Phi : 1`), exact volumes
+   :math:`V_{\text{acute}} = 2\Phi^2` and :math:`V_{\text{obtuse}} = 2\Phi`
+   (ratio :math:`\Phi : 1`), and 10 of each assemble the rhombic triacontahedron
+   of volume :math:`20\Phi^3`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-3.3``.
+
+

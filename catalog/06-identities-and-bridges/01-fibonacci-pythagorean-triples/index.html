@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples &mdash; Mathematical Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../index.html" class="is-active" aria-selected="true" >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >Modules</a>
+        </li>
+        <li>
+          <a href="../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-canonical-id="KNOTT-6.1">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../index.html">Mathematical Catalog</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+            <a class="book-crumb-link" href="../index.html">KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes & π</a>
+            <span class="book-crumb-sep">/</span>
+            <span class="book-badge canonical-badge">KNOTT-6.1</span>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../02-cassini-jigsaw-paradoxes/index.html" title="KNOTT-6.2 — Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) &amp; The 64 ↔ 65 / 63 Jigsaw Dissections"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="knott-6-1-fibonacci-generator-of-primitive-pythagorean-triples">
+        <span id="knott-6-1"></span><h1>KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples<a class="headerlink" href="#knott-6-1-fibonacci-generator-of-primitive-pythagorean-triples" title="Link to this heading">¶</a></h1>
+        <div class="enunciation">Any four consecutive positive Fibonacci numbers (Fₙ, Fₙ₊₁, Fₙ₊₂, Fₙ₊₃) form the Pythagorean right triangle (Fₙ Fₙ₊₃, 2 Fₙ₊₁ Fₙ₊₂, F₂ₙ₊₃) of area Fₙ Fₙ₊₁ Fₙ₊₂ Fₙ₊₃ and inradius Fₙ Fₙ₊₁, primitive whenever 3 ∤ n and twice a primitive triple when 3 ∣ n.</div>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -264.67 616.00 312.67" width="616.0" height="312.7" class="euclid-graphic" data-graphic-id="knott-6-1.g1" data-folio="knott-6-1" data-graphic="g1">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath id="clip-knott-6-1-g1">
+              <rect x="-48.00" y="-264.67" width="616.00" height="312.67" />
+            </clipPath>
+          </defs>
+          <g id="elements" clip-path="url(#clip-knott-6-1-g1)">
+            <circle data-ref="( I2 T2 )" data-type="circle" fill="none" stroke="#e0911b" stroke-width="1.4" stroke-opacity="0.85" cx="86.67" cy="-86.67" r="86.67" class="geom-circle geom-golden" />
+          </g>
+          <g id="graphics">
+            <polygon data-ref="&lt; O A2 B2 &gt;" data-type="polygon" fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 520.00,-0.00 0.00,-216.67" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <polygon data-ref="&lt; O A1 B1 &gt;" data-type="polygon" fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 173.33,-0.00 0.00,-130.00" class="geom-polygon geom-polygon-bordered" />
+            <path data-ref="/ A1 B1 /" data-type="segment" fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 173.33 -0.00 L 86.67 -65.00 L 0.00 -130.00" class="geom-line geom-segment" />
+            <path data-ref="/ O A2 /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 260.00 -0.00 L 520.00 -0.00" class="geom-line geom-segment geom-golden" />
+            <path data-ref="/ O B2 /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 0.00 -108.33 L 0.00 -216.67" class="geom-line geom-segment geom-golden" />
+            <path data-ref="/ A2 B2 /" data-type="segment" fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 520.00 -0.00 L 260.00 -108.33 L 0.00 -216.67" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g id="highlights" clip-path="url(#clip-knott-6-1-g1)" style="pointer-events: none;">
+            <polygon data-ref="&lt; O A2 B2 &gt;" data-type="polygon" fill="none" opacity="0" points="0.00,-0.00 520.00,-0.00 0.00,-216.67" class="geom-overlay" />
+            <polygon data-ref="&lt; O A1 B1 &gt;" data-type="polygon" fill="none" opacity="0" points="0.00,-0.00 173.33,-0.00 0.00,-130.00" class="geom-overlay" />
+            <path data-ref="/ A1 B1 /" data-type="segment" fill="none" opacity="0" d="M 173.33 -0.00 L 86.67 -65.00 L 0.00 -130.00" class="geom-overlay" />
+            <path data-ref="/ O A2 /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 260.00 -0.00 L 520.00 -0.00" class="geom-overlay" />
+            <path data-ref="/ O B2 /" data-type="segment" fill="none" opacity="0" d="M 0.00 -0.00 L 0.00 -108.33 L 0.00 -216.67" class="geom-overlay" />
+            <path data-ref="/ A2 B2 /" data-type="segment" fill="none" opacity="0" d="M 520.00 -0.00 L 260.00 -108.33 L 0.00 -216.67" class="geom-overlay" />
+            <circle data-ref="( I2 T2 )" data-type="circle" fill="none" opacity="0" cx="86.67" cy="-86.67" r="86.67" class="geom-overlay" />
+          </g>
+          <g id="points">
+            <circle data-ref="O" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle data-ref="A1" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="173.33" cy="-0.00" r="4.2" class="geom-point" />
+            <circle data-ref="B1" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-130.00" r="4.2" class="geom-point" />
+            <circle data-ref="A2" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle data-ref="B2" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-216.67" r="4.2" class="geom-point" />
+            <circle data-ref="I2" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="86.67" cy="-86.67" r="4.2" class="geom-point" />
+            <circle data-ref="T2" data-type="point" fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="86.67" cy="-0.00" r="4.2" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text data-ref="O" x="-12.73" y="12.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text data-ref="A1" x="188.92" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A1</text>
+            <text data-ref="B1" x="-9.00" y="-145.59" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B1</text>
+            <text data-ref="A2" x="537.39" y="4.66" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A2</text>
+            <text data-ref="B2" x="-9.00" y="-232.26" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B2</text>
+            <text data-ref="I2" x="68.67" y="-86.67" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">I2</text>
+            <text data-ref="T2" x="71.08" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">T2</text>
+          </g>
+        </svg>
+        </figure>
+        <section class="level-2" id="curated-source-catalog-provenance">
+        <h2>Curated Source &amp; Catalog Provenance<a class="headerlink" href="#curated-source-catalog-provenance" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 26.0%" />
+        <col style="width: 74.0%" />
+        </colgroup>
+        <tbody>
+        <tr class="row-odd"><td><p><strong>Catalog ID</strong></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">KNOTT-6.1</span></code></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Curated Source</strong></p></td>
+        <td><p><a class="person-ref" id="occ-person-knott-1" href="../../../persons.html#person-knott" data-person="knott" title="Dr. Ron Knott (fl. 1979–2025) — Mathematician &amp; computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).">Dr. Ron Knott</a>, <em>Pythagorean Triangles and Triples</em> (<a class="reference external" href="https://r-knott.surrey.ac.uk/Pythag/pythag.html#pythfib">#pythfib</a>)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Source Attribution</strong></p></td>
+        <td><p><strong>© 1996–2025 Dr. Ron Knott, University of Surrey</strong> — <a class="reference external" href="https://r-knott.surrey.ac.uk/Pythag/pythag.html#pythfib">Explore Dr. Knott’s original exposition</a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Exact SymPy Validator</strong></p></td>
+        <td><p><a class="reference internal" href="../../../modules/api/geometor/knott/identities/index.html#geometor.knott.identities.construct_fibonacci_pythagorean_model" title="geometor.knott.identities.construct_fibonacci_pythagorean_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.knott.identities.construct_fibonacci_pythagorean_model()</span></code></a> (<cite>0</cite> <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> atoms)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>GEOMETOR Concordance</strong></p></td>
+        <td><p><a class="reference external" href="https://geometor.github.io/wildberger/">geometor/wildberger</a>, <a class="reference external" href="https://geometor.github.io/euclid/">geometor/euclid</a>, <a class="reference external" href="https://geometor.github.io/elements/">geometor/elements</a></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="constructive-synthesis-exact-proof">
+        <h2>Constructive Synthesis &amp; Exact Proof<a class="headerlink" href="#constructive-synthesis-exact-proof" title="Link to this heading">¶</a></h2>
+        <p>On <code class="docutils literal notranslate"><span class="pre">Pythag/pythag.html</span></code> (<a class="citation-ref" id="occ-cite-knottpythag-1" href="../../../bibliography.html#cite-knottpythag" data-cite="knottpythag" title="Citation: knottpythag">KnottPythag</a>), <a class="person-ref" id="occ-person-knott-2" href="../../../persons.html#person-knott" data-person="knott" title="Dr. Ron Knott (fl. 1979–2025) — Mathematician &amp; computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).">Dr. Ron Knott</a> catalogs
+        <a class="person-ref" id="occ-person-fibonacci-1" href="../../../persons.html#person-fibonacci" data-person="fibonacci" title="Leonardo Pisano (Fibonacci) (c. 1170 – c. 1240–1250) — Pisan mathematician whose Liber Abaci (1202) introduced Hindu-Arabic numerals to Europe and posed the monthly rabbit problem generating 1, 1, 2, 3, 5, 8, 13, …">Alwyn Horadam</a>’s (<a class="citation-ref" id="occ-cite-horadam1961-1" href="../../../bibliography.html#cite-horadam1961" data-cite="horadam1961" title="Citation: horadam1961">Horadam1961</a>) four-term Fibonacci generator
+        of <a class="person-ref" id="occ-person-pythagoras-1" href="../../../persons.html#person-pythagoras" data-person="pythagoras" title="Pythagoras of Samos (c. 570 – c. 495 BCE) — Founder of the Pythagorean school; associated with the pentagram badge (ὑγίεια) and right-triangle quadrance additivity.">Pythagoras</a>’s right triangles: any four consecutive positive
+        Fibonacci numbers <span class="math notranslate nohighlight">\((F_n, F_{n+1}, F_{n+2}, F_{n+3})\)</span> satisfy</p>
+        <div class="math notranslate nohighlight">
+        \[(F_n F_{n+3})^2 + (2 F_{n+1} F_{n+2})^2 = (F_{n+1}^2 + F_{n+2}^2)^2 = F_{2n+3}^2.\]</div>
+        <ul class="simple">
+        <li><p><strong>Nested Exact Right Triangles &amp; Rational Incircle</strong>: Anchored at right-angle vertex
+        <span class="geom-ref" data-ref="knott-6-1.g1:O" title="O">O</span>, <span class="math notranslate nohighlight">\(n = 1 \mapsto (1, 1, 2, 3)\)</span> constructs the classic
+        <span class="math notranslate nohighlight">\((3, 4, 5)\)</span> triangle <span class="geom-ref" data-ref="knott-6-1.g1:&lt; O A1 B1 &gt;" title="&lt; O A1 B1 &gt;">OA1B1</span> with hypotenuse
+        <span class="geom-ref" data-ref="knott-6-1.g1:/ A1 B1 /" title="/ A1 B1 /">A1B1</span> <span class="math notranslate nohighlight">\(= F_5 = 5\)</span>, while <span class="math notranslate nohighlight">\(n = 2 \mapsto (1, 2, 3, 5)\)</span>
+        constructs the <span class="math notranslate nohighlight">\((5, 12, 13)\)</span> triangle <span class="geom-ref" data-ref="knott-6-1.g1:&lt; O A2 B2 &gt;" title="&lt; O A2 B2 &gt;">OA2B2</span> on legs
+        <span class="geom-ref" data-ref="knott-6-1.g1:/ O A2 /" title="/ O A2 /">OA2</span> <span class="math notranslate nohighlight">\(= 5\)</span>, <span class="geom-ref" data-ref="knott-6-1.g1:/ O B2 /" title="/ O B2 /">OB2</span> <span class="math notranslate nohighlight">\(= 12\)</span>,
+        and hypotenuse <span class="geom-ref" data-ref="knott-6-1.g1:/ A2 B2 /" title="/ A2 B2 /">A2B2</span> <span class="math notranslate nohighlight">\(= F_7 = 13\)</span>. Its exact incircle
+        <span class="geom-ref" data-ref="knott-6-1.g1:( I2 T2 )" title="( I2 T2 )">(I2, T2)</span> centered at <span class="geom-ref" data-ref="knott-6-1.g1:I2" title="I2">I2</span> <span class="math notranslate nohighlight">\((2, 2)\)</span>
+        has integer inradius <span class="math notranslate nohighlight">\(r = F_2 F_3 = 2\)</span> and triangle area
+        <span class="math notranslate nohighlight">\(F_2 F_3 F_4 F_5 = 1 \cdot 2 \cdot 3 \cdot 5 = 30\)</span>.</p></li>
+        <li><p><strong>Divisibility Dichotomy</strong>: Because <span class="math notranslate nohighlight">\(\gcd(F_{n+1}, F_{n+2}) = 1\)</span> and <span class="math notranslate nohighlight">\(2 \mid F_k \iff 3 \mid k\)</span>,
+        the generated triple has <span class="math notranslate nohighlight">\(\gcd = 1\)</span> (primitive) whenever <span class="math notranslate nohighlight">\(3 \nmid n\)</span> and
+        <span class="math notranslate nohighlight">\(\gcd = 2\)</span> (twice a primitive triple, e.g. <span class="math notranslate nohighlight">\(n = 3 \mapsto (16, 30, 34) = 2(8, 15, 17)\)</span>)
+        whenever <span class="math notranslate nohighlight">\(3 \mid n\)</span>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="machine-verified-exact-symbolic-invariants">
+        <h2>Machine-Verified Exact Symbolic Invariants<a class="headerlink" href="#machine-verified-exact-symbolic-invariants" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 38.0%" />
+        <col style="width: 62.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Invariant</p></th>
+        <th class="head"><p>Exact Symbolic Value</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">n1</span> <span class="pre">hypotenuse</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">n1</span> <span class="pre">area</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">n2</span> <span class="pre">hypotenuse</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(13\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">n2</span> <span class="pre">area</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(30\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">n2</span> <span class="pre">inradius</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">n4</span> <span class="pre">hypotenuse</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(89\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">n4</span> <span class="pre">area</span></code></p></td>
+        <td><p><span class="math notranslate nohighlight">\(1560\)</span></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π">&larr; <span class="nav-label">KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes & π</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">Mathematical Catalog</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../02-cassini-jigsaw-paradoxes/index.html" title="KNOTT-6.2 — Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) &amp; The 64 ↔ 65 / 63 Jigsaw Dissections"><span class="nav-label">KNOTT-6.2 — Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) & The 64 ↔ 65 / 63 Jigsaw Dissections</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../types/collection.html">collection</a></li>
+        <li><a href="../../../types/item.html">item</a></li>
+        <li><a href="../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

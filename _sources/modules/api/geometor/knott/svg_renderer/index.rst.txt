@@ -1,0 +1,61 @@
+geometor.knott.svg_renderer
+===========================
+
+.. py:module:: geometor.knott.svg_renderer
+
+.. autoapi-nested-parse::
+
+   Theme-adaptive ``.euclid-graphic`` SVG serializer for ``geometor.model.Model``.
+
+   Generates canonical Digital Scriptorium ``.euclid-graphic`` SVGs with:
+
+   - Exact 3-vertex midpoint ``<path>`` segments (supporting ``#geom-tick-1..3`` equality markers);
+   - Dedicated ``#elements``, ``#graphics``, ``#highlights``, ``#points``, and ``#labels`` groups;
+   - Canonical ``data-ref`` tokens (``A``, ``/ A B /``, ``[ A B ]``, ``( A B )``, ``< A B C >``);
+   - Automatic non-colliding radial label placement around vertices.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.svg_renderer.render_euclid_svg
+   geometor.knott.svg_renderer.write_euclid_svg
+
+
+Module Contents
+---------------
+
+.. py:function:: render_euclid_svg(model: geometor.model.Model, *, folio_id: str, graphic_num: str = 'g1', target_size: float = 520.0, padding: float = 48.0, include_circles_in_bbox: bool = True, label_overrides: dict[str, tuple[float, float]] | None = None) -> str
+
+   Serialize an exact :class:`geometor.model.Model` into a ``.euclid-graphic`` SVG string.
+
+   :param model: Populated exact :class:`geometor.model.Model`.
+   :param folio_id: Canonical item slug (e.g., ``"knott-1-1"``).
+   :param graphic_num: Graphic identifier within the item (defaults to ``"g1"``).
+   :param target_size: Target pixel span of the primary geometry before padding.
+   :param padding: Outer margin in SVG units around the bounding box.
+   :param include_circles_in_bbox: Whether non-guide circles expand the viewport bounding box.
+   :param label_overrides: Optional ``{point_ID: (dx_px, dy_px)}`` manual label offsets.
+
+   :returns: Complete UTF-8 SVG document string.
+
+
+.. py:function:: write_euclid_svg(model: geometor.model.Model, output_path: pathlib.Path, *, folio_id: str, graphic_num: str = 'g1', target_size: float = 520.0, padding: float = 48.0, include_circles_in_bbox: bool = True, label_overrides: dict[str, tuple[float, float]] | None = None) -> pathlib.Path
+
+   Render and write an exact ``.euclid-graphic`` SVG file to ``output_path``.
+
+   :param model: Populated exact :class:`geometor.model.Model`.
+   :param output_path: Destination ``.svg`` filesystem path.
+   :param folio_id: Canonical item slug (e.g., ``"knott-1-1"``).
+   :param graphic_num: Graphic identifier within the item (defaults to ``"g1"``).
+   :param target_size: Target pixel span of the primary geometry before padding.
+   :param padding: Outer margin in SVG units around the bounding box.
+   :param include_circles_in_bbox: Whether non-guide circles expand the viewport bounding box.
+   :param label_overrides: Optional ``{point_ID: (dx_px, dy_px)}`` manual label offsets.
+
+   :returns: Resolved ``output_path``.
+
+

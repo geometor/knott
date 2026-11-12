@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.knott.solid_geometry &mdash; Modules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../../../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../../../../../catalog/index.html"  >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="module-geometor.knott.solid_geometry">
+        <span id="geometor-knott-solid-geometry"></span><h1>geometor.knott.solid_geometry<a class="headerlink" href="#module-geometor.knott.solid_geometry" title="Link to this heading">¶</a></h1>
+        <p>Collection 3: 3D Golden Geometry of Solids (<cite>KNOTT-3.1</cite> through <cite>KNOTT-3.3</cite>).</p>
+        <p>Catalogs the exact 3D algebraic coordinates, edge lengths, dihedral spreads,
+        volumes, 5-cube compounds, and acute/obtuse golden quasicrystal rhombohedra curated
+        by Dr. Ron Knott on <code class="docutils literal notranslate"><span class="pre">phi3DGeom.html</span></code>, paired with exact rational axonometric
+        2D projections into <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code>.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.Point3D" title="geometor.knott.solid_geometry.Point3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Point3D</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.project_3d_to_2d" title="geometor.knott.solid_geometry.project_3d_to_2d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">project_3d_to_2d</span></code></a>(pt3) → tuple[sympy.Expr, sympy.Expr]</p></td>
+        <td><p>Project an exact 3D point <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">z)</span></code> to 2D via an injective rational cabinet matrix.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.quadrance_3d" title="geometor.knott.solid_geometry.quadrance_3d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quadrance_3d</span></code></a>(a, b) → sympy.Expr</p></td>
+        <td><p>Compute exact 3D Euclidean quadrance <span class="math notranslate nohighlight">\((x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.icosahedron_vertices_3d" title="geometor.knott.solid_geometry.icosahedron_vertices_3d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">icosahedron_vertices_3d</span></code></a>() → dict[str, Point3D]</p></td>
+        <td><p>Return the 12 exact vertices of the regular icosahedron spanned by 3 golden rectangles.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.dodecahedron_vertices_3d" title="geometor.knott.solid_geometry.dodecahedron_vertices_3d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dodecahedron_vertices_3d</span></code></a>() → dict[str, Point3D]</p></td>
+        <td><p>Return the 20 exact vertices of the regular dodecahedron of edge <span class="math notranslate nohighlight">\(2\phi\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.construct_orthogonal_golden_rectangles_solids" title="geometor.knott.solid_geometry.construct_orthogonal_golden_rectangles_solids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_orthogonal_golden_rectangles_solids</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-3.1</cite>: Three orthogonal golden rectangles &amp; regular icosahedron/dodecahedron.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.find_five_cubes_in_dodecahedron" title="geometor.knott.solid_geometry.find_five_cubes_in_dodecahedron"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_five_cubes_in_dodecahedron</span></code></a>() → list[tuple[str, ...]]</p></td>
+        <td><p>Discover all 5 inscribed cubes of edge <code class="docutils literal notranslate"><span class="pre">2</span></code> among the 20 dodecahedron vertices.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.construct_cube_in_dodecahedron_model" title="geometor.knott.solid_geometry.construct_cube_in_dodecahedron_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_cube_in_dodecahedron_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-3.2</cite>: Inscribed cube &amp; compound of five cubes in a dodecahedron.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.knott.solid_geometry.construct_golden_rhombohedra_model" title="geometor.knott.solid_geometry.construct_golden_rhombohedra_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_golden_rhombohedra_model</span></code></a>() → geometor.knott.flat_geometry.GeometricCatalogResult</p></td>
+        <td><p>Construct <cite>KNOTT-3.3</cite>: Acute &amp; obtuse golden rhombohedra (3D quasicrystal tiles).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.Point3D">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">Point3D</span></span><a class="headerlink" href="#geometor.knott.solid_geometry.Point3D" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.project_3d_to_2d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">project_3d_to_2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pt3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.knott.solid_geometry.Point3D" title="geometor.knott.solid_geometry.Point3D"><span class="pre">Point3D</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.project_3d_to_2d" title="Link to this definition">¶</a></dt>
+        <dd><p>Project an exact 3D point <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">z)</span></code> to 2D via an injective rational cabinet matrix.</p>
+        <p>Uses exact rational coefficients <span class="math notranslate nohighlight">\((X, Y) = (x - \frac{2}{5} y,\; z - \frac{1}{4} y + \frac{1}{7} x)\)</span>
+        so no floating-point approximations enter <code class="xref py py-class docutils literal notranslate"><span class="pre">geometor.model.Model</span></code> and symmetric
+        polyhedral vertices remain distinct in the plane.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>pt3</strong> – Exact 3D coordinate triple <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">z)</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact 2D coordinate pair <code class="docutils literal notranslate"><span class="pre">(X,</span> <span class="pre">Y)</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.quadrance_3d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">quadrance_3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.knott.solid_geometry.Point3D" title="geometor.knott.solid_geometry.Point3D"><span class="pre">Point3D</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.knott.solid_geometry.Point3D" title="geometor.knott.solid_geometry.Point3D"><span class="pre">Point3D</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.quadrance_3d" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact 3D Euclidean quadrance <span class="math notranslate nohighlight">\((x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>a</strong> – First 3D point.</p></li>
+        <li><p><strong>b</strong> – Second 3D point.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic squared distance in 3D.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.icosahedron_vertices_3d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">icosahedron_vertices_3d</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.knott.solid_geometry.Point3D" title="geometor.knott.solid_geometry.Point3D"><span class="pre">Point3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.icosahedron_vertices_3d" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the 12 exact vertices of the regular icosahedron spanned by 3 golden rectangles.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Ordered mapping of vertex IDs (<code class="docutils literal notranslate"><span class="pre">X1..X4</span></code>, <code class="docutils literal notranslate"><span class="pre">Y1..Y4</span></code>, <code class="docutils literal notranslate"><span class="pre">Z1..Z4</span></code>) to 3D points.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.dodecahedron_vertices_3d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">dodecahedron_vertices_3d</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.knott.solid_geometry.Point3D" title="geometor.knott.solid_geometry.Point3D"><span class="pre">Point3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.dodecahedron_vertices_3d" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the 20 exact vertices of the regular dodecahedron of edge <span class="math notranslate nohighlight">\(2\phi\)</span>.</p>
+        <p>Combines the 8 cube vertices <span class="math notranslate nohighlight">\((\pm 1, \pm 1, \pm 1)\)</span> (<code class="docutils literal notranslate"><span class="pre">C1..C8</span></code>) with the
+        12 cyclic permutations of <span class="math notranslate nohighlight">\((0, \pm\phi, \pm\Phi)\)</span> (<code class="docutils literal notranslate"><span class="pre">D1..D12</span></code>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Ordered mapping of 20 vertex IDs to exact 3D coordinate triples.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.construct_orthogonal_golden_rectangles_solids">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_orthogonal_golden_rectangles_solids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.construct_orthogonal_golden_rectangles_solids" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-3.1</cite>: Three orthogonal golden rectangles &amp; regular icosahedron/dodecahedron.</p>
+        <p>Verifies in 3D that:</p>
+        <ul class="simple">
+        <li><p>The 12 corners of three mutually perpendicular <span class="math notranslate nohighlight">\(2 \times 2\Phi\)</span> golden
+        rectangles form a regular icosahedron with 30 edges of length <code class="docutils literal notranslate"><span class="pre">2</span></code>, 20 equilateral
+        faces, exact volume <span class="math notranslate nohighlight">\(20\Phi^2 / 3\)</span>, and rational dihedral spread <span class="math notranslate nohighlight">\(4/9\)</span>;</p></li>
+        <li><p>The 20 vertices <span class="math notranslate nohighlight">\((\pm 1, \pm 1, \pm 1) \cup \operatorname{cyc}(0, \pm\phi, \pm\Phi)\)</span>
+        form a regular dodecahedron with 30 edges of length <span class="math notranslate nohighlight">\(2\phi\)</span>, exact volume
+        <span class="math notranslate nohighlight">\(8 + 4\Phi\)</span>, and rational dihedral spread <span class="math notranslate nohighlight">\(4/5\)</span>.</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-3.1</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.find_five_cubes_in_dodecahedron">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">find_five_cubes_in_dodecahedron</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.find_five_cubes_in_dodecahedron" title="Link to this definition">¶</a></dt>
+        <dd><p>Discover all 5 inscribed cubes of edge <code class="docutils literal notranslate"><span class="pre">2</span></code> among the 20 dodecahedron vertices.</p>
+        <p>Each cube is an 8-element subset of <a class="reference internal" href="#geometor.knott.solid_geometry.dodecahedron_vertices_3d" title="geometor.knott.solid_geometry.dodecahedron_vertices_3d"><code class="xref py py-func docutils literal notranslate"><span class="pre">dodecahedron_vertices_3d()</span></code></a> in which
+        every vertex has 3 orthogonal neighbors at exact 3D quadrance <code class="docutils literal notranslate"><span class="pre">4</span></code> (face diagonal
+        of a regular pentagon of side <span class="math notranslate nohighlight">\(2\phi\)</span>, since <span class="math notranslate nohighlight">\(\Phi \cdot 2\phi = 2\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Sorted list of 5 8-tuples of vertex IDs partitioning the 60 face diagonals.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.construct_cube_in_dodecahedron_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_cube_in_dodecahedron_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.construct_cube_in_dodecahedron_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-3.2</cite>: Inscribed cube &amp; compound of five cubes in a dodecahedron.</p>
+        <p>Constructs the 20-vertex regular dodecahedron of edge <span class="math notranslate nohighlight">\(2\phi\)</span>, highlights
+        primary inscribed cube <code class="docutils literal notranslate"><span class="pre">C1..C8</span></code> of edge <code class="docutils literal notranslate"><span class="pre">2</span></code> (whose 12 edges are one face
+        diagonal on each of the 12 pentagonal faces), and verifies all 5 inscribed cubes
+        partition the 60 face diagonals with every dodecahedron vertex shared by 2 cubes.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-3.2</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.knott.solid_geometry.construct_golden_rhombohedra_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.knott.solid_geometry.</span></span><span class="sig-name descname"><span class="pre">construct_golden_rhombohedra_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../flat_geometry/index.html#geometor.knott.flat_geometry.GeometricCatalogResult" title="geometor.knott.flat_geometry.GeometricCatalogResult"><span class="pre">geometor.knott.flat_geometry.GeometricCatalogResult</span></a></span></span><a class="headerlink" href="#geometor.knott.solid_geometry.construct_golden_rhombohedra_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct <cite>KNOTT-3.3</cite>: Acute &amp; obtuse golden rhombohedra (3D quasicrystal tiles).</p>
+        <p>Spans the acute (prolate) golden rhombohedron from icosahedral vectors
+        <span class="math notranslate nohighlight">\(u_1=(0,1,\Phi), u_2=(1,\Phi,0), u_3=(\Phi,0,1)\)</span> and the obtuse (oblate)
+        golden rhombohedron from <span class="math notranslate nohighlight">\(v_1=(0,1,\Phi), v_2=(1,-\Phi,0), v_3=(-\Phi,0,-1)\)</span>
+        (translated alongside for visual comparison). Every rhombic face has exact
+        diagonals <span class="math notranslate nohighlight">\(2\Phi\)</span> and <code class="docutils literal notranslate"><span class="pre">2</span></code> (ratio <span class="math notranslate nohighlight">\(\Phi : 1\)</span>), exact volumes
+        <span class="math notranslate nohighlight">\(V_{\text{acute}} = 2\Phi^2\)</span> and <span class="math notranslate nohighlight">\(V_{\text{obtuse}} = 2\Phi\)</span>
+        (ratio <span class="math notranslate nohighlight">\(\Phi : 1\)</span>), and 10 of each assemble the rhombic triacontahedron
+        of volume <span class="math notranslate nohighlight">\(20\Phi^3\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricCatalogResult</span></code> for <code class="docutils literal notranslate"><span class="pre">KNOTT-3.3</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/item.html">item</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

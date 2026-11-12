@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNOTT-3 — 3D Golden Geometry of Solids &mdash; Mathematical Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+        <li>
+          <a href="../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Mathematical Catalog</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../02-exact-trigonometry/02-three-degree-constructible-lattice/index.html" title="KNOTT-2.2 — The Complete 3° Constructible Angle Lattice (3°k for k = 1..29)">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="01-orthogonal-golden-rectangles-solids/index.html" title="KNOTT-3.1 — Three Orthogonal Golden Rectangles → Regular Icosahedron &amp; Dodecahedron"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="knott-3-3d-golden-geometry-of-solids">
+        <span id="collection-03-solid-geometry"></span><h1>KNOTT-3 — 3D Golden Geometry of Solids<a class="headerlink" href="#knott-3-3d-golden-geometry-of-solids" title="Link to this heading">¶</a></h1>
+        <div class="enunciation">Three-dimensional golden coordinates spanning the regular icosahedron and dodecahedron from three mutually orthogonal golden rectangles, Euclid XIII.17’s inscribed cube and five-cube compound, and the acute and obtuse golden rhombohedra of icosahedral quasicrystals.</div>
+        <p>Curated from <a class="person-ref" id="occ-person-knott-1" href="../../persons.html#person-knott" data-person="knott" title="Dr. Ron Knott (fl. 1979–2025) — Mathematician &amp; computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).">Dr. Ron Knott</a>’s University of Surrey archive (<strong>© 1996–2025 Dr. Ron Knott, University of Surrey</strong>).</p>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="01-orthogonal-golden-rectangles-solids/index.html" aria-label="KNOTT-3.1 — Three Orthogonal Golden Rectangles → Regular Icosahedron & Dodecahedron">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-277.27 -308.00 554.53 616.00" width="554.5" height="616.0" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-3-1.g1" data-folio="knott-3-1" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-277.27" y="-308.00" width="554.53" height="616.00" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-3-1-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="49.10,36.42 -229.27,76.18 -49.10,-36.42 229.27,-76.18" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="225.20,-171.36 225.20,107.01 -225.20,171.36 -225.20,-107.01" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="-55.67,-190.41 55.67,-260.00 55.67,190.41 -55.67,260.00" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -55.67 -190.41 L 0.00 -225.20 L 55.67 -260.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 -190.41 L 84.77 -180.88 L 225.20 -171.36" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 -190.41 L -140.44 -148.71 L -225.20 -107.01" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 -190.41 L -3.29 -77.00 L 49.10 36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 -190.41 L -142.47 -57.11 L -229.27 76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 -260.00 L 140.44 -215.68 L 225.20 -171.36" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 -260.00 L -84.77 -183.51 L -225.20 -107.01" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 -260.00 L 3.29 -148.21 L -49.10 -36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 -260.00 L 142.47 -168.09 L 229.27 -76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 55.67 190.41 L 0.00 225.20 L -55.67 260.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 190.41 L 140.44 148.71 L 225.20 107.01" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 190.41 L -84.77 180.88 L -225.20 171.36" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 190.41 L 3.29 77.00 L -49.10 -36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 55.67 190.41 L 142.47 57.11 L 229.27 -76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 260.00 L 84.77 183.51 L 225.20 107.01" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 260.00 L -140.44 215.68 L -225.20 171.36" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 260.00 L -3.29 148.21 L 49.10 36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -55.67 260.00 L -142.47 168.09 L -229.27 76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 225.20 -171.36 L 225.20 -32.17 L 225.20 107.01" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 225.20 -171.36 L 137.15 -67.47 L 49.10 36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 225.20 -171.36 L 227.23 -123.77 L 229.27 -76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 225.20 107.01 L 137.15 71.71 L 49.10 36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 225.20 107.01 L 227.23 15.41 L 229.27 -76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -225.20 171.36 L -225.20 32.17 L -225.20 -107.01" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -225.20 171.36 L -227.23 123.77 L -229.27 76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -225.20 171.36 L -137.15 67.47 L -49.10 -36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -225.20 -107.01 L -227.23 -15.41 L -229.27 76.18" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -225.20 -107.01 L -137.15 -71.71 L -49.10 -36.42" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 49.10 36.42 L -90.08 56.30 L -229.27 76.18" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -49.10 -36.42 L 90.08 -56.30 L 229.27 -76.18" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-55.67" cy="-190.41" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="55.67" cy="-260.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="55.67" cy="190.41" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-55.67" cy="260.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="225.20" cy="-171.36" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="225.20" cy="107.01" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-225.20" cy="171.36" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-225.20" cy="-107.01" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="49.10" cy="36.42" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-229.27" cy="76.18" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-49.10" cy="-36.42" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="229.27" cy="-76.18" r="4.2" class="geom-point" />
+          </g>
+          <g>
+            <text x="-64.67" y="-206.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">X1</text>
+            <text x="55.67" y="-278.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">X2</text>
+            <text x="64.67" y="206.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">X3</text>
+            <text x="-55.67" y="278.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">X4</text>
+            <text x="240.79" y="-180.36" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Y1</text>
+            <text x="240.79" y="116.01" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Y2</text>
+            <text x="-240.79" y="180.36" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Y3</text>
+            <text x="-240.79" y="-116.01" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Y4</text>
+            <text x="58.10" y="52.01" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Z1</text>
+            <text x="-247.27" y="76.18" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Z2</text>
+            <text x="-58.10" y="-52.01" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Z3</text>
+            <text x="247.27" y="-76.18" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Z4</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="01-orthogonal-golden-rectangles-solids/index.html">KNOTT-3.1 — Three Orthogonal Golden Rectangles → Regular Icosahedron & Dodecahedron</a></h2>
+                      <div class="enunciation">Three mutually perpendicular 2 × 2Φ golden rectangles have 12 corners (0, ±1, ±Φ) forming a regular icosahedron of edge 2, volume 20Φ²/3, and rational dihedral spread 4/9, while (±1, ±1, ±1) ∪ cyc(0, ±φ, ±Φ) forms a regular dodecahedron of edge 2φ, volume 8 + 4Φ, and dihedral spread 4/5.</div>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="02-five-cubes-in-dodecahedron/index.html" aria-label="KNOTT-3.2 — Inscribed Cube & Compound of Five Cubes in a Dodecahedron">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-285.34 -308.00 570.67 616.00" width="570.7" height="616.0" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-3-2.g1" data-folio="knott-3-2" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-285.34" y="-308.00" width="570.67" height="616.00" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-3-2-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="88.01,-130.97 205.35,-204.31 -88.01,-162.40 -205.35,-89.06" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.01 -130.97 L 25.87 -172.82 L -36.26 -214.67" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.01 -130.97 L 162.67 -127.76 L 237.34 -124.56" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.01 -130.97 L 41.86 -42.29 L -4.28 46.38" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 205.35 -204.31 L 120.81 -232.15 L 36.26 -260.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 205.35 -204.31 L 221.35 -164.43 L 237.34 -124.56" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 205.35 -204.31 L 195.47 -138.30 L 185.59 -72.28" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -88.01 -162.40 L -25.87 -211.20 L 36.26 -260.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -88.01 -162.40 L -162.67 -109.57 L -237.34 -56.75" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -88.01 -162.40 L -41.86 -104.39 L 4.28 -46.38" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -205.35 -89.06 L -120.81 -151.86 L -36.26 -214.67" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -205.35 -89.06 L -221.35 -72.90 L -237.34 -56.75" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -205.35 -89.06 L -195.47 -8.39 L -185.59 72.28" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.01 162.40 L 25.87 211.20 L -36.26 260.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.01 162.40 L 162.67 109.57 L 237.34 56.75" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 88.01 162.40 L 41.86 104.39 L -4.28 46.38" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 205.35 89.06 L 120.81 151.86 L 36.26 214.67" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 205.35 89.06 L 221.35 72.90 L 237.34 56.75" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 205.35 89.06 L 195.47 8.39 L 185.59 -72.28" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -88.01 130.97 L -25.87 172.82 L 36.26 214.67" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -88.01 130.97 L -162.67 127.76 L -237.34 124.56" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -88.01 130.97 L -41.86 42.29 L 4.28 -46.38" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -205.35 204.31 L -120.81 232.15 L -36.26 260.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -205.35 204.31 L -221.35 164.43 L -237.34 124.56" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -205.35 204.31 L -195.47 138.30 L -185.59 72.28" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -36.26 -214.67 L 0.00 -237.34 L 36.26 -260.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 36.26 214.67 L 0.00 237.34 L -36.26 260.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 237.34 -124.56 L 237.34 -33.91 L 237.34 56.75" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -237.34 124.56 L -237.34 33.91 L -237.34 -56.75" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M -4.28 46.38 L -94.93 59.33 L -185.59 72.28" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 4.28 -46.38 L 94.93 -59.33 L 185.59 -72.28" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 88.01 -130.97 L 146.68 -167.64 L 205.35 -204.31" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 88.01 -130.97 L -58.67 -110.01 L -205.35 -89.06" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 88.01 -130.97 L 88.01 15.72 L 88.01 162.40" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 205.35 -204.31 L 58.67 -183.35 L -88.01 -162.40" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 205.35 -204.31 L 205.35 -57.63 L 205.35 89.06" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -88.01 -162.40 L -146.68 -125.73 L -205.35 -89.06" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -88.01 -162.40 L -88.01 -15.72 L -88.01 130.97" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -205.35 -89.06 L -205.35 57.63 L -205.35 204.31" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 88.01 162.40 L 146.68 125.73 L 205.35 89.06" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 88.01 162.40 L -58.67 183.35 L -205.35 204.31" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 205.35 89.06 L 58.67 110.01 L -88.01 130.97" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -88.01 130.97 L -146.68 167.64 L -205.35 204.31" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="88.01" cy="-130.97" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="205.35" cy="-204.31" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-88.01" cy="-162.40" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-205.35" cy="-89.06" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="88.01" cy="162.40" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="205.35" cy="89.06" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-88.01" cy="130.97" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-205.35" cy="204.31" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-36.26" cy="-214.67" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="36.26" cy="-260.00" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="36.26" cy="214.67" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-36.26" cy="260.00" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="237.34" cy="-124.56" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="237.34" cy="56.75" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-237.34" cy="124.56" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-237.34" cy="-56.75" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-4.28" cy="46.38" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-185.59" cy="72.28" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="4.28" cy="-46.38" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="185.59" cy="-72.28" r="3.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="88.01" y="-148.97" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C1</text>
+            <text x="218.08" y="-217.03" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C2</text>
+            <text x="-97.01" y="-177.99" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C3</text>
+            <text x="-218.08" y="-101.78" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C4</text>
+            <text x="97.01" y="177.99" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C5</text>
+            <text x="218.08" y="101.78" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C6</text>
+            <text x="-88.01" y="148.97" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C7</text>
+            <text x="-218.08" y="217.03" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">C8</text>
+            <text x="-45.26" y="-230.26" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D1</text>
+            <text x="36.26" y="-278.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D2</text>
+            <text x="45.26" y="230.26" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D3</text>
+            <text x="-36.26" y="278.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D4</text>
+            <text x="254.72" y="-129.22" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D5</text>
+            <text x="254.72" y="61.41" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D6</text>
+            <text x="-254.72" y="129.22" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D7</text>
+            <text x="-254.72" y="-61.41" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D8</text>
+            <text x="-8.94" y="63.77" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D9</text>
+            <text x="-203.59" y="72.28" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D10</text>
+            <text x="8.94" y="-63.77" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D11</text>
+            <text x="203.59" y="-72.28" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">D12</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="02-five-cubes-in-dodecahedron/index.html">KNOTT-3.2 — Inscribed Cube & Compound of Five Cubes in a Dodecahedron</a></h2>
+                      <div class="enunciation">Inside a regular dodecahedron of edge 2φ, the 60 face diagonals of length 2 = Φ · (2φ) partition into five congruent inscribed cubes of edge 2 and volume 8, with each of the 20 dodecahedral vertices belonging to exactly two cubes.</div>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="03-golden-rhombohedra-quasicrystals/index.html" aria-label="KNOTT-3.3 — Acute & Obtuse Golden Rhombohedra (3D Quasicrystal / Ammann Tiles)">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-77.52 -242.04 616.00 328.18" width="616.0" height="328.2" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-3-3.g1" data-folio="knott-3-3" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-77.52" y="-242.04" width="616.00" height="328.18" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-3-3-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="368.94,-52.71 339.42,-153.65 460.97,-194.04 490.48,-93.09" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 -29.52,-100.94 -3.48,-81.64 26.03,19.31" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L -14.76 -50.47 L -29.52 -100.94" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 13.02 9.65 L 26.03 19.31" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 59.70 -45.42 L 119.39 -90.84" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -29.52 -100.94 L -16.50 -91.29 L -3.48 -81.64" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -29.52 -100.94 L 30.18 -146.37 L 89.88 -191.79" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 26.03 19.31 L 11.27 -31.17 L -3.48 -81.64" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 26.03 19.31 L 85.73 -26.12 L 145.42 -71.54" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 119.39 -90.84 L 104.63 -141.32 L 89.88 -191.79" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 119.39 -90.84 L 132.41 -81.19 L 145.42 -71.54" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -3.48 -81.64 L 56.21 -127.06 L 115.91 -172.48" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 89.88 -191.79 L 102.89 -182.14 L 115.91 -172.48" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 145.42 -71.54 L 130.67 -122.01 L 115.91 -172.48" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 368.94 -52.71 L 354.18 -103.18 L 339.42 -153.65" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 368.94 -52.71 L 429.71 -72.90 L 490.48 -93.09" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 368.94 -52.71 L 309.24 -7.28 L 249.55 38.14" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 339.42 -153.65 L 400.20 -173.84 L 460.97 -194.04" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 339.42 -153.65 L 279.73 -108.23 L 220.03 -62.81" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 490.48 -93.09 L 475.73 -143.57 L 460.97 -194.04" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 490.48 -93.09 L 430.79 -47.67 L 371.09 -2.25" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 249.55 38.14 L 234.79 -12.33 L 220.03 -62.81" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 249.55 38.14 L 310.32 17.94 L 371.09 -2.25" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 460.97 -194.04 L 401.27 -148.62 L 341.58 -103.20" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 220.03 -62.81 L 280.81 -83.00 L 341.58 -103.20" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 371.09 -2.25 L 356.34 -52.72 L 341.58 -103.20" class="geom-line geom-segment" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-29.52" cy="-100.94" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="26.03" cy="19.31" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="119.39" cy="-90.84" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-3.48" cy="-81.64" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="89.88" cy="-191.79" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="145.42" cy="-71.54" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="115.91" cy="-172.48" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="368.94" cy="-52.71" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="339.42" cy="-153.65" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="490.48" cy="-93.09" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="249.55" cy="38.14" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="460.97" cy="-194.04" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="220.03" cy="-62.81" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="371.09" cy="-2.25" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="341.58" cy="-103.20" r="3.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="-15.59" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A0</text>
+            <text x="-46.90" y="-105.60" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A1</text>
+            <text x="26.03" y="37.31" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A2</text>
+            <text x="102.00" y="-95.50" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A3</text>
+            <text x="-19.07" y="-72.64" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A4</text>
+            <text x="89.88" y="-209.79" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A5</text>
+            <text x="162.81" y="-66.88" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A6</text>
+            <text x="131.50" y="-181.48" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A7</text>
+            <text x="377.94" y="-37.12" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B0</text>
+            <text x="330.42" y="-169.24" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B1</text>
+            <text x="507.87" y="-88.44" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B2</text>
+            <text x="240.55" y="53.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B3</text>
+            <text x="469.97" y="-209.63" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B4</text>
+            <text x="202.65" y="-67.47" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B5</text>
+            <text x="380.09" y="13.34" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B6</text>
+            <text x="358.96" y="-98.54" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B7</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="03-golden-rhombohedra-quasicrystals/index.html">KNOTT-3.3 — Acute & Obtuse Golden Rhombohedra (3D Quasicrystal / Ammann Tiles)</a></h2>
+                      <div class="enunciation">Triples of five-fold icosahedral vectors of quadrance Φ + 2 span acute (prolate) and obtuse (oblate) golden rhombohedra bounded by six congruent golden rhombi of diagonal ratio Φ : 1, with exact volumes 2Φ² and 2Φ in ratio Φ : 1 and 10 + 10 assembly into a rhombic triacontahedron of volume 20Φ³.</div>
+                  </section>
+                </div>
+              </article>
+            </section><section class="level-2" id="collection-concordance">
+        <h2>Collection Concordance<a class="headerlink" href="#collection-concordance" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 16.0%" />
+        <col style="width: 48.0%" />
+        <col style="width: 36.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Catalog ID</p></th>
+        <th class="head"><p>GEOMETOR Catalog Entry</p></th>
+        <th class="head"><p>Curated Source Anchor</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-orthogonal-golden-rectangles-solids/index.html#knott-3-1" title="KNOTT-3.1: Three mutually perpendicular 2 × 2Φ golden rectangles have 12 corners (0, ±1, ±Φ) forming a regular icosahedron of edge 2, volume 20Φ²/3, and rational dihedral spread 4/9, while…"><span class="std std-ref">KNOTT-3.1</span></a></p></td>
+        <td><p>Three Orthogonal Golden Rectangles → Regular Icosahedron &amp; Dodecahedron</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/phi3DGeom.html#coords">The Golden Geometry of Solids or Phi in 3 Dimensions (#coords)</a></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="02-five-cubes-in-dodecahedron/index.html#knott-3-2" title="KNOTT-3.2: Inside a regular dodecahedron of edge 2φ, the 60 face diagonals of length 2 = Φ · (2φ) partition into five congruent inscribed cubes of edge 2 and volume 8, with each of the 20…"><span class="std std-ref">KNOTT-3.2</span></a></p></td>
+        <td><p>Inscribed Cube &amp; Compound of Five Cubes in a Dodecahedron</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/phi3DGeom.html#cubeinDod">The Golden Geometry of Solids or Phi in 3 Dimensions (#cubeinDod)</a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="03-golden-rhombohedra-quasicrystals/index.html#knott-3-3" title="KNOTT-3.3: Triples of five-fold icosahedral vectors of quadrance Φ + 2 span acute (prolate) and obtuse (oblate) golden rhombohedra bounded by six congruent golden rhombi of diagonal ratio Φ…"><span class="std std-ref">KNOTT-3.3</span></a></p></td>
+        <td><p>Acute &amp; Obtuse Golden Rhombohedra (3D Quasicrystal / Ammann Tiles)</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/phi3DGeom.html#quasicrystalsPhi">The Golden Geometry of Solids or Phi in 3 Dimensions (#quasicrystalsPhi)</a></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../02-exact-trigonometry/02-three-degree-constructible-lattice/index.html" title="KNOTT-2.2 — The Complete 3° Constructible Angle Lattice (3°k for k = 1..29)">&larr; <span class="nav-label">KNOTT-2.2 — The Complete 3° Constructible Angle Lattice (3°k for k = 1..29)</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Mathematical Catalog</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="01-orthogonal-golden-rectangles-solids/index.html" title="KNOTT-3.1 — Three Orthogonal Golden Rectangles → Regular Icosahedron &amp; Dodecahedron"><span class="nav-label">KNOTT-3.1 — Three Orthogonal Golden Rectangles → Regular Icosahedron & Dodecahedron</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/collection.html">collection</a></li>
+        <li><a href="../../types/item.html">item</a></li>
+        <li><a href="../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../log/index.html"  >Log</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

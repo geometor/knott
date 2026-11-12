@@ -1,0 +1,214 @@
+geometor.knott.phigits
+======================
+
+.. py:module:: geometor.knott.phigits
+
+.. autoapi-nested-parse::
+
+   Collection 4: Algebraic Powers of :math:`\Phi`, Continued Fractions & Base-:math:`\Phi` "Phigits" (`KNOTT-4.1` – `KNOTT-4.3`).
+
+   Catalogs Fibonacci power linearizations, Donald Seitz's Phibonacci brick, extremal
+   continued fraction convergents :math:`F_{n+1}/F_n`, Hurwitz's :math:`\sqrt{5}` bound,
+   and George Bergman's (1957) base-:math:`\Phi` ("phigit") numeral system curated by
+   Dr. Ron Knott on ``propsOfPhi.html``, ``phigits.html``, and ``cfINTRO.html``.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.knott.phigits.ConvergentEntry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.phigits.phi_power_linearization
+   geometor.knott.phigits.phibonacci_brick_invariants
+   geometor.knott.phigits.construct_phi_powers_model
+   geometor.knott.phigits.phi_continued_fraction_convergents
+   geometor.knott.phigits.construct_convergents_model
+   geometor.knott.phigits.to_phigits_exponents
+   geometor.knott.phigits.to_phigits
+   geometor.knott.phigits.from_phigits
+   geometor.knott.phigits.all_phigit_forms
+   geometor.knott.phigits.to_maximal_phigits
+   geometor.knott.phigits.construct_phigit_scale_model
+
+
+Module Contents
+---------------
+
+.. py:class:: ConvergentEntry
+
+   Exact rational Fibonacci convergent to :math:`\Phi = [1; 1, 1, \dots]`.
+
+
+   .. py:attribute:: index
+      :type:  int
+
+
+   .. py:attribute:: numerator
+      :type:  int
+
+
+   .. py:attribute:: denominator
+      :type:  int
+
+
+   .. py:attribute:: value
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: signed_error
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: hurwitz_scaled_error
+      :type:  sympy.Expr
+
+
+.. py:function:: phi_power_linearization(n: int) -> tuple[sympy.Expr, sympy.Expr]
+
+   Verify :math:`\Phi^n = F_n \Phi + F_{n-1}` and :math:`(-\phi)^n = F_{n+1} - F_n \Phi`.
+
+   :param n: Any positive, zero, or negative integer exponent.
+
+   :returns: Tuple ``(F_n * PHI + F_{n-1}, F_{n+1} - F_n * PHI)`` verified equal to
+             :math:`(\Phi^n, (-\phi)^n)`.
+
+
+.. py:function:: phibonacci_brick_invariants() -> dict[str, sympy.Expr]
+
+   Verify Donald Seitz's :math:`(1, \phi, \Phi)` Phibonacci brick invariants.
+
+   Cataloged on ``propsOfPhi.html#phiBrick``: a rectangular box of edges
+   :math:`(1, \phi, \Phi)` has unit volume ``1``, surface area :math:`4\Phi`,
+   and rational space diagonal ``2`` (quadrance ``4``).
+
+   :returns: Dictionary of verified exact brick invariants.
+
+
+.. py:function:: construct_phi_powers_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-4.1`: Geometric area linearization of :math:`\Phi^2 = \Phi + 1` and :math:`(\phi + \phi^2)^2 = 1`.
+
+   Partitions the :math:`\Phi \times \Phi` square ``AEFD`` along ``x = 1`` and ``y = 1``
+   into unit square ``ABCD`` (area ``1``), two golden gnomons ``BEGC`` and ``DCJH``
+   (each area :math:`\phi`), and corner square ``CGFJ`` (area :math:`\phi^2`), proving
+   :math:`\Phi^2 = 1 + 2\phi + \phi^2 = 1 + \phi + 1 = \Phi + 1`, while simultaneously
+   verifying :math:`\Phi^n = F_n \Phi + F_{n-1}` for :math:`n \in [-6, 8]` and the
+   Phibonacci brick invariants.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-4.1``.
+
+
+.. py:function:: phi_continued_fraction_convergents(count: int = 8) -> list[ConvergentEntry]
+
+   Generate exact Fibonacci convergents :math:`c_k = F_{k+1} / F_k` to :math:`\Phi = [1; 1, 1, \dots]`.
+
+   Verifies for each :math:`k = 1\dots \text{count}` that
+   :math:`F_{k+1}/F_k - \Phi = (-\phi)^k / F_k` and
+   :math:`F_k \phi^k = (1 - (-1)^k \phi^{2k}) / \sqrt{5}`.
+
+   :param count: Number of convergents to generate (:math:`\ge 1`).
+
+   :returns: List of verified :class:`ConvergentEntry` records.
+
+
+.. py:function:: construct_convergents_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-4.2`: Fibonacci convergent lattice points straddling ray :math:`y = \Phi x`.
+
+   Plots origin ``O`` and the exact golden slope ray ``[O P]`` (:math:`P = (5, 5\Phi)`)
+   alongside Fibonacci lattice points ``C1(1,1)``, ``C2(1,2)``, ``C3(2,3)``, ``C4(3,5)``,
+   and ``C5(5,8)``. Consecutive convergent triangles ``O C_k C_{k+1}`` have exact unit
+   cassini area :math:`1/2` (parallelogram area ``1``) and alternate strictly below/above
+   the golden ray.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-4.2``.
+
+
+.. py:function:: to_phigits_exponents(a: int, b: int = 0) -> frozenset[int]
+
+   Compute the unique canonical (minimal, ``11``-free) base-:math:`\Phi` exponents of :math:`a + b\Phi > 0`.
+
+   Executes Bergman's greedy algorithm purely inside :math:`\mathbb{Z}[\Phi]` using
+   :math:`\Phi^k = F_{k-1} + F_k \Phi` and exact integer quadratic comparisons.
+
+   :param a: Integer constant part of :math:`a + b\Phi`.
+   :param b: Integer :math:`\Phi`-coefficient of :math:`a + b\Phi`.
+
+   :returns: Frozenset of integer exponents :math:`k` whose canonical digit is ``1``.
+
+   :raises ValueError: If :math:`a + b\Phi < 0`.
+
+
+.. py:function:: to_phigits(n: int) -> str
+
+   Encode non-negative integer ``n`` into its unique minimal base-:math:`\Phi` string.
+
+   .. rubric:: Examples
+
+   ``to_phigits(1) == '1'``, ``to_phigits(2) == '10.01'``,
+   ``to_phigits(3) == '100.01'``, ``to_phigits(4) == '101.01'``.
+
+   :param n: Non-negative integer to encode.
+
+   :returns: Canonical non-adjacent base-:math:`\Phi` numeral string.
+
+
+.. py:function:: from_phigits(phigit_str: str) -> sympy.Expr
+
+   Decode any finite base-:math:`\Phi` string into an exact SymPy expression in :math:`\mathbb{Z}[\Phi]`.
+
+   :param phigit_str: Finite base-:math:`\Phi` numeral string containing ``0``, ``1``, and optional ``.``.
+
+   :returns: Exact simplified SymPy expression (reducing to ``sp.Integer(n)`` for integer inputs).
+
+
+.. py:function:: all_phigit_forms(n: int) -> list[str]
+
+   Enumerate all finite base-:math:`\Phi` representations of ``n`` not ending in ``011``.
+
+   Implements Dr. Ron Knott's finite expansion closure (``phigits.html#expandall``):
+   starting from the minimal representation :func:`to_phigits`, applies all sequences of:
+
+   1. Interior ``100 -> 011`` (:math:`k \to \{k-1, k-2\}` for :math:`k > \min(E)`);
+   2. Tail ``101 -> 01111`` (:math:`\{m+2, m\} \to \{m+1, m, m-1, m-2\}` at :math:`m = \min(E)`).
+
+   For every Fibonacci number :math:`F_k` (:math:`k \ge 2`), ``len(all_phigit_forms(F_k)) == F_k``.
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Deterministically sorted list of valid finite base-:math:`\Phi` strings for ``n``.
+
+
+.. py:function:: to_maximal_phigits(n: int) -> str
+
+   Return Dr. Ron Knott's unique maximal base-:math:`\Phi` representation of ``n`` (most ``1`` digits, no ``00`` pairs).
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Maximal finite base-:math:`\Phi` string not ending in ``011``.
+
+
+.. py:function:: construct_phigit_scale_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-4.3`: Geometric phigit Decomposition of integers ``1..6`` over :math:`\Phi^k`.
+
+   Builds an exact geometric bar-and-power decomposition diagram in ``geometor.model``:
+   horizontal reference ticks at powers :math:`\Phi^{-2} = \phi^2`, :math:`\Phi^{-1} = \phi`,
+   :math:`\Phi^0 = 1`, :math:`\Phi^1 = \Phi`, :math:`\Phi^2 = \Phi + 1`, and
+   :math:`\Phi^3 = 2\Phi + 1`, paired with stacked horizontal segments proving
+   :math:`2 = \Phi^1 + \Phi^{-2}`, :math:`3 = \Phi^2 + \Phi^{-2}`, and
+   :math:`4 = \Phi^2 + \Phi^0 + \Phi^{-2}`. Also verifies Bergman uniqueness and
+   Knott's Fibonacci fixed-point theorem ``#all_phigit_forms(F_k) == F_k`` for :math:`k = 2..8`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-4.3``.
+
+

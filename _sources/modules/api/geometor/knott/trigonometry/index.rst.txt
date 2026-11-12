@@ -1,0 +1,129 @@
+geometor.knott.trigonometry
+===========================
+
+.. py:module:: geometor.knott.trigonometry
+
+.. autoapi-nested-parse::
+
+   Collection 2: Exact Pentagonal & Constructible Trigonometry (`KNOTT-2.1` – `KNOTT-2.2`).
+
+   Catalogs closed-form radical sines, cosines, tangents, and Rational Trigonometry
+   spreads for the pentagonal family (:math:`18^\circ, 36^\circ, 54^\circ, 72^\circ`),
+   the complete 29-angle :math:`3^\circ k` constructible lattice (:math:`k = 1\dots 29`),
+   and Gauss's regular 17-gon cosine curated by Dr. Ron Knott on ``simpleTrig.html``
+   and ``phi2DGeomTrig.html``.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.knott.trigonometry.ExactAngleEntry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.trigonometry.pentagonal_trig_table
+   geometor.knott.trigonometry.construct_pentagonal_trig_model
+   geometor.knott.trigonometry.three_degree_lattice
+   geometor.knott.trigonometry.gauss_seventeen_gon_cosine
+   geometor.knott.trigonometry.construct_three_degree_lattice_model
+
+
+Module Contents
+---------------
+
+.. py:class:: ExactAngleEntry
+
+   Exact closed-form trigonometric invariants for a constructible angle.
+
+
+   .. py:attribute:: degrees
+      :type:  int
+
+
+   .. py:attribute:: radians
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: sin
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: cos
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: tan
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: spread
+      :type:  sympy.Expr
+
+
+.. py:function:: pentagonal_trig_table() -> dict[int, ExactAngleEntry]
+
+   Return exact radical trigonometric entries for :math:`18^\circ, 36^\circ, 54^\circ, 72^\circ`.
+
+   Verifies every entry against :math:`\sin^2 + \cos^2 = 1`, :math:`\cos 36^\circ - \sin 18^\circ = 1/2`,
+   :math:`\cos 36^\circ \cdot \sin 18^\circ = 1/4`, and Wildberger's 5-fold spread polynomial
+   :math:`S_5(s) = s(16 s^2 - 20 s + 5)^2 = 0` for :math:`36^\circ` and :math:`72^\circ`.
+
+   :returns: Mapping ``{18: ..., 36: ..., 54: ..., 72: ...}`` of verified :class:`ExactAngleEntry` records.
+
+
+.. py:function:: construct_pentagonal_trig_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-2.1`: First-quadrant unit circle pentagonal rays & golden projections.
+
+   Places rays at :math:`18^\circ, 36^\circ, 54^\circ, 72^\circ` on unit circle ``(O, U)``
+   and drops perpendiculars ``C36`` (:math:`x = \Phi/2`) and ``C72`` (:math:`x = \phi/2`)
+   onto ``[O U]``, demonstrating :math:`OC_{36} - OC_{72} = 1/2` and
+   :math:`OC_{36} \cdot OC_{72} = 1/4`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-2.1``.
+
+
+.. py:function:: three_degree_lattice() -> dict[int, ExactAngleEntry]
+
+   Compute closed-form radicals and spreads for all 29 angles :math:`3^\circ k` (:math:`k = 1\dots 29`).
+
+   Decomposes every integer multiple of :math:`3^\circ` in :math:`(0^\circ, 90^\circ)`
+   as a single sum or difference :math:`a \cdot 18^\circ \pm b \cdot 15^\circ` between the
+   pentagonal subfield :math:`\mathbb{Q}(\sqrt{5}, \sqrt{10 \pm 2\sqrt{5}})` and the
+   hexagonal/octagonal subfield :math:`\mathbb{Q}(\sqrt{2}, \sqrt{3})`.
+
+   :returns: Ordered mapping ``{3: ..., 6: ..., ..., 87: ...}`` of 29 verified :class:`ExactAngleEntry` records.
+
+
+.. py:function:: gauss_seventeen_gon_cosine() -> sympy.Expr
+
+   Return Gauss's exact nested quadratic radical for :math:`\cos(\pi / 17)` (1796).
+
+   Cataloged by Dr. Ron Knott on ``simpleTrig.html#pi17`` as the Fermat-prime bridge
+   beyond Euclid's :math:`2^a \cdot 3 \cdot 5` angle lattice. Verified algebraically via
+   Chebyshev's polynomial :math:`T_{17}(\cos(\pi / 17)) + 1 = 0` reduced step-by-step in
+   Gauss's quadratic field tower :math:`\mathbb{Q} \subset K_1 \subset K_2 \subset K_3 \subset K_4`.
+
+   :returns: Exact radical expression for :math:`\cos(\pi / 17)`.
+
+
+.. py:function:: construct_three_degree_lattice_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-2.2`: Euclid IV.16 regular 15-gon superposition & :math:`3^\circ` lattice.
+
+   Superimposes equilateral-triangle ray ``P60`` (:math:`60^\circ`, :math:`\mathbb{Q}(\sqrt{3})`)
+   and pentagonal central ray ``P72`` (:math:`72^\circ`, :math:`\mathbb{Q}(\sqrt{5})`) on unit
+   circle ``(O, U)`` to isolate the :math:`12^\circ` regular 15-gon arc ``P60 P72`` (and origin
+   ray ``P12``), together with bisected rays ``P6`` (:math:`6^\circ`) and ``P3`` (:math:`3^\circ`),
+   and Ailles' :math:`15^\circ` ray ``P15`` (:math:`18^\circ - 15^\circ = 3^\circ`).
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-2.2``.
+
+

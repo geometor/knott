@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π &mdash; Mathematical Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • knott</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">knott</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >Mission — Mathematical Cataloging & Source Respect</a>
+        </li>
+        <li>
+          <a href="../../notation/index.html"  >Notation Bridge — Knott (\Phi, \phi) & SymPy</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Mathematical Catalog</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+        <li>
+          <a href="../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../bibliography.html"  >Bibliography & Source Concordance</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; knott</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Mathematical Catalog</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../05-golden-string-and-arrays/03-wythoff-beatty-and-stolarsky-arrays/index.html" title="KNOTT-5.3 — Wythoff’s Array, Beatty’s Complementary Sequences (⌊nΦ⌋, ⌊nΦ²⌋), &amp; Stolarsky’s Array">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="01-fibonacci-pythagorean-triples/index.html" title="KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="knott-6-fibonacci-lucas-identities-pythagorean-triples-jigsaw-paradoxes">
+        <span id="collection-06-identities-and-bridges"></span><h1>KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π<a class="headerlink" href="#knott-6-fibonacci-lucas-identities-pythagorean-triples-jigsaw-paradoxes" title="Link to this heading">¶</a></h1>
+        <div class="enunciation">Four-term Fibonacci generators of Pythagorean right triangles, Cassini’s alternating ±1 determinant realized as 64 ↔ 65 and 64 ↔ 63 four-piece dissections, Binet/Lucas/Catalan/d’Ocagne/Honsberger and Fibonomial power identities, Fibonacci arctangent telescoping series for π, and the Golden Angle parastichy lattice.</div>
+        <p>Curated from <a class="person-ref" id="occ-person-knott-1" href="../../persons.html#person-knott" data-person="knott" title="Dr. Ron Knott (fl. 1979–2025) — Mathematician &amp; computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).">Dr. Ron Knott</a>’s University of Surrey archive (<strong>© 1996–2025 Dr. Ron Knott, University of Surrey</strong>).</p>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="01-fibonacci-pythagorean-triples/index.html" aria-label="KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -264.67 616.00 312.67" width="616.0" height="312.7" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-6-1.g1" data-folio="knott-6-1" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-48.00" y="-264.67" width="616.00" height="312.67" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-6-1-g1)">
+            <circle fill="none" stroke="#e0911b" stroke-width="1.4" stroke-opacity="0.85" cx="86.67" cy="-86.67" r="86.67" class="geom-circle geom-golden" />
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 520.00,-0.00 0.00,-216.67" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 173.33,-0.00 0.00,-130.00" class="geom-polygon geom-polygon-bordered" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 173.33 -0.00 L 86.67 -65.00 L 0.00 -130.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 260.00 -0.00 L 520.00 -0.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 0.00 -108.33 L 0.00 -216.67" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 520.00 -0.00 L 260.00 -108.33 L 0.00 -216.67" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="173.33" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-130.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-216.67" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="86.67" cy="-86.67" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="86.67" cy="-0.00" r="4.2" class="geom-point" />
+          </g>
+          <g>
+            <text x="-12.73" y="12.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="188.92" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A1</text>
+            <text x="-9.00" y="-145.59" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B1</text>
+            <text x="537.39" y="4.66" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A2</text>
+            <text x="-9.00" y="-232.26" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B2</text>
+            <text x="68.67" y="-86.67" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">I2</text>
+            <text x="71.08" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">T2</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="01-fibonacci-pythagorean-triples/index.html">KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples</a></h2>
+                      <div class="enunciation">Any four consecutive positive Fibonacci numbers (Fₙ, Fₙ₊₁, Fₙ₊₂, Fₙ₊₃) form the Pythagorean right triangle (Fₙ Fₙ₊₃, 2 Fₙ₊₁ Fₙ₊₂, F₂ₙ₊₃) of area Fₙ Fₙ₊₁ Fₙ₊₂ Fₙ₊₃ and inradius Fₙ Fₙ₊₁, primitive whenever 3 ∤ n and twice a primitive triple when 3 ∣ n.</div>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="02-cassini-jigsaw-paradoxes/index.html" aria-label="KNOTT-6.2 — Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) & The 64 ↔ 65 / 63 Jigsaw Dissections">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -568.00 471.56 616.00" width="471.6" height="616.0" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-6-2.g1" data-folio="knott-6-2" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-48.00" y="-568.00" width="471.56" height="616.00" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-6-2-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-288.89 231.11,-375.56 375.56,-433.33 144.44,-346.67" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="144.44,-346.67 375.56,-346.67 375.56,-433.33" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="231.11,-375.56 375.56,-433.33 375.56,-520.00 231.11,-520.00" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-288.89 231.11,-375.56 0.00,-375.56" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-202.22 144.44,-202.22 144.44,-346.67 0.00,-288.89" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 231.11,-86.67 375.56,-144.44 144.44,-57.78" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="144.44,-57.78 375.56,-144.44 144.44,-144.44" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 144.44,-57.78 144.44,-144.44 0.00,-144.44" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="231.11,-0.00 375.56,-0.00 375.56,-144.44 231.11,-86.67" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 231.11,-0.00 231.11,-86.67" class="geom-polygon geom-polygon-bordered" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 115.56 -43.33 L 231.11 -86.67" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 231.11 -86.67 L 303.33 -115.56 L 375.56 -144.44" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 72.22 -28.89 L 144.44 -57.78" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 144.44 -57.78 L 260.00 -101.11 L 375.56 -144.44" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -288.89 L 72.22 -317.78 L 144.44 -346.67" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 144.44 -346.67 L 260.00 -390.00 L 375.56 -433.33" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -288.89 L 115.56 -332.22 L 231.11 -375.56" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 231.11 -375.56 L 303.33 -404.44 L 375.56 -433.33" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="231.11" cy="-0.00" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="375.56" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="231.11" cy="-86.67" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="375.56" cy="-144.44" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-144.44" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="144.44" cy="-144.44" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="144.44" cy="-57.78" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-202.22" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="144.44" cy="-202.22" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="144.44" cy="-346.67" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-288.89" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="231.11" cy="-375.56" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-375.56" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="231.11" cy="-520.00" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="375.56" cy="-520.00" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="375.56" cy="-433.33" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="375.56" cy="-346.67" r="3.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="-12.73" y="12.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="231.11" y="18.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">B8</text>
+            <text x="388.28" y="12.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">R0</text>
+            <text x="246.70" y="-77.67" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P1</text>
+            <text x="388.28" y="-157.17" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">Q</text>
+            <text x="-12.73" y="-157.17" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">T0</text>
+            <text x="144.44" y="-162.44" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">T5</text>
+            <text x="149.10" y="-40.39" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P2</text>
+            <text x="-12.73" y="-189.49" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S0</text>
+            <text x="157.17" y="-189.49" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S1</text>
+            <text x="139.79" y="-364.05" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">U1</text>
+            <text x="-18.00" y="-288.89" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">U0</text>
+            <text x="240.11" y="-359.97" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">U3</text>
+            <text x="-12.73" y="-388.28" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S2</text>
+            <text x="218.38" y="-532.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S3</text>
+            <text x="388.28" y="-532.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S4</text>
+            <text x="393.56" y="-433.33" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">U2</text>
+            <text x="388.28" y="-333.94" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S5</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="02-cassini-jigsaw-paradoxes/index.html">KNOTT-6.2 — Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) & The 64 ↔ 65 / 63 Jigsaw Dissections</a></h2>
+                      <div class="enunciation">Cassini’s alternating identity Fₙ₋₁ Fₙ₊₁ − Fₙ² = (−1)ⁿ manifests geometrically when the four pieces of an 8 × 8 = 64 square (two 3 × 8 triangles and two 5 × (3, 5) trapezoids) rearrange into a 5 × 13 = 65 rectangle with a +1 parallelogram gap OR into a 63-unit notched block with a −1 parallelogram overlap.</div>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="03-binet-lucas-catalan-fibonomials/index.html" aria-label="KNOTT-6.3 — Binet, Lucas, Catalan, d’Ocagne, Honsberger & Fibonomial Power Identities">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -280.55 616.00 328.55" width="616.0" height="328.6" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-6-3.g1" data-folio="knott-6-3" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-48.00" y="-280.55" width="616.00" height="328.55" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-6-3-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 260.00,-130.00 455.00,-195.00" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 195.00,-65.00 260.00,-130.00" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 65.00,-65.00 195.00,-65.00" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 130.00,-0.00 65.00,-65.00" class="geom-polygon geom-polygon-bordered" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 260.00 -116.28 L 520.00 -232.55" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 65.00 -0.00 L 130.00 -0.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 32.50 -32.50 L 65.00 -65.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 97.50 -32.50 L 195.00 -65.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 130.00 -65.00 L 260.00 -130.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 227.50 -97.50 L 455.00 -195.00" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 130.00 -0.00 L 97.50 -32.50 L 65.00 -65.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 65.00 -65.00 L 130.00 -65.00 L 195.00 -65.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 195.00 -65.00 L 227.50 -97.50 L 260.00 -130.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 260.00 -130.00 L 357.50 -162.50 L 455.00 -195.00" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="-232.55" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="130.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="65.00" cy="-65.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="195.00" cy="-65.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="260.00" cy="-130.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="455.00" cy="-195.00" r="4.2" class="geom-point" />
+          </g>
+          <g>
+            <text x="-15.59" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="535.59" y="-241.55" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="145.59" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P0</text>
+            <text x="56.00" y="-80.59" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P1</text>
+            <text x="204.00" y="-49.41" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P2</text>
+            <text x="255.34" y="-147.39" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P3</text>
+            <text x="472.39" y="-199.66" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P4</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="03-binet-lucas-catalan-fibonomials/index.html">KNOTT-6.3 — Binet, Lucas, Catalan, d’Ocagne, Honsberger & Fibonomial Power Identities</a></h2>
+                      <div class="enunciation">Binet’s closed forms Fₙ = (Φⁿ − (−φ)ⁿ)/√5 and Lₙ = Φⁿ + (−φ)ⁿ place (Lₙ, Fₙ) on the alternating Pell-Lucas hyperbolas Lₙ² − 5 Fₙ² = 4(−1)ⁿ with unit sector triangles, unify Catalan, d’Ocagne, and Honsberger identities, and annihilate k-th powers Fₙᵏ via signed Fibonomial coefficients.</div>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="04-fibonacci-arctangent-pi-formulae/index.html" aria-label="KNOTT-6.4 — Fibonacci Arctangent Telescoping Formulae for π">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-48.00 -373.00 616.00 421.00" width="616.0" height="421.0" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-6-4.g1" data-folio="knott-6-4" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-48.00" y="-373.00" width="616.00" height="421.00" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-6-4-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 520.00,-65.00 487.50,-162.50" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 487.50,-162.50 325.00,-325.00" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 260.00 -0.00 L 520.00 -0.00" class="geom-line geom-segment geom-given" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 260.00 -32.50 L 520.00 -65.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 243.75 -81.25 L 487.50 -162.50" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 162.50 -162.50 L 325.00 -325.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 325.00 -325.00 L 406.25 -243.75 L 487.50 -162.50" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 487.50 -162.50 L 503.75 -113.75 L 520.00 -65.00" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 520.00 -0.00 L 520.00 -32.50 L 520.00 -65.00" class="geom-line geom-segment" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="520.00" cy="-65.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="487.50" cy="-162.50" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="325.00" cy="-325.00" r="4.2" class="geom-point" />
+          </g>
+          <g>
+            <text x="-15.59" y="9.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="532.73" y="12.73" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">X</text>
+            <text x="537.39" y="-69.66" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">N</text>
+            <text x="503.09" y="-171.50" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text x="325.00" y="-343.00" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="04-fibonacci-arctangent-pi-formulae/index.html">KNOTT-6.4 — Fibonacci Arctangent Telescoping Formulae for π</a></h2>
+                      <div class="enunciation">By Cassini’s odd-index relation F₂ₙ₊₁² − 1 = F₂ₙ F₂ₙ₊₂, every even-indexed reciprocal Fibonacci angle splits as arctan(1/F₂ₙ) = arctan(1/F₂ₙ₊₁) + arctan(1/F₂ₙ₊₂), telescoping from arctan(1/F₂) = π/4 into Lehmer’s series π/4 = ∑_{k=1}^∞ arctan(1/F₂ₖ₊₁).</div>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="05-golden-angle-and-parastichy-bridges/index.html" aria-label="KNOTT-6.5 — Golden Angle (360° / Φ² ≈ 137.50776°) & Parastichy Bridges">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-246.62 -521.27 616.00 569.27" width="616.0" height="569.3" class="euclid-graphic euclid-thumbnail" data-graphic-id="knott-6-5.g1" data-folio="knott-6-5" data-graphic="g1">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-5" x2="-2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="2" y1="-5" x2="2" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="0" y1="-5" x2="0" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+              <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="#16a34a" stroke-width="2.0" stroke-linecap="round" class="geom-tick-mark" />
+            </marker>
+            <clipPath>
+              <rect x="-246.62" y="-521.27" width="616.00" height="569.27" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#clip-knott-6-5-g1)">
+          </g>
+          <g>
+            <polygon fill="#e0911b" fill-opacity="0.07" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 122.76,-157.76 46.89,-420.69 -75.87,-262.93" class="geom-polygon geom-polygon-bordered" />
+            <polygon fill="#e0911b" fill-opacity="0.16" stroke="#e0911b" stroke-width="1.5" stroke-linejoin="round" points="0.00,-0.00 122.76,-157.76 -75.87,-262.93 -198.62,-105.17" class="geom-polygon geom-polygon-gnomon geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L 0.00 -236.64 L 0.00 -473.27" class="geom-line geom-segment geom-given" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 160.69 -26.29 L 321.38 -52.59" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L -99.31 -52.59 L -198.62 -105.17" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 61.38 -78.88 L 122.76 -157.76" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#18181b" stroke-width="1.9" stroke-linecap="round" d="M 0.00 -0.00 L -37.93 -131.47 L -75.87 -262.93" class="geom-line geom-segment" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 0.00 -0.00 L 23.44 -210.34 L 46.89 -420.69" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -198.62 -105.17 L -137.24 -184.05 L -75.87 -262.93" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 122.76 -157.76 L 23.44 -210.34 L -75.87 -262.93" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M 122.76 -157.76 L 84.82 -289.22 L 46.89 -420.69" class="geom-line geom-segment geom-golden" />
+            <path fill="none" stroke="#e0911b" stroke-width="2.3" stroke-linecap="round" d="M -75.87 -262.93 L -14.49 -341.81 L 46.89 -420.69" class="geom-line geom-segment geom-golden" />
+          </g>
+          <g>
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-0.00" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="0.00" cy="-473.27" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="321.38" cy="-52.59" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-198.62" cy="-105.17" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="122.76" cy="-157.76" r="4.2" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="-75.87" cy="-262.93" r="3.6" class="geom-point" />
+            <circle fill="#18181b" stroke="#faf8f2" stroke-width="1.4" cx="46.89" cy="-420.69" r="4.2" class="geom-point" />
+          </g>
+          <g>
+            <text x="-4.66" y="17.39" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="-0.00" y="-491.27" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">S</text>
+            <text x="339.38" y="-52.59" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">P2</text>
+            <text x="-216.01" y="-100.51" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">F2</text>
+            <text x="140.14" y="-153.10" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">F3</text>
+            <text x="-91.46" y="-271.93" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">F5</text>
+            <text x="51.55" y="-438.08" fill="#18181b" font-family="Georgia, serif" font-style="italic" font-size="15" text-anchor="middle" dominant-baseline="central" class="geom-label">F8</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="05-golden-angle-and-parastichy-bridges/index.html">KNOTT-6.5 — Golden Angle (360° / Φ² ≈ 137.50776°) & Parastichy Bridges</a></h2>
+                      <div class="enunciation">Dividing a full turn in extreme and mean ratio yields the Golden Angle 2π / Φ² = 2π φ² ≈ 137.50776°, whose cylindrical primordia satisfy Fₖ φ² − Fₖ₋₂ = (−φ)ᵏ, pairing opposing left- and right-handed parastichy spirals in consecutive Fibonacci numbers (Fₖ, Fₖ₊₁).</div>
+                  </section>
+                </div>
+              </article>
+            </section><section class="level-2" id="collection-concordance">
+        <h2>Collection Concordance<a class="headerlink" href="#collection-concordance" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 16.0%" />
+        <col style="width: 48.0%" />
+        <col style="width: 36.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Catalog ID</p></th>
+        <th class="head"><p>GEOMETOR Catalog Entry</p></th>
+        <th class="head"><p>Curated Source Anchor</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-fibonacci-pythagorean-triples/index.html#knott-6-1" title="KNOTT-6.1: Any four consecutive positive Fibonacci numbers (Fₙ, Fₙ₊₁, Fₙ₊₂, Fₙ₊₃) form the Pythagorean right triangle (Fₙ Fₙ₊₃, 2 Fₙ₊₁ Fₙ₊₂, F₂ₙ₊₃) of area Fₙ Fₙ₊₁ Fₙ₊₂ Fₙ₊₃ and inradius Fₙ…"><span class="std std-ref">KNOTT-6.1</span></a></p></td>
+        <td><p>Fibonacci Generator of Primitive Pythagorean Triples</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Pythag/pythag.html#pythfib">Pythagorean Triangles and Triples (#pythfib)</a></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="02-cassini-jigsaw-paradoxes/index.html#knott-6-2" title="KNOTT-6.2: Cassini's alternating identity Fₙ₋₁ Fₙ₊₁ − Fₙ² = (−1)ⁿ manifests geometrically when the four pieces of an 8 × 8 = 64 square (two 3 × 8 triangles and two 5 × (3, 5) trapezoids)…"><span class="std std-ref">KNOTT-6.2</span></a></p></td>
+        <td><p>Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) &amp; The 64 ↔ 65 / 63 Jigsaw Dissections</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/fibpuzzles2.html#jigsaw1">Harder Fibonacci Puzzles (#jigsaw1)</a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="03-binet-lucas-catalan-fibonomials/index.html#knott-6-3" title="KNOTT-6.3: Binet's closed forms Fₙ = (Φⁿ − (−φ)ⁿ)/√5 and Lₙ = Φⁿ + (−φ)ⁿ place (Lₙ, Fₙ) on the alternating Pell-Lucas hyperbolas Lₙ² − 5 Fₙ² = 4(−1)ⁿ with unit sector triangles, unify…"><span class="std std-ref">KNOTT-6.3</span></a></p></td>
+        <td><p>Binet, Lucas, Catalan, d’Ocagne, Honsberger &amp; Fibonomial Power Identities</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/fibFormulae.html#defs">Fibonacci and Phi Formulae (#defs)</a></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="04-fibonacci-arctangent-pi-formulae/index.html#knott-6-4" title="KNOTT-6.4: By Cassini's odd-index relation F₂ₙ₊₁² − 1 = F₂ₙ F₂ₙ₊₂, every even-indexed reciprocal Fibonacci angle splits as arctan(1/F₂ₙ) = arctan(1/F₂ₙ₊₁) + arctan(1/F₂ₙ₊₂), telescoping from…"><span class="std std-ref">KNOTT-6.4</span></a></p></td>
+        <td><p>Fibonacci Arctangent Telescoping Formulae for π</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/fibpi.html#piandfib">The Fibonacci Numbers in a Formula for Pi (#piandfib)</a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="05-golden-angle-and-parastichy-bridges/index.html#knott-6-5" title="KNOTT-6.5: Dividing a full turn in extreme and mean ratio yields the Golden Angle 2π / Φ² = 2π φ² ≈ 137.50776°, whose cylindrical primordia satisfy Fₖ φ² − Fₖ₋₂ = (−φ)ᵏ, pairing opposing…"><span class="std std-ref">KNOTT-6.5</span></a></p></td>
+        <td><p>Golden Angle (360° / Φ² ≈ 137.50776°) &amp; Parastichy Bridges</p></td>
+        <td><p><a class="reference external" href="https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html#seeds">Fibonacci Numbers and Nature (#seeds)</a></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../05-golden-string-and-arrays/03-wythoff-beatty-and-stolarsky-arrays/index.html" title="KNOTT-5.3 — Wythoff’s Array, Beatty’s Complementary Sequences (⌊nΦ⌋, ⌊nΦ²⌋), &amp; Stolarsky’s Array">&larr; <span class="nav-label">KNOTT-5.3 — Wythoff’s Array, Beatty’s Complementary Sequences (⌊nΦ⌋, ⌊nΦ²⌋), & Stolarsky’s Array</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Mathematical Catalog</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="01-fibonacci-pythagorean-triples/index.html" title="KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples"><span class="nav-label">KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.316-162000/index.html">Initial Synthesis of the Knott Mathematical Catalog v0.1.0</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/collection.html">collection</a></li>
+        <li><a href="../../types/item.html">item</a></li>
+        <li><a href="../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../log/index.html"  >Log</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

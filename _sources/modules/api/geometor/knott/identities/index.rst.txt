@@ -1,0 +1,229 @@
+geometor.knott.identities
+=========================
+
+.. py:module:: geometor.knott.identities
+
+.. autoapi-nested-parse::
+
+   Collection 6: Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes & :math:`\pi` (`KNOTT-6.1` – `KNOTT-6.5`).
+
+   Catalogs the Fibonacci generator of Pythagorean right triangles, Cassini's identity
+   and both :math:`64 \leftrightarrow 65` (:math:`+1` gap) and :math:`64 \leftrightarrow 63`
+   (:math:`-1` overlap) jigsaw dissections, Binet/Lucas/Catalan/d'Ocagne/Honsberger and
+   Jarden-Fibonomial power identities, Lehmer/Hayashi Fibonacci arctangent telescoping
+   series for :math:`\pi`, and the Golden Angle parastichy lattice curated by Dr. Ron
+   Knott on ``pythag.html``, ``fibpuzzles2.html``, ``fibFormulae.html``, ``fibpi.html``,
+   and ``fibnat.html``.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.knott.identities.FibonacciPythagoreanRecord
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.identities.fibonacci_pythagorean_triple
+   geometor.knott.identities.construct_fibonacci_pythagorean_model
+   geometor.knott.identities.verify_cassini
+   geometor.knott.identities.construct_fibonacci_jigsaw_model
+   geometor.knott.identities.fibonomial
+   geometor.knott.identities.verify_classical_identities
+   geometor.knott.identities.construct_lucas_binet_model
+   geometor.knott.identities.verify_fibonacci_arctan_step
+   geometor.knott.identities.verify_fibonacci_pi_telescoping
+   geometor.knott.identities.construct_hayashi_arctan_grid_model
+   geometor.knott.identities.golden_angle_invariants
+   geometor.knott.identities.construct_parastichy_lattice_model
+
+
+Module Contents
+---------------
+
+.. py:class:: FibonacciPythagoreanRecord
+
+   Exact Pythagorean right triangle generated from :math:`(F_n, F_{n+1}, F_{n+2}, F_{n+3})`.
+
+
+   .. py:attribute:: n
+      :type:  int
+
+
+   .. py:attribute:: leg_a
+      :type:  int
+
+
+   .. py:attribute:: leg_b
+      :type:  int
+
+
+   .. py:attribute:: hypotenuse_c
+      :type:  int
+
+
+   .. py:attribute:: area
+      :type:  int
+
+
+   .. py:attribute:: inradius
+      :type:  int
+
+
+   .. py:attribute:: gcd_factor
+      :type:  int
+
+
+   .. py:attribute:: primitive_triple
+      :type:  tuple[int, int, int]
+
+
+.. py:function:: fibonacci_pythagorean_triple(n: int) -> FibonacciPythagoreanRecord
+
+   Generate and verify the Fibonacci Pythagorean triple for index :math:`n \ge 1`.
+
+   Uses Euclid's generator :math:`(m, k) = (F_{n+2}, F_{n+1})`:
+
+   - :math:`a_n = m^2 - k^2 = (F_{n+2} - F_{n+1})(F_{n+2} + F_{n+1}) = F_n F_{n+3}`;
+   - :math:`b_n = 2 m k = 2 F_{n+1} F_{n+2}`;
+   - :math:`c_n = m^2 + k^2 = F_{n+1}^2 + F_{n+2}^2 = F_{2n+3}`.
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Verified :class:`FibonacciPythagoreanRecord`.
+
+
+.. py:function:: construct_fibonacci_pythagorean_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-6.1`: Exact right triangles :math:`(3,4,5)` & :math:`(5,12,13)` with incircle.
+
+   Constructs the first two Fibonacci Pythagorean right triangles ``O A1 B1`` (:math:`3, 4, 5`
+   from :math:`1, 1, 2, 3`) and ``O A2 B2`` (:math:`5, 12, 13` from :math:`1, 2, 3, 5`)
+   sharing right-angle vertex ``O(0, 0)``, together with incircle ``(I2, T2)`` of exact
+   inradius :math:`r_2 = F_2 F_3 = 2` inside :math:`(5, 12, 13)`.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-6.1``.
+
+
+.. py:function:: verify_cassini(n: int) -> int
+
+   Verify Cassini's identity :math:`F_{n-1} F_{n+1} - F_n^2 = (-1)^n`.
+
+   :param n: Integer index.
+
+   :returns: Exact alternating determinant :math:`(-1)^n \in \{-1, +1\}`.
+
+
+.. py:function:: construct_fibonacci_jigsaw_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-6.2`: Cassini's :math:`8 \times 8 = 64 \leftrightarrow 5 \times 13 = 65` & :math:`63` jigsaws.
+
+   Models **both** classical four-piece dissections of the :math:`8 \times 8 = 64` square
+   (two :math:`3 \times 8` right triangles of area ``12`` + two :math:`5 \times (3, 5)`
+   right trapezoids of area ``20``) inside a single exact ``geometor.model.Model``:
+
+   1. **Lower figure (:math:`5 \times 13 = 65` Hooper/Loyd rectangle)**: encloses the
+      slender internal parallelogram ``O P1 Q P2`` of exact shoelace area ``+1``;
+   2. **Upper figure (Sam Loyd Jr. / Dudeney / Knott 63-unit notched block, shifted to ``y >= 7``)**:
+      two :math:`5 \times 6 = 30` wings joined by a :math:`3 \times 1 = 3` bridge
+      (apparent outer area ``63``), concealing an internal overlap parallelogram
+      ``U0 U1 U2 U3`` of exact shoelace area ``+1`` (:math:`64 - 1 = 63`).
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-6.2``.
+
+
+.. py:function:: fibonomial(n: int, k: int) -> int
+
+   Compute the exact integer Fibonomial coefficient :math:`\binom{n}{k}_F`.
+
+   Defined on ``Fibonomials.html`` and ``fibFormulae.html#FibonomialFormulae`` as
+   :math:`\frac{F_n F_{n-1} \cdots F_{n-k+1}}{F_k F_{k-1} \cdots F_1}` (with
+   :math:`\binom{n}{0}_F = \binom{n}{n}_F = 1`).
+
+   :param n: Non-negative upper index.
+   :param k: Integer lower index.
+
+   :returns: Exact integer Fibonomial coefficient.
+
+
+.. py:function:: verify_classical_identities() -> dict[str, sympy.Expr]
+
+   Machine-verify Binet, Lucas, Catalan, d'Ocagne, Honsberger, and Fibonomial identities.
+
+   :returns: Dictionary of representative verified exact quantities.
+
+
+.. py:function:: construct_lucas_binet_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-6.3`: Pell-Lucas lattice points :math:`(L_n, F_n)` & asymptote :math:`y = x / \sqrt{5}`.
+
+   Plots exact Pell-Lucas points :math:`P_n = (L_n, F_n)` for :math:`n = 0..4`
+   (``P0(2,0)``, ``P1(1,1)``, ``P2(3,1)``, ``P3(4,2)``, ``P4(7,3)``) alternating across
+   hyperbolas :math:`x^2 - 5 y^2 = \pm 4` around Binet's asymptote ray ``[O A]`` of
+   exact slope :math:`1 / \sqrt{5}` (:math:`A = (8, 8/\sqrt{5})`).
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-6.3``.
+
+
+.. py:function:: verify_fibonacci_arctan_step(n: int) -> sympy.Expr
+
+   Verify Lehmer's step :math:`\arctan(1/F_{2n}) = \arctan(1/F_{2n+1}) + \arctan(1/F_{2n+2})`.
+
+   Proves exact equality both via rational tangent-addition algebra
+   :math:`(a + b)/(1 - a b) = 1/F_{2n}` and via SymPy's symbolic ``atan`` simplification.
+
+   :param n: Positive integer (:math:`n \ge 1`).
+
+   :returns: Exact common tangent :math:`1 / F_{2n}` as :class:`sympy.Rational`.
+
+
+.. py:function:: verify_fibonacci_pi_telescoping(terms: int = 8) -> sympy.Expr
+
+   Verify :math:`\frac{\pi}{4} = \sum_{k=1}^{N} \arctan\frac{1}{F_{2k+1}} + \arctan\frac{1}{F_{2N+2}}`.
+
+   :param terms: Number of telescoping steps :math:`N \ge 1`.
+
+   :returns: Exact symbolic remainder :math:`\arctan(1 / F_{2N+2})`.
+
+
+.. py:function:: construct_hayashi_arctan_grid_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-6.4`: Ko Hayashi's integer-grid proof of :math:`\frac{\pi}{4} = \arctan\frac{1}{2} + \arctan\frac{1}{5} + \arctan\frac{1}{8}`.
+
+   Constructs four integer lattice points ``O(0,0)``, ``E(10,10)``, ``M(15,5)``, and
+   ``N(16,2)`` (with horizontal reference ``X(16,0)``):
+
+   - Right triangle ``O E M`` has :math:`s([OE], [EM]) = 1` and :math:`Q(E,M)/Q(O,E) = 50/200 = 1/4 = (1/2)^2`,
+     proving :math:`\angle EOM = \arctan(1/2)` between :math:`45^\circ` ray ``OE`` and slope-:math:`1/3` ray ``OM``;
+   - Right triangle ``O M N`` has :math:`s([OM], [MN]) = 1` and :math:`Q(M,N)/Q(O,M) = 10/250 = 1/25 = (1/5)^2`,
+     proving :math:`\angle MON = \arctan(1/5)` between slope-:math:`1/3` ray ``OM`` and slope-:math:`1/8` ray ``ON``.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-6.4``.
+
+
+.. py:function:: golden_angle_invariants() -> dict[str, sympy.Expr]
+
+   Return exact symbolic invariants of the Golden Angle (:math:`360^\circ / \Phi^2`).
+
+   :returns: Dictionary of exact turn fractions, radian/degree expressions, and parastichy offsets.
+
+
+.. py:function:: construct_parastichy_lattice_model() -> geometor.knott.flat_geometry.GeometricCatalogResult
+
+   Construct `KNOTT-6.5`: Cylindrical Golden-Angle parastichy lattice & opposing Fibonacci spirals.
+
+   Unrolls cylindrical phyllotaxis onto the :math:`(\Delta x, n)` plane around stem axis
+   ``[O S]`` (:math:`x = 0`), plotting exact Fibonacci primordia
+   :math:`P_k = (20 (F_k \phi^2 - F_{k-2}),\; F_k) = (20 (-\phi)^k,\; F_k)` for
+   :math:`k = 2..6` (:math:`F_2=1, F_3=2, F_4=3, F_5=5, F_6=8`), plus their vector sum
+   completing fundamental parastichy parallelograms ``O P3 Q34 P4`` and ``O P4 Q45 P5``.
+
+   :returns: Verified :class:`GeometricCatalogResult` for ``KNOTT-6.5``.
+
+

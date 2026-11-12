@@ -1,0 +1,191 @@
+geometor.knott.catalog
+======================
+
+.. py:module:: geometor.knott.catalog
+
+.. autoapi-nested-parse::
+
+   Master registry of the 6 Collections and 22 Catalog Items (`KNOTT-1.1` – `KNOTT-6.5`).
+
+   Maps every cataloged theorem, construction, sequence, and identity to Dr. Ron Knott's
+   exact University of Surrey source URL and section anchor, its exact SymPy /
+   ``geometor.model`` validator function, scholarly apparatus keys, and cross-referenced
+   GEOMETOR repositories.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.knott.catalog.KNOTT_COPYRIGHT
+   geometor.knott.catalog.COLLECTIONS
+   geometor.knott.catalog.CATALOG_ITEMS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.knott.catalog.CollectionSpec
+   geometor.knott.catalog.CatalogItemSpec
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.knott.catalog.get_catalog_item
+   geometor.knott.catalog.verify_all_catalog_items
+   geometor.knott.catalog.build_manifest_payload
+   geometor.knott.catalog.export_catalog_manifest
+
+
+Module Contents
+---------------
+
+.. py:data:: KNOTT_COPYRIGHT
+   :value: '© 1996–2025 Dr. Ron Knott, University of Surrey'
+
+
+.. py:class:: CollectionSpec
+
+   Metadata for one of the six thematic Collections in ``docsrc/catalog/``.
+
+
+   .. py:attribute:: order
+      :type:  int
+
+
+   .. py:attribute:: slug
+      :type:  str
+
+
+   .. py:attribute:: code_prefix
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: enunciation
+      :type:  str
+
+
+   .. py:attribute:: source_pages
+      :type:  tuple[str, ...]
+
+
+.. py:class:: CatalogItemSpec
+
+   Complete specification for a single cataloged mathematical item.
+
+
+   .. py:attribute:: canonical_id
+      :type:  str
+
+
+   .. py:attribute:: collection_slug
+      :type:  str
+
+
+   .. py:attribute:: order
+      :type:  int
+
+
+   .. py:attribute:: item_slug
+      :type:  str
+
+
+   .. py:attribute:: folio_id
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: enunciation
+      :type:  str
+
+
+   .. py:attribute:: knott_url
+      :type:  str
+
+
+   .. py:attribute:: knott_page_title
+      :type:  str
+
+
+   .. py:attribute:: knott_anchor
+      :type:  str
+
+
+   .. py:attribute:: validator_qualname
+      :type:  str
+
+
+   .. py:attribute:: builder
+      :type:  collections.abc.Callable[[], geometor.knott.flat_geometry.GeometricCatalogResult]
+
+
+   .. py:attribute:: geometor_repos
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: citations
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: persons
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: terms
+      :type:  tuple[str, ...]
+
+
+.. py:data:: COLLECTIONS
+   :type:  tuple[CollectionSpec, ...]
+
+.. py:data:: CATALOG_ITEMS
+   :type:  tuple[CatalogItemSpec, ...]
+
+.. py:function:: get_catalog_item(canonical_id: str) -> CatalogItemSpec
+
+   Look up a :class:`CatalogItemSpec` by its ``canonical_id`` (e.g., ``"KNOTT-1.1"``).
+
+   :param canonical_id: Canonical catalog ID.
+
+   :returns: Matching :class:`CatalogItemSpec`.
+
+   :raises KeyError: If ``canonical_id`` is not registered.
+
+
+.. py:function:: verify_all_catalog_items() -> dict[str, geometor.knott.flat_geometry.GeometricCatalogResult]
+
+   Execute and verify all 22 catalog item builders (`0` ``sp.Float`` atoms).
+
+   :returns: Mapping ``{canonical_id: GeometricCatalogResult}`` across ``KNOTT-1.1`` .. ``KNOTT-6.5``.
+
+
+.. py:function:: build_manifest_payload() -> dict[str, object]
+
+   Build the serializable dictionary written to ``resources/catalog_manifest.json``.
+
+   :returns: Structured JSON-serializable catalog manifest dictionary.
+
+
+.. py:function:: export_catalog_manifest(output_path: pathlib.Path) -> pathlib.Path
+
+   Write ``resources/catalog_manifest.json`` with deterministic UTF-8 formatting.
+
+   :param output_path: Destination JSON file path.
+
+   :returns: Resolved ``output_path``.
+
+
