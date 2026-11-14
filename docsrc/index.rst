@@ -20,7 +20,7 @@ Catalog Collections & Reference
    catalog/index
    persons
    bibliography
-   mission/index
+   about/index
    notation/index
    usage/index
    log/index
