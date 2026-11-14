@@ -17,12 +17,13 @@ Catalog Collections & Reference
    :hidden:
    :maxdepth: 2
 
-   mission/index
-   notation/index
    catalog/index
-   modules/index
-   glossary
    persons
    bibliography
+   mission/index
+   notation/index
+   usage/index
    log/index
+   modules/index
+   glossary
    changelog

@@ -1,6 +1,6 @@
-:layout: book
 :navigation: header
-:order: 5
+:order: 10
+:nav_title: Mission
 
 ===================================================
 Mission — Mathematical Cataloging & Source Respect

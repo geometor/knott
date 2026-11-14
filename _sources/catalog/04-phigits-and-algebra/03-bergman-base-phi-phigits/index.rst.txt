@@ -1,4 +1,3 @@
-:layout: book
 :type: item
 :order: 3
 :canonical_id: KNOTT-4.3

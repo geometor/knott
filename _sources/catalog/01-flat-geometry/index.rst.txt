@@ -1,4 +1,3 @@
-:layout: book
 :type: collection
 :order: 1
 :featured_image: catalog/01-flat-geometry/01-golden-section-segment/knott-1-1.g1.svg

@@ -1,4 +1,3 @@
-:layout: book
 :type: collection
 :order: 6
 :featured_image: catalog/06-identities-and-bridges/01-fibonacci-pythagorean-triples/knott-6-1.g1.svg

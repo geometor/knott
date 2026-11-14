@@ -1,6 +1,6 @@
-:layout: book
-:navigation: footer
-:order: 90
+:navigation: header
+:order: 30
+:nav_title: Log
 
 ===
 Log

@@ -1,10 +1,31 @@
-:layout: book
 :navigation: header
-:order: 10
+:order: 1
+:nav_title: Mathematical Catalog
+:layout: book
+:book_title: Mathematical Catalog of Fibonacci Numbers and the Golden Section
+:book_subtitle: Inspired by Dr. Ron Knott — Exact Symbolic Synthesis in GEOMETOR
+:author: Dr. Ron Knott & phi ARCHITECT
+:year: 1996–2025
 
-====================
+.. _knott-catalog:
+
 Mathematical Catalog
 ====================
+
+.. rubric:: Exact Symbolic Synthesis of Fibonacci Numbers & the Golden Section — Inspired by Dr. Ron Knott
+
+.. container:: title-page
+
+   | **Dr. Ron Knott** & **phi ARCHITECT**
+   | *Mathematical Catalog of Fibonacci Numbers and the Golden Section*
+   |
+   | Exact Symbolic Synthesis of 22 Fundamental Golden Ratio, Trigonometric, Polyhedral, Phigit, Sturmian, and Fibonacci–Lucas Structures
+   |
+   | **Primary Web Witness:** Dr. Ron Knott, *Fibonacci Numbers and the Golden Section* (University of Surrey, 1996–2025)
+   | **Digital Edition:** GEOMETOR Scriptorium (100% Exact SymPy Algebra, Symbolic Models & Euclid-Graphic Vector Plates)
+
+Table of Contents
+-----------------
 
 .. enunciation::
 
@@ -113,3 +134,11 @@ Master 22-Entry Concordance
      - Golden Angle (360° / Φ² ≈ 137.50776°) & Parastichy Bridges
      - `#seeds <https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html#seeds>`_
      - :func:`~geometor.knott.identities.construct_parastichy_lattice_model`
+
+Scholarly Apparatus
+-------------------
+
+* :doc:`People </persons>` — Prosopographical register of mathematicians from Fibonacci and Lucas to Ron Knott.
+* :doc:`Bibliography </bibliography>` — Systematic bibliography of research literature and primary web sources.
+* :doc:`Mathematical Notation </notation/index>` — Symbolic notation and mapping between Knott radicals and GEOMETOR algebraic fields.
+* :doc:`Glossary </glossary>` — Lexicon of terms across golden geometry, phigits, and combinatorics.

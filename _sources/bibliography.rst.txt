@@ -1,10 +1,12 @@
-:layout: book
 :navigation: header
-:order: 80
+:order: 6
+:nav_title: Bibliography
 
-=================================
-Bibliography & Source Concordance
-=================================
+.. _bibliography:
+
+============
+Bibliography
+============
 
 Primary online reference pages by **Dr. Ron Knott** (**© 1996–2025 Dr. Ron Knott, University of Surrey**) and classical/modern mathematical treatises cited across this catalog.
 
