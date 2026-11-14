@@ -1,4 +1,3 @@
-:layout: book
 :type: collection
 :order: 5
 :featured_image: catalog/05-golden-string-and-arrays/01-golden-string-and-cutting-line/knott-5-1.g1.svg

@@ -1,4 +1,3 @@
-:layout: book
 :type: collection
 :order: 4
 :featured_image: catalog/04-phigits-and-algebra/01-fibonacci-power-linearization/knott-4-1.g1.svg

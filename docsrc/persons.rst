@@ -1,12 +1,20 @@
-:layout: book
 :navigation: header
-:order: 75
+:order: 5
+:nav_title: People
 
-=======
-Persons
-=======
+.. _persons:
 
-Mathematicians, geometers, and scholars referenced across the **GEOMETOR Knott Mathematical Catalog**.
+People
+======
+
+.. rubric:: Authors, Curators & Cited Mathematicians Across the Catalog
+
+Every inline ``:person:`` reference across the catalog resolves directly to its entry below.
+
+----
+
+Authors, Curators & Editors
+---------------------------
 
 .. _person-knott:
 
@@ -15,19 +23,40 @@ Dr. Ron Knott (fl. 1979–2025)
 
 Mathematician & computer scientist (formerly Dept. of Mathematics, University of Surrey); author and curator of Fibonacci Numbers, the Golden Section and the Golden String (1996–2025).
 
-.. _person-euclid:
-
-Euclid of Alexandria (fl. c. 300 BCE)
--------------------------------------
-
-Author of the Elements; formalized division in extreme and mean ratio (II.11, VI.30), the golden 72°–72°–36° triangle and regular pentagon/15-gon (IV.10–16), and the icosahedron/dodecahedron (Book XIII).
-
 .. _person-fibonacci:
 
 Leonardo Pisano (Fibonacci) (c. 1170 – c. 1240–1250)
 ----------------------------------------------------
 
 Pisan mathematician whose Liber Abaci (1202) introduced Hindu-Arabic numerals to Europe and posed the monthly rabbit problem generating 1, 1, 2, 3, 5, 8, 13, …
+
+.. _person-lucas:
+
+Édouard Lucas (1842 – 1891)
+---------------------------
+
+French number theorist who named the Fibonacci sequence, introduced the companion Lucas sequence L_n = Φ^n + (-φ)^n, and developed Fibonomial coefficients.
+
+.. _person-phi-architect:
+
+phi ARCHITECT (fl. 2024–present)
+--------------------------------
+
+*Founder of GEOMETOR & Symbolic Geometry Engine Architect*
+
+Creator of the GEOMETOR digital geometry research initiative, exact symbolic synthesis algorithms, and Euclid-graphic visualization frameworks for classical and modern mathematical corpora.
+
+----
+
+Cited Mathematicians, Geometers & Scholars
+------------------------------------------
+
+.. _person-euclid:
+
+Euclid of Alexandria (fl. c. 300 BCE)
+-------------------------------------
+
+Author of the Elements; formalized division in extreme and mean ratio (II.11, VI.30), the golden 72°–72°–36° triangle and regular pentagon/15-gon (IV.10–16), and the icosahedron/dodecahedron (Book XIII).
 
 .. _person-pacioli:
 
@@ -91,13 +120,6 @@ Eugène Charles Catalan (1814 – 1894)
 ------------------------------------
 
 Belgian-French mathematician who generalized Cassini's identity to F_n^2 - F_{n-r} F_{n+r} = (-1)^{n-r} F_r^2 (1879).
-
-.. _person-lucas:
-
-Édouard Lucas (1842 – 1891)
----------------------------
-
-French number theorist who named the Fibonacci sequence, introduced the companion Lucas sequence L_n = Φ^n + (-φ)^n, and developed Fibonomial coefficients.
 
 .. _person-loyd:
 

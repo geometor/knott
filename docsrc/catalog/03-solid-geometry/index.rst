@@ -1,4 +1,3 @@
-:layout: book
 :type: collection
 :order: 3
 :featured_image: catalog/03-solid-geometry/01-orthogonal-golden-rectangles-solids/knott-3-1.g1.svg

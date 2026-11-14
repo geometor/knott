@@ -1,6 +1,6 @@
-:layout: book
 :navigation: header
-:order: 60
+:order: 40
+:nav_title: Modules
 
 =======
 Modules

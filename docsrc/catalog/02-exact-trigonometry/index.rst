@@ -1,4 +1,3 @@
-:layout: book
 :type: collection
 :order: 2
 :featured_image: catalog/02-exact-trigonometry/01-pentagonal-radicals-and-spreads/knott-2-1.g1.svg
