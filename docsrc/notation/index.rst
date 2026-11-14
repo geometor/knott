@@ -1,6 +1,6 @@
-:layout: book
 :navigation: header
-:order: 8
+:order: 15
+:nav_title: Notation
 
 ====================================================
 Notation Bridge — Knott (:math:`\Phi, \phi`) & SymPy

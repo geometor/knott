@@ -1,4 +1,3 @@
-:layout: book
 :type: log
 :date: 26.316-162000
 

@@ -1,4 +1,3 @@
-:layout: book
 :type: item
 :order: 1
 :canonical_id: KNOTT-6.1

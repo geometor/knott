@@ -1,4 +1,3 @@
-:layout: book
 :type: item
 :order: 5
 :canonical_id: KNOTT-1.5
