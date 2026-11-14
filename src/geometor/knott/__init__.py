@@ -104,7 +104,7 @@ from geometor.knott.trigonometry import (
     three_degree_lattice,
 )
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 __all__ = [
     "CATALOG_ITEMS",
