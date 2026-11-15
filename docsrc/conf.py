@@ -61,8 +61,7 @@ for _sister in (
 
 html_title = "GEOMETOR • Knott Mathematical Catalog"
 html_theme = "foundation"
-html_static_path: list[str] = []
-html_logo = None
+html_static_path: list[str] = ["_static"]
 autoapi_add_toctree_entry = False
 if "intro.rst" not in exclude_patterns:  # noqa: F405
     exclude_patterns.append("intro.rst")  # noqa: F405
