@@ -12,6 +12,9 @@ KNOTT-3 — 3D Golden Geometry of Solids
 
    Three-dimensional golden coordinates spanning the regular icosahedron and dodecahedron from three mutually orthogonal golden rectangles, Euclid XIII.17's inscribed cube and five-cube compound, and the acute and obtuse golden rhombohedra of icosahedral quasicrystals.
 
+.. picture:: /catalog/03-solid-geometry/01-orthogonal-golden-rectangles-solids/knott-3-1.g1.svg
+   :alt: KNOTT-3 — 3D Golden Geometry of Solids representative construction
+
 Curated from :person:`Dr. Ron Knott <knott>`'s University of Surrey archive (**© 1996–2025 Dr. Ron Knott, University of Surrey**).
 
 .. collection::
