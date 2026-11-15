@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.1.4 (2026-11-15)
+------------------
+
+- Added representative ``.. picture::`` hero figures to the 6 catalog section pages (``KNOTT-1`` through ``KNOTT-6``) and rebuilt inline SVGs with explicit ``viewBox`` dimensions and scoped dark/light theme styles (``publish`` ``v0.4.6``).
+
 0.1.3 (2026-11-15)
 ------------------
 

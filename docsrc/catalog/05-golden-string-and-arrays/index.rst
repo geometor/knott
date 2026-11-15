@@ -12,6 +12,9 @@ KNOTT-5 — The Golden String, Zeckendorf Base, & Wythoff / Stolarsky Arrays
 
    The infinite Sturmian Golden String (101101011011...) generated both by morphism substitution and by a lattice-cutting ray of slope φ, Zeckendorf's canonical non-consecutive Fibonacci base, and the bijective Beatty, Wythoff, and Stolarsky interspersion arrays.
 
+.. picture:: /catalog/05-golden-string-and-arrays/01-golden-string-and-cutting-line/knott-5-1.g1.svg
+   :alt: KNOTT-5 — The Golden String, Zeckendorf Base, & Wythoff / Stolarsky Arrays representative construction
+
 Curated from :person:`Dr. Ron Knott <knott>`'s University of Surrey archive (**© 1996–2025 Dr. Ron Knott, University of Surrey**).
 
 .. collection::
