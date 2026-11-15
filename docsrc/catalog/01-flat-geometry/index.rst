@@ -12,6 +12,9 @@ KNOTT-1 — 2D Golden Geometry & Constructions
 
    Planar compass-and-straightedge divisions in extreme and mean ratio, golden and root-5 rectangles with orthogonal gnomonic spiral poles, self-deflating golden triangles and gnomons, pentagonal star progressions and overhand paper-strip knots, Kepler's geometric-progression right triangle, and Penrose aperiodic P2/P3 prototiles.
 
+.. picture:: /catalog/01-flat-geometry/01-golden-section-segment/knott-1-1.g1.svg
+   :alt: KNOTT-1 — 2D Golden Geometry & Constructions representative construction
+
 Curated from :person:`Dr. Ron Knott <knott>`'s University of Surrey archive (**© 1996–2025 Dr. Ron Knott, University of Surrey**).
 
 .. collection::

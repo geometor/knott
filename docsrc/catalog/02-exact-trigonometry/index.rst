@@ -12,6 +12,9 @@ KNOTT-2 — Exact Pentagonal & Constructible Trigonometry
 
    Closed-form quadratic radicals and Rational Trigonometry spreads for 18°, 36°, 54°, and 72°, extended by Euclid IV.16 pentagon-equilateral superposition across all 29 constructible multiples of 3° in the first quadrant and contrasted with Gauss's Fermat-prime regular 17-gon cosine.
 
+.. picture:: /catalog/02-exact-trigonometry/01-pentagonal-radicals-and-spreads/knott-2-1.g1.svg
+   :alt: KNOTT-2 — Exact Pentagonal & Constructible Trigonometry representative construction
+
 Curated from :person:`Dr. Ron Knott <knott>`'s University of Surrey archive (**© 1996–2025 Dr. Ron Knott, University of Surrey**).
 
 .. collection::

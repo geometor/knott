@@ -12,6 +12,9 @@ KNOTT-4 — Algebraic Powers of Φ, Continued Fractions & Base-Φ Phigits
 
    Linearization of all integer powers of Φ into Fibonacci multiples, the unit-volume Phibonacci brick, extremal continued fraction convergents F_{n+1}/F_n and Hurwitz's √5 irrationality barrier, and George Bergman's non-adjacent base-Φ ('phigit') numeral system.
 
+.. picture:: /catalog/04-phigits-and-algebra/01-fibonacci-power-linearization/knott-4-1.g1.svg
+   :alt: KNOTT-4 — Algebraic Powers of Φ, Continued Fractions & Base-Φ Phigits representative construction
+
 Curated from :person:`Dr. Ron Knott <knott>`'s University of Surrey archive (**© 1996–2025 Dr. Ron Knott, University of Surrey**).
 
 .. collection::

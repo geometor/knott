@@ -12,6 +12,9 @@ KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes & 
 
    Four-term Fibonacci generators of Pythagorean right triangles, Cassini's alternating ±1 determinant realized as 64 ↔ 65 and 64 ↔ 63 four-piece dissections, Binet/Lucas/Catalan/d'Ocagne/Honsberger and Fibonomial power identities, Fibonacci arctangent telescoping series for π, and the Golden Angle parastichy lattice.
 
+.. picture:: /catalog/06-identities-and-bridges/01-fibonacci-pythagorean-triples/knott-6-1.g1.svg
+   :alt: KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes & π representative construction
+
 Curated from :person:`Dr. Ron Knott <knott>`'s University of Surrey archive (**© 1996–2025 Dr. Ron Knott, University of Surrey**).
 
 .. collection::
