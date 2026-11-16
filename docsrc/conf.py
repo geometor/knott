@@ -30,6 +30,10 @@ repo_name = "knott"
 
 setup_globals(org, org_name, repo, repo_name)  # noqa: F405
 
+site_title = "Ron Knott"
+project = site_title
+html_title = f"{site_title} • {org_name}"
+
 # Restrict intersphinx_mapping strictly to offline local inventories present on disk:
 for _key in list(intersphinx_mapping.keys()):  # noqa: F405
     _entry = intersphinx_mapping[_key]  # noqa: F405
@@ -59,7 +63,6 @@ for _sister in (
             (os.fspath(_inv), None),
         )
 
-html_title = "GEOMETOR • Knott Mathematical Catalog"
 html_theme = "foundation"
 html_static_path: list[str] = ["_static"]
 autoapi_add_toctree_entry = False
