@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π &mdash; Mathematical Catalog of Fibonacci Numbers and the Golden Section</title>
+
+  <title>KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π — Mathematical Catalog of Fibonacci Numbers and the Golden Section • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/knott/catalog/06-identities-and-bridges/" />
+  <meta name="description" content="Four-term Fibonacci generators of Pythagorean right triangles, Cassini&#39;s alternating ±1 determinant realized as 64 ↔ 65 and 64 ↔ 63 four-piece dissections…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π — Mathematical Catalog of Fibonacci Numbers and the Golden Section • GEOMETOR" />
+  <meta property="og:description" content="Four-term Fibonacci generators of Pythagorean right triangles, Cassini&#39;s alternating ±1 determinant realized as 64 ↔ 65 and 64 ↔ 63 four-piece dissections…" />
+  <meta property="og:url" content="https://geometor.github.io/knott/catalog/06-identities-and-bridges/" />
+  <meta property="og:image" content="https://geometor.github.io/knott/_static/social/catalog.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ron Knott — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KNOTT-6 — Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes &amp; π — Mathematical Catalog of Fibonacci Numbers and the Golden Section • GEOMETOR" />
+  <meta name="twitter:description" content="Four-term Fibonacci generators of Pythagorean right triangles, Cassini&#39;s alternating ±1 determinant realized as 64 ↔ 65 and 64 ↔ 63 four-piece dissections…" />
+  <meta name="twitter:image" content="https://geometor.github.io/knott/_static/social/catalog.png" />
+  <meta name="twitter:image:alt" content="Ron Knott — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="is-book-page book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../../index.html">
-        <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../index.html" title="Home">
+        <img src="../../_static/logo.png" class="logo" alt="GEOMETOR knott"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">knott</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">knott</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -68,11 +88,11 @@
     <article class="book-layout book-reading-pane">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; knott</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../index.html">Mathematical Catalog of Fibonacci Numbers and the Golden Section</a>
-          </div>
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../index.html">Mathematical Catalog</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">KNOTT-6</span>
+          </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
@@ -214,7 +234,7 @@
                   </figure>
                   <section>
                     <h2><a href="01-fibonacci-pythagorean-triples/index.html">KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples</a></h2>
-                      <div class="enunciation">Any four consecutive positive Fibonacci numbers (Fₙ, Fₙ₊₁, Fₙ₊₂, Fₙ₊₃) form the Pythagorean right triangle (Fₙ Fₙ₊₃, 2 Fₙ₊₁ Fₙ₊₂, F₂ₙ₊₃) of area Fₙ Fₙ₊₁ Fₙ₊₂ Fₙ₊₃ and inradius Fₙ Fₙ₊₁, primitive whenever 3 ∤ n and twice a primitive triple when 3 ∣ n.</div>
+                      <p>Any four consecutive positive Fibonacci numbers (Fₙ, Fₙ₊₁, Fₙ₊₂, Fₙ₊₃) form the Pythagorean right triangle (Fₙ Fₙ₊₃, 2 Fₙ₊₁ Fₙ₊₂, F₂ₙ₊₃) of area Fₙ Fₙ₊₁ Fₙ₊₂ Fₙ₊₃ and inradius Fₙ Fₙ₊₁, primitive whenever 3 ∤ n and twice a primitive triple when 3 ∣ n.</p>
                   </section>
                 </div>
               </article>
@@ -311,7 +331,7 @@
                   </figure>
                   <section>
                     <h2><a href="02-cassini-jigsaw-paradoxes/index.html">KNOTT-6.2 — Cassini’s Identity (Fₙ₋₁Fₙ₊₁ − Fₙ² = (−1)ⁿ) & The 64 ↔ 65 / 63 Jigsaw Dissections</a></h2>
-                      <div class="enunciation">Cassini’s alternating identity Fₙ₋₁ Fₙ₊₁ − Fₙ² = (−1)ⁿ manifests geometrically when the four pieces of an 8 × 8 = 64 square (two 3 × 8 triangles and two 5 × (3, 5) trapezoids) rearrange into a 5 × 13 = 65 rectangle with a +1 parallelogram gap OR into a 63-unit notched block with a −1 parallelogram overlap.</div>
+                      <p>Cassini's alternating identity Fₙ₋₁ Fₙ₊₁ − Fₙ² = (−1)ⁿ manifests geometrically when the four pieces of an 8 × 8 = 64 square (two 3 × 8 triangles and two 5 × (3, 5) trapezoids) rearrange into a 5 × 13 = 65 rectangle with a +1 parallelogram gap OR into a 63-unit notched block with a −1 parallelogram overlap.</p>
                   </section>
                 </div>
               </article>
@@ -382,7 +402,7 @@
                   </figure>
                   <section>
                     <h2><a href="03-binet-lucas-catalan-fibonomials/index.html">KNOTT-6.3 — Binet, Lucas, Catalan, d’Ocagne, Honsberger & Fibonomial Power Identities</a></h2>
-                      <div class="enunciation">Binet’s closed forms Fₙ = (Φⁿ − (−φ)ⁿ)/√5 and Lₙ = Φⁿ + (−φ)ⁿ place (Lₙ, Fₙ) on the alternating Pell-Lucas hyperbolas Lₙ² − 5 Fₙ² = 4(−1)ⁿ with unit sector triangles, unify Catalan, d’Ocagne, and Honsberger identities, and annihilate k-th powers Fₙᵏ via signed Fibonomial coefficients.</div>
+                      <p>Binet's closed forms Fₙ = (Φⁿ − (−φ)ⁿ)/√5 and Lₙ = Φⁿ + (−φ)ⁿ place (Lₙ, Fₙ) on the alternating Pell-Lucas hyperbolas Lₙ² − 5 Fₙ² = 4(−1)ⁿ with unit sector triangles, unify Catalan, d'Ocagne, and Honsberger identities, and annihilate k-th powers Fₙᵏ via signed Fibonomial coefficients.</p>
                   </section>
                 </div>
               </article>
@@ -444,7 +464,7 @@
                   </figure>
                   <section>
                     <h2><a href="04-fibonacci-arctangent-pi-formulae/index.html">KNOTT-6.4 — Fibonacci Arctangent Telescoping Formulae for π</a></h2>
-                      <div class="enunciation">By Cassini’s odd-index relation F₂ₙ₊₁² − 1 = F₂ₙ F₂ₙ₊₂, every even-indexed reciprocal Fibonacci angle splits as arctan(1/F₂ₙ) = arctan(1/F₂ₙ₊₁) + arctan(1/F₂ₙ₊₂), telescoping from arctan(1/F₂) = π/4 into Lehmer’s series π/4 = ∑_{k=1}^∞ arctan(1/F₂ₖ₊₁).</div>
+                      <p>By Cassini's odd-index relation F₂ₙ₊₁² − 1 = F₂ₙ F₂ₙ₊₂, every even-indexed reciprocal Fibonacci angle splits as arctan(1/F₂ₙ) = arctan(1/F₂ₙ₊₁) + arctan(1/F₂ₙ₊₂), telescoping from arctan(1/F₂) = π/4 into Lehmer's series π/4 = ∑_{k=1}^∞ arctan(1/F₂ₖ₊₁).</p>
                   </section>
                 </div>
               </article>
@@ -513,7 +533,7 @@
                   </figure>
                   <section>
                     <h2><a href="05-golden-angle-and-parastichy-bridges/index.html">KNOTT-6.5 — Golden Angle (360° / Φ² ≈ 137.50776°) & Parastichy Bridges</a></h2>
-                      <div class="enunciation">Dividing a full turn in extreme and mean ratio yields the Golden Angle 2π / Φ² = 2π φ² ≈ 137.50776°, whose cylindrical primordia satisfy Fₖ φ² − Fₖ₋₂ = (−φ)ᵏ, pairing opposing left- and right-handed parastichy spirals in consecutive Fibonacci numbers (Fₖ, Fₖ₊₁).</div>
+                      <p>Dividing a full turn in extreme and mean ratio yields the Golden Angle 2π / Φ² = 2π φ² ≈ 137.50776°, whose cylindrical primordia satisfy Fₖ φ² − Fₖ₋₂ = (−φ)ᵏ, pairing opposing left- and right-handed parastichy spirals in consecutive Fibonacci numbers (Fₖ, Fₖ₊₁).</p>
                   </section>
                 </div>
               </article>
@@ -562,13 +582,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../05-golden-string-and-arrays/03-wythoff-beatty-and-stolarsky-arrays/index.html" title="KNOTT-5.3 — Wythoff’s Array, Beatty’s Complementary Sequences (⌊nΦ⌋, ⌊nΦ²⌋), &amp; Stolarsky’s Array">&larr; <span class="nav-label">KNOTT-5.3 — Wythoff’s Array, Beatty’s Complementary Sequences (⌊nΦ⌋, ⌊nΦ²⌋), & Stolarsky’s Array</span></a>
+            <a class="book-nav-btn" href="../05-golden-string-and-arrays/03-wythoff-beatty-and-stolarsky-arrays/index.html" title="KNOTT-5.3 — Wythoff’s Array, Beatty’s Complementary Sequences (⌊nΦ⌋, ⌊nΦ²⌋), &amp; Stolarsky’s Array">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../index.html">Mathematical Catalog of Fibonacci Numbers and the Golden Section</a>
+            <a class="book-toc-link" href="../index.html">Mathematical Catalog</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="01-fibonacci-pythagorean-triples/index.html" title="KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples"><span class="nav-label">KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples</span> &rarr;</a>
+            <a class="book-nav-btn" href="01-fibonacci-pythagorean-triples/index.html" title="KNOTT-6.1 — Fibonacci Generator of Primitive Pythagorean Triples"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -602,6 +622,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../../types/book.html">book</a></li>
         <li><a href="../../types/collection.html">collection</a></li>
         <li><a href="../../types/item.html">item</a></li>
         <li><a href="../../types/log.html">log</a></li>

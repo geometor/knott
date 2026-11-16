@@ -1,16 +1,17 @@
-:layout: landing
+:site_title: Ron Knott
 
-===================================
-GEOMETOR Knott Mathematical Catalog
-===================================
+.. container:: author-overline
 
-.. include:: intro.rst
+   the works of
 
-Catalog Collections & Reference
--------------------------------
+=========
+Ron Knott
+=========
+
+The mission of this project is to capture an exact symbolic mathematical catalog inspired by the seminal work of **Dr. Ron Knott**, author of *Fibonacci Numbers, the Golden Section and the Golden String*.
 
 .. collection::
-   :type: header
+   :type: book
    :sort: order
 
 .. toctree::

@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KNOTT-1.2 — Golden Rectangles, √5 Rectangles, &amp; Whirling-Square Gnomonic Spirals &mdash; Mathematical Catalog of Fibonacci Numbers and the Golden Section</title>
+
+  <title>KNOTT-1.2 — Golden Rectangles, √5 Rectangles, &amp; Whirling-Square Gnomonic Spirals — Mathematical Catalog of Fibonacci Numbers and the Golden Section • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/knott/catalog/01-flat-geometry/02-golden-rectangles-and-spiral/" />
+  <meta name="description" content="Flanking a unit square ABCD on both sides via its base-midpoint circle produces a 1 × √5 rectangle WEFN containing right golden rectangle AEFD; recursive whirling-square cuts in gnomon BEFC…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="KNOTT-1.2 — Golden Rectangles, √5 Rectangles, &amp; Whirling-Square Gnomonic Spirals — Mathematical Catalog of Fibonacci Numbers and the Golden Section • GEOMETOR" />
+  <meta property="og:description" content="Flanking a unit square ABCD on both sides via its base-midpoint circle produces a 1 × √5 rectangle WEFN containing right golden rectangle AEFD; recursive whirling-square cuts in gnomon BEFC…" />
+  <meta property="og:url" content="https://geometor.github.io/knott/catalog/01-flat-geometry/02-golden-rectangles-and-spiral/" />
+  <meta property="og:image" content="https://geometor.github.io/knott/_static/social/catalog.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ron Knott — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KNOTT-1.2 — Golden Rectangles, √5 Rectangles, &amp; Whirling-Square Gnomonic Spirals — Mathematical Catalog of Fibonacci Numbers and the Golden Section • GEOMETOR" />
+  <meta name="twitter:description" content="Flanking a unit square ABCD on both sides via its base-midpoint circle produces a 1 × √5 rectangle WEFN containing right golden rectangle AEFD; recursive whirling-square cuts in gnomon BEFC…" />
+  <meta name="twitter:image" content="https://geometor.github.io/knott/_static/social/catalog.png" />
+  <meta name="twitter:image:alt" content="Ron Knott — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="is-book-page book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../../../index.html">
-        <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../../index.html" title="Home">
+        <img src="../../../_static/logo.png" class="logo" alt="GEOMETOR knott"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">knott</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">knott</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -68,16 +88,13 @@
     <article class="book-layout book-reading-pane" data-canonical-id="KNOTT-1.2">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../../index.html" title="Return to Project Portal">&larr; knott</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../../index.html">Mathematical Catalog of Fibonacci Numbers and the Golden Section</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../index.html">Mathematical Catalog</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
             <a class="book-crumb-link" href="../index.html">KNOTT-1 — 2D Golden Geometry & Constructions</a>
-            <span class="book-crumb-sep">/</span>
-            <span class="book-badge canonical-badge">KNOTT-1.2</span>
-          </div>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">KNOTT-1.2</span>
+          </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
@@ -280,13 +297,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../01-golden-section-segment/index.html" title="KNOTT-1.1 — Internal &amp; External Golden Section Constructions on a Segment">&larr; <span class="nav-label">KNOTT-1.1 — Internal & External Golden Section Constructions on a Segment</span></a>
+            <a class="book-nav-btn" href="../01-golden-section-segment/index.html" title="KNOTT-1.1 — Internal &amp; External Golden Section Constructions on a Segment">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../../index.html">Mathematical Catalog of Fibonacci Numbers and the Golden Section</a>
+            <a class="book-toc-link" href="../../index.html">Mathematical Catalog</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../03-golden-triangles-and-gnomons/index.html" title="KNOTT-1.3 — Golden Triangles (72°–72°–36°) &amp; Golden Gnomons (36°–36°–108°)"><span class="nav-label">KNOTT-1.3 — Golden Triangles (72°–72°–36°) & Golden Gnomons (36°–36°–108°)</span> &rarr;</a>
+            <a class="book-nav-btn" href="../03-golden-triangles-and-gnomons/index.html" title="KNOTT-1.3 — Golden Triangles (72°–72°–36°) &amp; Golden Gnomons (36°–36°–108°)"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -320,6 +337,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../../../types/book.html">book</a></li>
         <li><a href="../../../types/collection.html">collection</a></li>
         <li><a href="../../../types/item.html">item</a></li>
         <li><a href="../../../types/log.html">log</a></li>
