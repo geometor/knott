@@ -2,13 +2,13 @@
 
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • mathematical catalog
 
 =========
 Ron Knott
 =========
 
-The mission of this project is to capture an exact symbolic mathematical catalog inspired by the seminal work of **Dr. Ron Knott**, author of *Fibonacci Numbers, the Golden Section and the Golden String*.
+The mathematical catalog formalizes the constructive and arithmetic discoveries of :person:`Ron Knott`, author of the foundational Surrey archive on Fibonacci numbers, the Golden Section, base-:math:`\Phi` numeral systems, and the Golden String. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these principles are liberated into 22 machine-certified symbolic models over exact radical number fields, interactive vector diagrams, and algorithmic decoders speaking one shared geometric language.
 
 .. collection::
    :type: book
