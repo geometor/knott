@@ -141,7 +141,7 @@ Master 22-Entry Concordance
 Scholarly Apparatus
 -------------------
 
-* :doc:`People </persons>` — Prosopographical register of mathematicians from Fibonacci and Lucas to Ron Knott.
+* :doc:`People </people/index>` — Prosopographical register of mathematicians from Fibonacci and Lucas to Ron Knott.
 * :doc:`Bibliography </bibliography>` — Systematic bibliography of research literature and primary web sources.
 * :doc:`Mathematical Notation </notation/index>` — Symbolic notation and mapping between Knott radicals and GEOMETOR algebraic fields.
 * :doc:`Glossary </glossary>` — Lexicon of terms across golden geometry, phigits, and combinatorics.
