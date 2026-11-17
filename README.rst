@@ -3,6 +3,11 @@ GEOMETOR • knott
 
 **Visit the Online Archive:** https://geometor.github.io/knott/
 
+.. image:: docsrc/catalog/01-flat-geometry/01-golden-section-segment/knott-1-1.g1.svg
+   :alt: GEOMETOR • knott featured geometric construction
+   :target: https://geometor.github.io/knott/
+   :align: center
+
 **Ron Knott • Fibonacci Numbers, Golden Section & Wythoff Geometry • semantic digital archive**
 
 Mission
