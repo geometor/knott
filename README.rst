@@ -18,7 +18,7 @@ Mission
 Catalogs in This Archive
 ------------------------
 
-- **`Mathematical Catalog of Fibonacci Numbers and the Golden Section <https://geometor.github.io/knott/catalog/>`_** — 22 machine-verified catalog items across six thematic collections proved in exact radical algebra with original interactive vector diagrams.
+- `Mathematical Catalog of Fibonacci Numbers and the Golden Section <https://geometor.github.io/knott/catalog/>`_ — 22 machine-verified catalog items across six thematic collections proved in exact radical algebra with original interactive vector diagrams.
 
 Repository Contents
 -------------------
