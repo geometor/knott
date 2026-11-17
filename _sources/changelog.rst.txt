@@ -1,5 +1,5 @@
 :navigation: footer
-:order: 95
+:order: 20
 :nav_title: Changelog
 
 =========
