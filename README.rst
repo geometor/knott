@@ -20,6 +20,24 @@ Catalogs in This Archive
 
 - `Mathematical Catalog of Fibonacci Numbers and the Golden Section <https://geometor.github.io/knott/catalog/>`_ — 22 machine-verified catalog items across six thematic collections proved in exact radical algebra with original interactive vector diagrams.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-knott`` Python package (``import geometor.knott``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``catalog.py`` — Master registry of the 6 Collections and 22 Catalog Items (``KNOTT-1.1`` – ``KNOTT-6.5``).
+- ``constants.py`` — Exact symbolic constants, notation bridges, and Rational Trigonometry invariants.
+- ``expositions.py`` — Original GEOMETOR mathematical expositions and interactive ``:g:``/``:eq:`` bindings.
+- ``flat_geometry.py`` — Collection 1: 2D Golden Geometry & Constructions (``KNOTT-1.1`` through ``KNOTT-1.6``).
+- ``golden_string.py`` — Collection 5: The Golden String, Zeckendorf Base, & Wythoff / Stolarsky Arrays (``KNOTT-5.1`` – ``KNOTT-5.3``).
+- ``identities.py`` — Collection 6: Fibonacci-Lucas Identities, Pythagorean Triples, Jigsaw Paradoxes & ``\pi`` (``KNOTT-6.1`` – ``KNOTT-6.5``).
+- ``phigits.py`` — Collection 4: Algebraic Powers of ``\Phi``, Continued Fractions & Base-``\Phi`` "Phigits" (``KNOTT-4.1`` – ``KNOTT-4.3``).
+- ``solid_geometry.py`` — Collection 3: 3D Golden Geometry of Solids (``KNOTT-3.1`` through ``KNOTT-3.3``).
+- ``svg_renderer.py`` — Theme-adaptive ``.euclid-graphic`` SVG serializer for ``geometor.model.Model``.
+- ``trigonometry.py`` — Collection 2: Exact Pentagonal & Constructible Trigonometry (``KNOTT-2.1`` – ``KNOTT-2.2``).
+
+See the `API Reference <https://geometor.github.io/knott/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
