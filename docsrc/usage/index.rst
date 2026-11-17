@@ -56,7 +56,7 @@ People, Bibliography & Glossary Tooltips
 
 The catalog includes comprehensive scholarly registries:
 
-* **People (``:person:``)**: Reference cards connect mathematicians such as :person:`Leonardo Pisano (Fibonacci) <fibonacci>`, :person:`Édouard Lucas <lucas>`, and :person:`Dr. Ron Knott <knott>` to :doc:`/persons`.
+* **People (``:person:``)**: Reference cards connect mathematicians such as :person:`Leonardo Pisano (Fibonacci) <fibonacci>`, :person:`Édouard Lucas <lucas>`, and :person:`Dr. Ron Knott <knott>` to :doc:`/people/index`.
 * **Citations (``:cite:``)**: Bibliographic keys link directly to literature entries in :doc:`/bibliography`.
 * **Terms (``:term:``)**: Definitions of mathematical concepts connect to entries in the :doc:`/glossary`.
 * **Theme Toggle**: Switch between Light and Dark display modes using the theme button in the header bar.
