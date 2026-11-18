@@ -1,0 +1,22 @@
+{
+  "repository": "geometor/knott",
+  "rights_category": "non-derivative-catalog",
+  "sources": [
+    {
+      "id": "knott-fibonacci-web",
+      "title": "Fibonacci Numbers and the Golden Section (Online Mathematical Corpus)",
+      "author": "Ron Knott",
+      "year": "1996",
+      "era": "17 U.S.C. § 102(b) Catalog",
+      "languages": [
+        "English"
+      ],
+      "site_url": "https://r-knott.surrey.ac.uk/Fibonacci/fib.html",
+      "local_path": "resources/catalog_manifest.json",
+      "pages": null,
+      "publisher": "University of Surrey / GEOMETOR",
+      "rights": "Non-derivative symbolic catalog (17 U.S.C. § 102(b))",
+      "excerpt": "Symbolic verification and catalog of Fibonacci & Golden Section identities."
+    }
+  ]
+}
