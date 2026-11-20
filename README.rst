@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • knott Medallion
+   :target: https://geometor.github.io/knott/
+   :width: 150px
+   :align: right
+
 GEOMETOR • knott
 ================
 
 **Visit the Online Archive:** https://geometor.github.io/knott/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • knott Medallion
-   :target: https://geometor.github.io/knott/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/catalog/01-flat-geometry/01-golden-section-segment/knott-1-1.g1.svg
    :alt: GEOMETOR • knott featured geometric construction
