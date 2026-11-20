@@ -8,6 +8,10 @@
 Ron Knott
 =========
 
+.. image:: _static/medallion.svg
+   :alt: Ron Knott Medallion
+   :class: repo-medallion-hero
+
 The mathematical catalog formalizes the constructive and arithmetic discoveries of :person:`Ron Knott`, author of the foundational Surrey archive on Fibonacci numbers, the Golden Section, base-:math:`\Phi` numeral systems, and the Golden String. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these principles are liberated into 22 machine-certified symbolic models over exact radical number fields, interactive vector diagrams, and algorithmic decoders speaking one shared geometric language.
 
 .. reference-directory::
