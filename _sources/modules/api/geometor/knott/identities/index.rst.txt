@@ -128,9 +128,9 @@ Module Contents
    (two :math:`3 \times 8` right triangles of area ``12`` + two :math:`5 \times (3, 5)`
    right trapezoids of area ``20``) inside a single exact ``geometor.model.Model``:
 
-   1. **Lower figure (:math:`5 \times 13 = 65` Hooper/Loyd rectangle)**: encloses the
+   1. **Lower figure** (:math:`5 \times 13 = 65` Hooper/Loyd rectangle): encloses the
       slender internal parallelogram ``O P1 Q P2`` of exact shoelace area ``+1``;
-   2. **Upper figure (Sam Loyd Jr. / Dudeney / Knott 63-unit notched block, shifted to ``y >= 7``)**:
+   2. **Upper figure** (Sam Loyd Jr. / Dudeney / Knott 63-unit notched block, shifted to ``y >= 7``):
       two :math:`5 \times 6 = 30` wings joined by a :math:`3 \times 1 = 3` bridge
       (apparent outer area ``63``), concealing an internal overlap parallelogram
       ``U0 U1 U2 U3`` of exact shoelace area ``+1`` (:math:`64 - 1 = 63`).
