@@ -77,7 +77,7 @@
   "hurwitz": {
     "name": "Adolf Hurwitz",
     "dates": "1859 – 1919",
-    "role": "German mathematician who proved (1891) that :math:`|\\alpha - p/q| < 1/(\\sqrt{5}\\, q^2)` has infinitely many rational solutions for every irrational α, with √5 optimal specifically because of Φ."
+    "role": "German mathematician who proved (1891) that |α − p/q| < 1/(√5 q²) has infinitely many rational solutions for every irrational α, with √5 optimal specifically because of Φ."
   },
   "thompson": {
     "name": "D'Arcy Wentworth Thompson",
