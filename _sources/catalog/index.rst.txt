@@ -7,7 +7,8 @@
 :book_title: Mathematical Catalog of Fibonacci Numbers and the Golden Section
 :book_subtitle: Inspired by Dr. Ron Knott — Exact Symbolic Synthesis in GEOMETOR
 :author: Dr. Ron Knott & phi ARCHITECT
-:year: 1996–2025
+:year: 1996
+:year_label: 1996–2025
 :excerpt: A 22-entry exact symbolic mathematical catalog of the planar and solid Golden Ratio constructions, exact trigonometry, phigit numeral systems, and Fibonacci–Lucas structures curated by Dr. Ron Knott.
 
 .. _knott-catalog:
