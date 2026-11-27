@@ -12,7 +12,7 @@ Ron Knott
    :alt: Ron Knott Medallion
    :class: repo-medallion-hero
 
-**Dr. Ron Knott** of the University of Surrey built the premier modern web compendium on Fibonacci numbers, the Golden Section $\Phi$, base-$\Phi$ *phigits*, Sturmian golden strings, and Wythoff arrays. Where classical geometry meets discrete arithmetic, Knott traced every golden ratio thread from planar pentagrams and three-degree trigonometric lattices to 3D icosahedral coordinates and quasicrystals. This mathematical catalog translates his discoveries into **22 machine-certified symbolic models** over exact radical number fields with interactive vector plates.
+**Dr. Ron Knott** of the University of Surrey built the premier modern web compendium on Fibonacci numbers, the Golden Section :math:`\Phi`, base-:math:`\Phi` *phigits*, Sturmian golden strings, and Wythoff arrays. Where classical geometry meets discrete arithmetic, Knott traced every golden ratio thread from planar pentagrams and three-degree trigonometric lattices to 3D icosahedral coordinates and quasicrystals. This mathematical catalog translates his discoveries into **22 machine-certified symbolic models** over exact radical number fields with interactive vector plates.
 
 Inside This Reference
 ---------------------
@@ -29,7 +29,7 @@ Inside This Reference
 
       .. rubric:: University of Surrey Archive · 6 Collections · 22 Certified Models
 
-      **Mathematical Catalog of Fibonacci Numbers and the Golden Section** — Six thematic collections spanning planar golden constructions, exact pentagonal and $3^\circ$ trigonometry, orthogonal polyhedra, Bergman base-$\Phi$ phigits, Wythoff–Beatty arrays, and Fibonacci–Lucas identities.
+      **Mathematical Catalog of Fibonacci Numbers and the Golden Section** — Six thematic collections spanning planar golden constructions, exact pentagonal and :math:`3^\circ` trigonometry, orthogonal polyhedra, Bergman base-:math:`\Phi` phigits, Wythoff–Beatty arrays, and Fibonacci–Lucas identities.
 
       .. container:: home-actions
 
@@ -46,13 +46,13 @@ Key Features
 
       **22 Exact Radical Models**
 
-      Every planar, trigonometric, and polyhedral structure is proved in exact SymPy algebra over $\mathbb{Q}(\sqrt{5})$ and cyclotomic extensions—never floating-point approximations.
+      Every planar, trigonometric, and polyhedral structure is proved in exact SymPy algebra over :math:`\mathbb{Q}(\sqrt{5})` and cyclotomic extensions—never floating-point approximations.
 
    .. container:: home-feature-card
 
       **Phigits, Sturmian Words & Arrays**
 
-      Explore Bergman's base-$\Phi$ numeral system, Zeckendorf representations, the infinite Golden String cutting-line slope, and Wythoff's complementary Beatty sequences.
+      Explore Bergman's base-:math:`\Phi` numeral system, Zeckendorf representations, the infinite Golden String cutting-line slope, and Wythoff's complementary Beatty sequences.
 
    .. container:: home-feature-card
 
